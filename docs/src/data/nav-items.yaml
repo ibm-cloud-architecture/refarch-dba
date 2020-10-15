@@ -4,6 +4,12 @@
       path: /introduction/overview/
     - title: Reference Architecture
       path: /introduction/reference-architecture/
+    - title: Target audiences
+      path: /introduction/target-audiences/
+- title: Methodology
+  pages:
+    - title: Overview
+      path: /methodology/overview/
 - title: Contribute to this Site
   pages:
     - path: /contribute/

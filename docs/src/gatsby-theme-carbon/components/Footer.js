@@ -13,6 +13,7 @@ const links = {
   firstCol: [
     { linkText: 'Contributors:' },
     { href: 'https://www.linkedin.com/in/pierreberlandier', linkText: 'Pierre Berlandier'},
+    { href: 'https://www.linkedin.com/in/jeffreygoodhue/', linkText: 'Jeff Goodhue'},
     { href: 'https://www.linkedin.com/in/jeromeboyer/', linkText: 'Jerome Boyer' },
   ],
 };
