@@ -10,6 +10,12 @@
   pages:
     - title: Overview
       path: /methodology/overview/
+- title: Technology
+  pages:
+    - title: Decision
+      path: /technology/decision/
+    - title: RPA
+      path: /technology/rpa/
 - title: Contribute to this Site
   pages:
     - path: /contribute/
