@@ -4,13 +4,13 @@ import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
 import { calloutLink } from './Homepage.module.scss';
 import { withPrefix } from 'gatsby';
 
-import Carbon from '../../images/building_1024x512.jpg';
-
+// import Carbon from '../../images/building_1024x512.jpg';
+import Carbon from '../../images/Madrid-airport.jpg';
 const FirstLeftText = () => <p>What are Digital Business Automation Architectures?</p>;
 
 const FirstRightText = () => (
   <p>
-    Digital Business Automation architectures provide a collection .
+    Digital Business Automation architectures provide a collection of patterns to develop digital business automation solution by integrating workflow, document management, decision and AI.
     <a
       className={calloutLink}
       href={withPrefix(`/introduction/overview/`)}

@@ -16,6 +16,12 @@
       path: /technology/decision/
     - title: RPA
       path: /technology/rpa/
+- title: Use Cases
+  pages:
+    - title: Refund request
+      path: /use-cases/refund-req/
+    - title: Car Dealer
+      path: /use-cases/car-dealer/
 - title: Contribute to this Site
   pages:
     - path: /contribute/

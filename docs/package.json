@@ -1,5 +1,5 @@
 {
-  "name": "example",
+  "name": "refarch-dba",
   "private": true,
   "version": "1.22.1",
   "license": "Apache 2.0",
@@ -17,14 +17,18 @@
     "test:prefix": "yarn build:prefix && yarn serve:prefix"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.6.19",
+    "@mdx-js/react": "^1.6.19",
+    "acorn": "^6.4.2",
     "gatsby": "^2.24.9",
     "gatsby-plugin-google-analytics": "^2.3.13",
     "gatsby-remark-autolink-headers": "^2.3.11",
     "gatsby-remark-check-links": "^2.1.0",
+    "gatsby-theme-carbon": "^1.26.18",
     "gatsby-transformer-remark": "^2.8.27",
-    "gatsby-theme-carbon": "^1.26.4",
     "gh-pages": "^3.1.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "typescript": "^4.0.3"
   }
 }
