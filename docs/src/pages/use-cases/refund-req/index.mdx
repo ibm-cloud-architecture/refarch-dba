@@ -3,7 +3,7 @@ title: Refund request scenario
 description: Refund request scenario
 ---
 
-This scenario illustrates how to increase straight-through processing with process and decision automation to save time, money, and customer frustration. It uses the Business Automation Workflow, Automate Decision Service, Business Automation Insights
+This scenario illustrates how to increase straight-through processing with process and decision automation to save time, money, and customer frustration. It uses the workflow, decision and insights components of IBM Cloud Pak® for Automation.
 
 <InlineNotification kind="warning">
 <strong>Updated 10/21/2020</strong> - Work in progress
@@ -26,79 +26,98 @@ The following diagram illustrates the products involved and the solution compone
 
 ## Preparation
 
-The [dba-refund-request](https://github.com/ibm-cloud-architecture/dba-refund-request.git) git repository includes the decision services and workflow definitions needed for this lab.
-
-For a light weight demonstration Business Automation Insight is not used. 
+The [dba-refund-request](https://github.com/ibm-cloud-architecture/dba-refund-request.git) git repository includes the artifacts needed for this lab.
 
 ### Environment
 
 We assume the following products are installed, up and running:
 
-* Cloud Pak for Automation version 2020.3 on OpenShift
-* Decision Services
-* Process Center and Process Designer on VM
+* IBM Cloud Pak® for Automation version 20.0.3
+    * Business Automation Workflow (BAW) on VMs
+    * Operational Decision Manager (ODM) on OpenShift
+    * Business Automation Insights (BAI) on OpenShift (Optional, can be run without)
 
-### Setup your Navigator and Process Portal
+### Deploy the artifacts
 
-As the `Focus Corp Demo Dashboard` is in the Process Portal for now, it is recommended that you make this your default dashboard.
+1. Determine your credentials
+    a. For BAW, use your own credentials to login to Workflow Center and Process Portal
+    b. For ODM, create a service credential/account or use your own basic auth credentials to login to Rule Execution Server console
+    c. For BAI, set your password as required by your platform and login to Kibana
+2. Deploy ODM artifacts
+    a. Login to Decision Center Business console
+    b. On Library, click the import icon
+    c. Choose and upload Refund Processing [main].zip
+    d. Open the main branch, click Deployments and deploy to your Rule Execution Server (adjust the server within the deployment configuration as required)
+    e. Return to the branch list and click the plus sign to create a new branch based on main named Reduce Manual Processing
+    f. Import Refund Processing [Reduce Manual Processing].zip to the new branch and choose to replace the existing elements
+    g. Deploy the new branch as a second version
+3. (Optional) Deploy BAI artifacts
+    a. Login to Kibana
+    b. Management -> Saved Objects -> Import -> RefundRequest YYYY.MM.DD_XX.json
+4. Deploy BAW artifacts
+    a. Login to Workflow Center and navigate to Process Apps
+    b. Import Refund_Request - YYYY.MM.DD_XX.twx
+    c. Open the Refund Request process app and navigate to Process App Settings -> Servers
+    d. Edit the settings for hostname, port, authentication and so forth for your ODM server
+    e. (Optional) Open the BAI Generators team and add an appropriate user to the team
+    f. Go back to Workflow Center and create a new snapshot of the process application
+    g. Install the new snapshot to your Workflow Server unless you wish to run directly on Workflow Center's playback server (to support the optional BAI events, make sure the BAW server running the process app has BAI emitters enabled)
+5. (Optional) Setup BAI data
+    a. Login to Process Portal with the user specified in the above BAI Generators team
+    b. Under Launch, click Generate Week 1 BAI Data RR and wait for the spinner to complete in about 20 seconds
+    c. Do the same for Generate Week 2 BAI Data RR
+    d. Login to Kibana
+    e. Management -> Index Patterns -> process-sum* -> refresh icon
+    f. To improve the dashboard, edit the data.TG.pTime.integer field and set the Format to Number and the Numeral.js format pattern to 0,0 and save
+    g. Open the Dashboard -> Refund Request (RR) - Week 1 and Week 2 and check that data is displayed.  If it is not, check your emitters are sending data and connected to the BAW server where the Process App is deployed.
 
-* Log in to the Process Portal environment you wish to use (Run, Development, etc.).
+### Setup your Process Portal
+
+As the `Focus Corp Demo Dashboard` is currently embedded within the process app and deployed to the Process Portal, it is recommended that you make this your default dashboard.
+
+* Log in to your Process Portal environment.
 * Under Dashboards click Show more… and click the icon next to Focus Corp Demo Dashboard and click the star icon.
 * Drag the right-side handle of that dashboard row to the top so this will load when you start Process Portal.
 
 Why not personalize your Process Portal environment?  Click the Edit Profile link in the upper left and add a picture.
 
-If you do need to use the Work list, it is recommended to create a saved search (maybe name it My Work) that filters to your demo’s tasks.
+## Demo Scenario
 
-* Go to the default Work dashboard.
-* Click the Saved Search editor icon in the upper right ().
-* Click Add to create a criteria which can be a simple search or a filter by attribute such as process definition name.
-* Make sure to Show Advanced Options when done, name your search and click Save so it will show on the left menu.
-* You can also drag this to the top as you did for the Focus Corp Demo Dashboard so it will start automatically.
+The following diagrams describe the use case.  Caution: they are not necessarily meant to represent an executable business process and are more a business model to describe the flow.
 
-## Demo script
-
-The following diagrams describe the use case.  They are not necessarily meant to represent an executable business process and are more a business model to describe the flow. 
-
-*Caution should be used in presenting these to clients without appropriate contextof the difference between business modeling and process execution modeling.*
-
+Discovery Map:
 ![1](./images/bwl-discovery-map.png)
 
-
+Process Diagram:
 ![2](./images/bwl-process.png)
 
 The [following video](https://www.youtube.com/watch?v=u5Pw-uL5STA&feature=youtu.be) runs through the demonstration script as explains in this section.
 
-### Personas
+### Demo Outline
 
-1. Customer persona will do the following main tasks:
+1.	Use Case Overview
+1.	Focus Corp Demo Dashboard review
+1.	Customer persona
+    a. Submit approved return
+    b. Turn on decision labels
+    c. Submit denied return
+    d. Submit manual return
+4.	Operations Specialist persona
+    a. Week 1 dashboard
+5.	Rule Manager persona
+    a. Decision model review
+    b. Review time window table, type of goods table, and one final text rule
+    c. Switch to the Reduce Manual Processing branch
+    d. Review type of goods table, compare
+6.	Customer persona
+    a. Turn on decision labels and auto update rules
+    b. Submit manual return
+7.	Operations Specialist persona
+    a. Week 2 dashboard
+8.	Use case review and value of straight-through processing
 
-    * Submit approved return
-    * Turn on decision labels
-    * Submit denied return
-    * Submit manual return
 
-1. Operations Specialist persona
-
-    * Week 1 dashboard
-
-1. Rule Manager persona
-
-    * Decision model review
-    * Review time window table, type of goods table, and one final text rule
-    * Switch to the Reduce Manual Processing branch
-    * Review type of goods table, compare
-
-1. Customer persona (?)
-
-    * Turn on decision labels and auto update rules
-    * Submit manual return
-
-1. Operations Specialist persona
-
-    * Week 2 dashboard
-
-### Steps
+### Demo Narration and Flow
 
 #### Corp Demos Dashboard
 
@@ -106,9 +125,11 @@ Reviewing the `Focus Corp Demos Dashboard` we see a text summary describing the 
 
 #### Customer refund requests
 
-* We start by becoming the customer.  From the `Focus Corp Retail Your Returns and Refunds` portal, we select one of our recent orders and submit a return.  The result is approved with an expected date to receive funds.
-* We select and submit another order for refund but before we submit, let's take a peak behind the form at some of the business rules.  A few of the fields are used by a set of business rules to make the refund decision and we see those here.  This refund request results in a denial but it is still straight through processing without any manual work.
-* Upon selecting a final, third order, the rules this time are not certain and send the refund request off to a human queue for manual investigation.  This bottom investigation branch of the straight through process can utilize significant resources.
+We start by becoming the customer.  From the `Focus Corp Retail Your Returns and Refunds` portal, we select one of our recent orders and submit a return.  The result is approved with an expected date to receive funds.
+
+We select and submit another order for refund but before we submit, let's take a peak behind the form at some of the business rules.  A few of the fields are used by a set of business rules to make the refund decision and we see those here.  This refund request results in a denial but it is still straight through processing without any manual work.
+
+Upon selecting a final, third order, the rules this time are not certain and send the refund request off to a human queue for manual investigation.  This bottom investigation branch of the straight through process can utilize significant resources.
 
 #### Operations week 1
 
@@ -130,21 +151,6 @@ After these new rules are in place for a week, the **Operations Specialist** see
 
 #### Use Case Summary
 
-* With combined workflow and decision automation, both capabilities within IBM Cloud Pak for Automation, and updated business rules, we reduce the manual processing queues significantly
-* Increased straight through processing results in lower average completion time, lower costs, and more consistent communication with the customer throughout the process.  Now our processors can truly increase customer satisfaction.
+With combined workflow and decision automation, both capabilities within IBM Cloud Pak for Automation, and updated business rules, we reduce the manual processing queues significantly
 
-## Build it yourself lab
-
-### Pre-requisites
-
-Need to clone the [dba-refund-request](https://github.com/ibm-cloud-architecture/dba-refund-request.git) repository:
-
-```shell
-git clone https://github.com/ibm-cloud-architecture/dba-refund-request.git
-```
-
-### Get a development environment
-
-### Build the process application
-
-### Build the decision service
+Increased straight through processing results in lower average completion time, lower costs, and more consistent communication with the customer throughout the process.  Now our processors can truly increase customer satisfaction.
