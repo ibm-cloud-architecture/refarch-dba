@@ -6,17 +6,16 @@ description: Refund request scenario
 This scenario illustrates how to increase straight-through processing with process and decision automation to save time, money, and customer frustration. It uses the workflow, decision and insights components of IBM Cloud Pak® for Automation.
 
 <InlineNotification kind="warning">
-<strong>Updated 10/21/2020</strong> - Work in progress
+<strong>Updated Nov 9, 2020</strong> - Work in progress
 </InlineNotification>
 
 <AnchorLinks>
-  <AnchorLink>Scenario overview</AnchorLink>
-  <AnchorLink>Preparation</AnchorLink>
-  <AnchorLink>Demo script</AnchorLink>
-  <AnchorLink>Build it yourself lab</AnchorLink>
+  <AnchorLink>Scenario Overview</AnchorLink>
+  <AnchorLink>Preparation and Deployment</AnchorLink>
+  <AnchorLink>Demo Scenario</AnchorLink>
 </AnchorLinks>
 
-## Scenario overview
+## Scenario Overview
 
 Imagine that a customer purchases your product, but is unfortunately unsatisfied and requests a refund. Today, your refund process has several manual steps. Managing high volumes of refunds that require manual investigation leads to slow average completion times, inconsistent status updates to customers, and higher costs for any errors made. Although you have guidelines that determine when a refund is approved or denied, there are still inconsistencies in the decision-making. This use case demonstrates the use of automation in the form of straight-through-processing to save time, money, and customer frustration.
 
@@ -24,7 +23,7 @@ The following diagram illustrates the products involved and the solution compone
 
  ![0](./images/comp-view.png)
 
-## Preparation
+## Preparation and Deployment
 
 The [dba-refund-request](https://github.com/ibm-cloud-architecture/dba-refund-request.git) git repository includes the artifacts needed for this lab.
 
@@ -32,48 +31,48 @@ The [dba-refund-request](https://github.com/ibm-cloud-architecture/dba-refund-re
 
 We assume the following products are installed, up and running:
 
-* IBM Cloud Pak® for Automation version 20.0.3
-    * Business Automation Workflow (BAW) on VMs
-    * Operational Decision Manager (ODM) on OpenShift
-    * Business Automation Insights (BAI) on OpenShift (Optional, can be run without)
+- IBM Cloud Pak® for Automation version 20.0.2
+    - Business Automation Workflow (BAW) on VMs
+    - Operational Decision Manager (ODM) on OpenShift
+    - Business Automation Insights (BAI) on OpenShift (Optional, can be run without)
 
 ### Deploy the artifacts
 
 1. Determine your credentials
-    a. For BAW, use your own credentials to login to Workflow Center and Process Portal
-    b. For ODM, create a service credential/account or use your own basic auth credentials to login to Rule Execution Server console
-    c. For BAI, set your password as required by your platform and login to Kibana
-2. Deploy ODM artifacts
-    a. Login to Decision Center Business console
-    b. On Library, click the import icon
-    c. Choose and upload Refund Processing [main].zip
-    d. Open the main branch, click Deployments and deploy to your Rule Execution Server (adjust the server within the deployment configuration as required)
-    e. Return to the branch list and click the plus sign to create a new branch based on main named Reduce Manual Processing
-    f. Import Refund Processing [Reduce Manual Processing].zip to the new branch and choose to replace the existing elements
-    g. Deploy the new branch as a second version
-3. (Optional) Deploy BAI artifacts
-    a. Login to Kibana
-    b. Management -> Saved Objects -> Import -> RefundRequest YYYY.MM.DD_XX.json
-4. Deploy BAW artifacts
-    a. Login to Workflow Center and navigate to Process Apps
-    b. Import Refund_Request - YYYY.MM.DD_XX.twx
-    c. Open the Refund Request process app and navigate to Process App Settings -> Servers
-    d. Edit the settings for hostname, port, authentication and so forth for your ODM server
-    e. (Optional) Open the BAI Generators team and add an appropriate user to the team
-    f. Go back to Workflow Center and create a new snapshot of the process application
-    g. Install the new snapshot to your Workflow Server unless you wish to run directly on Workflow Center's playback server (to support the optional BAI events, make sure the BAW server running the process app has BAI emitters enabled)
-5. (Optional) Setup BAI data
-    a. Login to Process Portal with the user specified in the above BAI Generators team
-    b. Under Launch, click Generate Week 1 BAI Data RR and wait for the spinner to complete in about 20 seconds
-    c. Do the same for Generate Week 2 BAI Data RR
-    d. Login to Kibana
-    e. Management -> Index Patterns -> process-sum* -> refresh icon
-    f. To improve the dashboard, edit the data.TG.pTime.integer field and set the Format to Number and the Numeral.js format pattern to 0,0 and save
-    g. Open the Dashboard -> Refund Request (RR) - Week 1 and Week 2 and check that data is displayed.  If it is not, check your emitters are sending data and connected to the BAW server where the Process App is deployed.
+    1. For BAW, use your own credentials to login to Workflow Center and Process Portal
+    1. For ODM, create a service credential/account or use your own basic auth credentials to login to Rule Execution Server console
+    1. For BAI, set your password as required by your platform and login to Kibana
+1. Deploy ODM artifacts
+    1. Login to Decision Center Business console
+    1. On Library, click the import icon
+    1. Import `Refund Processing [main].zip`
+    1. Open the main branch, click Deployments and deploy to your Rule Execution Server (adjust the server within the deployment configuration as required)
+    1. Return to the branch list and click the plus sign to create a new branch based on main named Reduce Manual Processing
+    1. Import `Refund Processing [Reduce Manual Processing].zip` to the new branch and choose to replace the existing elements
+    1. Deploy the new branch as a second version
+1. (Optional) Deploy BAI artifacts
+    1. Login to Kibana
+    1. Management -> Saved Objects -> Import -> `RefundRequest YYYY.MM.DD_XX.json`
+1. Deploy BAW artifacts
+    1. Login to Workflow Center and navigate to Process Apps
+    1. Import `Refund_Request - YYYY.MM.DD_XX.twx`
+    1. Open the Refund Request process app and navigate to Process App Settings -> Servers
+    1. Edit the settings for hostname, port, authentication and so forth for your ODM server
+    1. (Optional) Open the BAI Generators team and add an appropriate user to the team
+    1. Go back to Workflow Center and create a new snapshot of the process application
+    1. Install the new snapshot to your Workflow Server unless you wish to run directly on Workflow Center's playback server (to support the optional BAI events, make sure the BAW server running the process app has BAI emitters enabled)
+1. (Optional) Setup BAI data
+    1. Login to Process Portal with the user specified in the above BAI Generators team
+    1. Under Launch, click Generate Week 1 BAI Data RR and wait for the spinner to complete in about 20 seconds
+    1. Do the same for Generate Week 2 BAI Data RR
+    1. Login to Kibana
+    1. Management -> Index Patterns -> process-sum* -> refresh icon
+    1. To improve the dashboard, edit the` `data.TG.pTime.integer` field and set the Format to `Number` and the Numeral.js format pattern to `0,0` and save
+    1. Open the Dashboard -> Refund Request (RR) - Week 1 and Week 2 and check that data is displayed.  If it is not, check your emitters are sending data and connected to the BAW server where the Process App is deployed.
 
 ### Setup your Process Portal
 
-As the `Focus Corp Demo Dashboard` is currently embedded within the process app and deployed to the Process Portal, it is recommended that you make this your default dashboard.
+As the Focus Corp Demo Dashboard is currently embedded within the process app and deployed to the Process Portal, it is recommended that you make this your default dashboard.
 
 * Log in to your Process Portal environment.
 * Under Dashboards click Show more… and click the icon next to Focus Corp Demo Dashboard and click the star icon.
@@ -98,23 +97,23 @@ The [following video](https://www.youtube.com/watch?v=u5Pw-uL5STA&feature=youtu.
 1.	Use Case Overview
 1.	Focus Corp Demo Dashboard review
 1.	Customer persona
-    a. Submit approved return
-    b. Turn on decision labels
-    c. Submit denied return
-    d. Submit manual return
-4.	Operations Specialist persona
-    a. Week 1 dashboard
-5.	Rule Manager persona
-    a. Decision model review
-    b. Review time window table, type of goods table, and one final text rule
-    c. Switch to the Reduce Manual Processing branch
-    d. Review type of goods table, compare
-6.	Customer persona
-    a. Turn on decision labels and auto update rules
-    b. Submit manual return
-7.	Operations Specialist persona
-    a. Week 2 dashboard
-8.	Use case review and value of straight-through processing
+    * Submit approved return
+    * Turn on decision labels
+    * Submit denied return
+    * Submit manual return
+1.	Operations Specialist persona
+    * Week 1 dashboard
+1.	Rule Manager persona
+    * Decision model review
+    * Review time window table, type of goods table, and one final text rule
+    * Switch to the Reduce Manual Processing branch
+    * Review type of goods table, compare
+1.	Customer persona
+    * Turn on decision labels and auto update rules
+    * Submit manual return
+1.	Operations Specialist persona
+    * Week 2 dashboard
+1.	Use case review and value of straight-through processing
 
 
 ### Demo Narration and Flow
@@ -133,7 +132,7 @@ Upon selecting a final, third order, the rules this time are not certain and sen
 
 #### Operations week 1
 
-A few manual refunds are not a problem for the team, but too many will cause delays and our customer satisfaction will go down.  The **Operations Specialist** reviews the `Refund Dashboard`, powered by `Business Automation Insights` and see not only the percentage of manually processed requests is high at more than 67% but the average manual investigation time across all requests is more than 2 hours.  They pass their findings to the Rule Manager to take action.
+A few manual refunds are not a problem for the team, but too many will cause delays and our customer satisfaction will go down.  The **Operations Specialist** reviews the `Refund Dashboard`, powered by Business Automation Insights, and sees not only the percentage of manually processed requests is high at more than 67% but the average manual investigation time across all requests is more than 2 hours.  They pass their findings to the Rule Manager to take action.
 
 #### Rules manager
 
