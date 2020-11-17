@@ -10,6 +10,8 @@
   pages:
     - title: Overview
       path: /methodology/overview/
+    - title: Different Data Models
+      path: /methodology/model/
 - title: Technology
   pages:
     - title: Decision
