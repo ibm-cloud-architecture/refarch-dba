@@ -16,12 +16,14 @@
       path: /technology/decision/
     - title: RPA
       path: /technology/rpa/
-- title: Use Cases
+- title: Use cases
   pages:
     - title: Refund request
       path: /use-cases/refund-req/
-    - title: Car Dealer
+    - title: Car dealer
       path: /use-cases/car-dealer/
-- title: Contribute to this Site
+    - title: ODM-WML integration
+      path: https://ibm-cloud-architecture.github.io/odm-cp4d-integration
+- title: Contribute to this site
   pages:
     - path: /contribute/
