@@ -6,10 +6,12 @@
       path: /introduction/reference-architecture/
     - title: Target audiences
       path: /introduction/target-audiences/
-- title: Methodology
+- title: Patterns in DBA
   pages:
     - title: Overview
       path: /methodology/overview/
+    - title: Champion and Challenges
+      path: https://ibm-cloud-architecture.github.io/odm-cp4d-integration/champchall/
     - title: Different Data Models
       path: /methodology/model/
 - title: Technology
@@ -25,7 +27,7 @@
     - title: Car dealer
       path: /use-cases/car-dealer/
     - title: ODM-WML integration
-      path: https://ibm-cloud-architecture.github.io/odm-cp4d-integration
+      path: https://ibm-cloud-architecture.github.io/odm-cp4d-integration/introduction
 - title: Contribute to this site
   pages:
     - path: /contribute/
