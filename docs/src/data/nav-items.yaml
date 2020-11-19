@@ -2,7 +2,7 @@
   pages:
     - title: Overview
       path: /introduction/overview/
-    - title: Reference Architecture
+    - title: Reference architecture
       path: /introduction/reference-architecture/
     - title: Target audiences
       path: /introduction/target-audiences/
@@ -10,9 +10,9 @@
   pages:
     - title: Overview
       path: /methodology/overview/
-    - title: Champion and Challenges
+    - title: Champion-challenger
       path: https://ibm-cloud-architecture.github.io/odm-cp4d-integration/champchall/
-    - title: Different Data Models
+    - title: Devising the data models
       path: /methodology/model/
 - title: Technology
   pages:
