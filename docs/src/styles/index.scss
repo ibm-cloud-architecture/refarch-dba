@@ -9,6 +9,14 @@ body {
     /*font-family: "Open Sans", sans-serif;*/
 }
 
+summary {
+  padding: 4px;
+  background-color: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  font-size: 18pt
+}
+
 h5.bx--article-card__subtitle {
   margin-bottom: 5px;
 }

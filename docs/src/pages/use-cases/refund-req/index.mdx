@@ -1,13 +1,15 @@
 ---
-title: Refund request scenario
-description: Refund request scenario
+title: Refund request use case
+description: Refund request use case
 ---
 
-This scenario illustrates how to increase straight-through processing with process and decision automation to save time, money, and customer frustration. It uses the workflow, decision and insights components of IBM Cloud Pak® for Automation.
-
 <InlineNotification kind="warning">
-<strong>Updated Nov 9, 2020</strong> - Work in progress
+<strong>Updated 2021-02-07</strong> - Work in progress
 </InlineNotification>
+
+# Refund Request Automation
+
+**an IBM Cloud Pak for Business Automation entry point**
 
 <AnchorLinks>
   <AnchorLink>Scenario Overview</AnchorLink>
@@ -70,33 +72,418 @@ We assume the following products are installed, up and running:
     1. To improve the dashboard, edit the` `data.TG.pTime.integer` field and set the Format to `Number` and the Numeral.js format pattern to `0,0` and save
     1. Open the Dashboard -> Refund Request (RR) - Week 1 and Week 2 and check that data is displayed.  If it is not, check your emitters are sending data and connected to the BAW server where the Process App is deployed.
 
-### Setup your Process Portal
 
+***
+
+
+**Business Challenge:** Customer demand is volatile ... requiring the ability to quickly scale up or down
 As the Focus Corp Demo Dashboard is currently embedded within the process app and deployed to the Process Portal, it is recommended that you make this your default dashboard.
 
-* Log in to your Process Portal environment.
-* Under Dashboards click Show more… and click the icon next to Focus Corp Demo Dashboard and click the star icon.
-* Drag the right-side handle of that dashboard row to the top so this will load when you start Process Portal.
+**Entry Point:** Handle spikes in demand with straight-through processing
 
-Why not personalize your Process Portal environment?  Click the Edit Profile link in the upper left and add a picture.
+**Use Case Overview:** Imagine that a customer purchases your product, but is unfortunately unsatisfied and requests a refund. Today, your refund process has several manual steps. Managing high volumes of refunds that require manual investigation leads to slow average completion times, inconsistent status updates to customers, and higher costs for any errors made.
+This use case demonstrates the use of automation in the form of straight-through-processing to save time, money, and customer frustration.
 
-## Demo Scenario
+**Choose an option:**
 
-The following diagrams describe the use case.  Caution: they are not necessarily meant to represent an executable business process and are more a business model to describe the flow.
+  * **Digital Business Automation on Cloud trial:** your environment is predeployed, continue to the [Guided Tour](#use-case-guided-tour) section below.
+  * **Install Yourself:** To deploy Refund Request on your own environment, and technical architecture information, see the <a href="https://github.com/ibm-cloud-architecture/dba-refund-request.git" target="_blank">dba-refund-request</a> git repository which includes the required deployment artifacts.
 
-Discovery Map:
-![1](./images/bwl-discovery-map.png)
+ ![10](./images/Slide2.png)
 
-Process Diagram:
-![2](./images/bwl-process.png)
+***
 
-The [following video](https://www.youtube.com/watch?v=u5Pw-uL5STA&feature=youtu.be) runs through the demonstration script as explains in this section.
+# Use Case Guided Tour
 
-### Demo Outline
+## Are you ready to see straight through processing in action?
+
+<details>
+<summary>1 - Scenario Introduction - Refund Request</summary>
+
+<Row>
+<Column colLg={5} colMd={5}>
+
+**Demo Video**
+
+<ArticleCard
+    color="dark"
+    title="Demo Video - Refund Request Automation"
+    subTitle="In this demo, you will learn how to handle spikes in demand with straight-through processing through business automation"
+    href="https://www.youtube.com/watch?v=u5Pw-uL5STA&"
+    actionIcon="arrowRight"
+    color="dark"
+    >
+
+![](./images/refundRequestThumbnail.png)
+
+</ArticleCard>
+</Column>
+<Column colLg={7} colMd={7}>
+
+**Demo Outline**
+
+[Full Demo Narration](#full-demo-narration)
 
 1.	Use Case Overview
 1.	Focus Corp Demo Dashboard review
 1.	Customer persona
+    1. Submit approved return
+    1. Turn on decision labels
+    1. Submit denied return
+    1. Submit manual return
+1.	Operations Specialist persona
+    1. Week 1 dashboard
+1.	Rule Manager persona
+    1. Decision model review
+    1. Review time window table, type of goods table, and one final text rule
+    1. Switch to the Reduce Manual Processing branch
+    1. Review type of goods table, compare
+1.	Customer persona
+    1. Turn on decision labels and auto update rules
+    1. Submit manual return
+1.	Operations Specialist persona
+    1. Week 2 dashboard
+1.	Use case review and value of straight-through processing
+
+<br/>
+
+</Column>
+</Row>
+<Row>
+<Column colLg={4} colMd={4}>
+
+**Discovery Map**
+
+![1](./images/bwl-discovery-map.png)
+<br/>
+
+</Column>
+<Column colLg={6} colMd={6}>
+
+**Process Diagram**
+
+![2](./images/bwl-process.png)
+<br/>
+
+</Column>
+</Row>
+
+[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+
+</details>
+
+<details>
+<summary>2 - Login to Your Digital Business Automation on Cloud Trial</summary>
+
+Login to your Digital Business Automation on Cloud trial <a href="http://automationcloud.ibm.com" target="_blank">here</a> to access your portal.
+<br/>
+Don't have a trial yet? <a href="https://www.ibm.com/account/reg/us-en/signup?formid=urx-45706" target="_blank">Sign up</a> to get started or see the <a href="https://github.com/ibm-cloud-architecture/dba-refund-request.git" target="_blank">dba-refund-request</a> git repository to deploy on your own platform.
+
+ ![10](./images/Slide3.png)
+
+[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+
+</details>
+
+<details>
+<summary>3 - Setup Your Trial SaaS Environment</summary>
+
+<br/>
+
+First time in your trial environment?  Here are some recommended setup steps to get the best experience!
+
+### IMPORTANT - Assign Your Roles
+
+<br/>
+
+You will need to make sure you have the correct roles to use the environment.
+
+1. Open the menu in the upper left.
+1. Under **Administer subscriptions**, click **Access management**.
+1. Locate or search for your user and ensure all environments (Development and so on) are activated.
+1. Click the pencil icon on the right side of your user row and ensure at least the required roles are selected.
+1. Optionally add all adinistrator roles as appropriate.
+
+<br/>
+
+<Row>
+<Column colLg={4} colMd={4}>
+
+**Required Roles**
+
+![2](./images/required-roles.png)
+<br/>
+
+</Column>
+<Column colLg={4} colMd={4}>
+
+**All Administrator Roles**
+
+![2](./images/all-admin-roles.png)
+<br/>
+
+</Column>
+</Row>
+
+### Setup Decision Center Business Console Servers
+
+You may need to setup new servers in the Decision Center Administation console to deploy and execute decisions.
+
+1. (step to be documented...)
+
+### Setup your Process Portal
+
+It is recommended to make the Focus Corp Demo Dashboard your default dashboard.
+
+1. Log in to your **Process Portal** environment.
+1. Under Dashboards click **Show more...** and click the icon next to **Focus Corp Demo Dashboard** and click the star icon.
+1. Drag the right-side handle of that dashboard row to the top so this will load when you start Process Portal.
+
+### Personalize your Process Portal
+
+* Click the **Edit Profile** link in the upper left
+* Add a picture
+* Set notification settings as desired
+
+<br/>
+
+[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+
+</details>
+
+<details>
+<summary>4 - Open the Focus Corp Demo Dashboard</summary>
+
+1. Open the menu in the upper left
+2. Select **Production** and then **Run**
+3. Click the **Process Portal** tile
+4. Wait for the portal to load in a new browser window/tab
+
+ ![11](./images/Slide4.png)
+
+5. On the left menu, under the **Dashboards**, click **Show more/less…**
+6. Click **Focus Corp Demos Dashboard**
+7. Wait for the dashboard to load on the right
+
+ ![12](./images/Slide5.png)
+
+Start by reviewing the available demos, they all represent an entry point to business automation so you can easily get started.
+<br/>
+
+ ![13](./images/Slide6.png)
+
+<br/>
+
+When ready, click the green **Refund Request** button to launch the demo.
+
+<br/>
+
+[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+
+</details>
+
+<details>
+<summary>5 - Submit some refunds</summary>
+
+#### Be your customer!
+
+<br/>
+You are now a customer that just purchased a product, but unfortunately you are unsatisfied and request a refund.  What do you experience?
+As a customer, you want quick answers to your refund requests, especially when there are no special circumstances that should cause a delay.  Straight through processing would be ideal for you.
+
+ ![13](./images/Slide8.png)
+
+<br/>
+
+1. Check the tabs to learn more about the demo
+    1. **Storyboard Outline**
+    1. **Demo Discovery Map**
+    1. **Demo Diagram**
+
+ ![13](./images/Slide9.png)
+
+2. Navigate to the **Launch the Demo** tab and then click on the picture of the **Customer**
+
+ ![13](./images/Slide10.png)
+
+3. Use the drop down to select the order ending in **AP**.
+
+> NOTE: there are three orders setup to provide the following results
+> * AP = approved
+> * DE = denied
+> * MA = manually investigated
+
+ ![13](./images/Slide11.png)
+
+<br/>
+
+4. Complete the drop-downs on the right with any values
+5. Click **Submit** to see the results
+6. Choose to submit another refund request
+7. Select the order ending in **DE**
+8. At the bottom, expand the **Demo Control Panel**
+9. Turn on the decision labels to see which data is used to make the decision
+10. Submit the refund if desired
+
+ ![13](./images/Slide12.png)
+
+11. Submit another refund request
+12. Select the order ending in **MA** and complete the drop downs
+13. Submit the refund and see that a manual investigation is required
+
+ ![13](./images/Slide13.png)
+
+<br/>
+
+[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+
+</details>
+
+<details>
+<summary>6 - Review the Operations Dashboard</summary>
+
+<br/>
+You are now a Focus Corp employee, first an Operations Specialist and later a Rule Manager.  How can you help to improve straight through processing?
+<br/>
+Operations Specialists are able to easily monitor process performance and identify problems before they become large.  Rule Managers can adjust rules, validate and simulate the decision service and deploy quickly and easily.
+
+ ![13](./images/Slide15.png)
+
+<br/>
+
+1. Navigate back to the Focus Corp Demos Dashboard browser window/tab
+2. Click on **Week 1** under the picture of the **Operations Specialist**
+3. Login to the **Insights Dashboard**
+
+> NOTE: If this is your FIRST TIME, your password may not work; go back to the SaaS portal, mouse over your name in the upper right and click Set Password.  Once complete, come back and login to the Open Distro for Elasticsearch / Kibana.
+
+ ![13](./images/Slide16.png)
+
+<br/>
+
+4. Review the Week 1 dashboard metrics and note the following:
+    1. A large number of manual requests in the pie chart
+    1. The high time for average manual investigation processing (~120 minutes)
+
+<br/>
+
+ ![13](./images/Slide17.png)
+
+<br/>
+
+[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+
+</details>
+
+<details>
+<summary>7 - Improve the business rules</summary>
+
+<br/>
+
+1. Navigate back to the Focus Corp Demos Dashboard browser window/tab
+2. Click the picture of the **Rule Manager**
+3. Click **Refund Processing** followed by **main** to open the decision model
+4. Review the decision model, green ovals are input data and blue boxes are decisions, each with their own business logic leading to the **Final Refund Decision**
+
+<br/>
+
+ ![13](./images/Slide18.png)
+
+<br/>
+
+5. Click the blue **Validate Time Window** decision node
+6. On the left pane, scroll to the bottom and click to open the **Validate Time Window** logic
+7. Review the decision table and note multiple rows that lead to manual review.
+
+<br/>
+
+ ![13](./images/Slide19.png)
+
+<br/>
+
+The Rule Manager created a new branch to try out some rule adjustments.
+
+<br/>
+
+8. At the upper left, click the down arrow next to main and select **Reduce Manual Processing**
+9. Open the same **Validate Time Window** decision node and table
+10. Review the decision table and note there are less manual review rows.
+
+> NOTE: In the full lifecycle, a Rule Manager runs test suites and simulations before deploying the rules, which is already completed.
+
+ ![13](./images/Slide20.png)
+
+<br/>
+
+[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+
+</details>
+
+<details>
+<summary>8 - Improve straight through processing</summary>
+
+<br/>
+
+1. Close the rules browser window/tab
+2. Click the picture of the **Customer**
+3. Expand the **Demo Control Panel**
+4. Turn on the improved straight through processing scenario
+5. Select the recent order ending with **MA**, fill in the drop downs and submit
+
+ ![13](./images/Slide21.png)
+
+## The "MA" order was previously categorized as a manually processed refund request, now it is APPROVED!
+
+<br/>
+
+ ![13](./images/Slide22.png)
+
+<br/>
+
+6. Navigate back to the Focus Corp Demos Dashboard browser window/tab
+7. Under the picture of the **Operations Specialist**, click **Week 2**
+8. Review the dashboard metrics and note the following
+    1. a smaller number of manual requests in the pie chart
+    1. a lower time for the average manual i
+
+ ![13](./images/Slide23.png)
+
+## The improved straight through processing is working!
+
+<br/>
+
+[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+
+</details>
+
+<details>
+<summary>9 - Summary</summary>
+
+<br/>
+
+With combined workflow and decision automation, both capabilities within IBM Cloud Pak for Automation, and updated business rules, we reduce the manual processing queues significantly
+
+<br/>
+
+Increased straight through processing results in lower average completion time, lower costs, and more consistent communication with the customer throughout the process.  Now our processors can truly increase customer satisfaction.
+
+<br/>
+
+[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+
+</details>
+
+***
+
+<br/>
+<br/>
+
+# Full Demo Narration
+
+#### Focus Corp Demos Dashboard
+
+Reviewing the Focus Corp Demos Dashboard we see a text summary describing the demo, a discovery map diagram and a flow diagram for our reference.  OK, let's launch the demo...
+=======
     * Submit approved return
     * Turn on decision labels
     * Submit denied return
@@ -124,7 +511,7 @@ Reviewing the `Focus Corp Demos Dashboard` we see a text summary describing the 
 
 #### Customer refund requests
 
-We start by becoming the customer.  From the `Focus Corp Retail Your Returns and Refunds` portal, we select one of our recent orders and submit a return.  The result is approved with an expected date to receive funds.
+We start by becoming the customer.  From the Focus Corp Your Returns and Refunds portal, we select one of our recent orders and submit a return.  The result is approved with an expected date to receive funds.
 
 We select and submit another order for refund but before we submit, let's take a peak behind the form at some of the business rules.  A few of the fields are used by a set of business rules to make the refund decision and we see those here.  This refund request results in a denial but it is still straight through processing without any manual work.
 
@@ -132,24 +519,28 @@ Upon selecting a final, third order, the rules this time are not certain and sen
 
 #### Operations week 1
 
-A few manual refunds are not a problem for the team, but too many will cause delays and our customer satisfaction will go down.  The **Operations Specialist** reviews the `Refund Dashboard`, powered by Business Automation Insights, and sees not only the percentage of manually processed requests is high at more than 67% but the average manual investigation time across all requests is more than 2 hours.  They pass their findings to the Rule Manager to take action.
+A few manual refunds are not a problem for the team, but too many will cause delays and our customer satisfaction will go down.  The Operations Specialist reviews the Refund Dashboard, powered by Business Automation Insights and see not only the percentage of manually processed requests is high at more than 67% but the average manual investigation time across all requests is more than 2 hours.  They pass their findings to the Rule Manager to take action.
 
 #### Rules manager
 
-As a **rules manager**, we have access to the decision model behind our refund process. The data is passed from the process system to the rules in the form of an order and refund request.  This moves through various decision tables including a time window validation that deals with the return reason, the days since delivery and the condition of the goods.  In combination, these lead to various processing decisions and we see a few that result in manual processing listed.  Another decision table deals with the type of goods and may also result in some manual processing.  Finally, this is then combined with a simple text rule to make the final decision.
+As a rules manager, we have access to the decision model behind our refund process. The data is passed from the process system to the rules in the form of an order and refund request.  This moves through various decision tables including a time window validation that deals with the return reason, the days since delivery and the condition of the goods.  In combination, these lead to various processing decisions and we see a few that result in manual processing listed.  Another decision table deals with the type of goods and may also result in some manual processing.  Finally, this is then combined with a simple text rule to make the final decision.
 
-The **rules manager** drafted up a new branch of the decision model with some updates, let's take a look.  To reduce manual processing, the rules manager adjusted the tables to remove some of the manual processing decisions.  Comparing the two versions shows that row 3 column 3 moved from manual to denied, for example.  Other rows were removed which results in an default approved decision.  We could also test and simulate the rule changes and compare historical results but we won't cover that here in this demo.
+The rules manager drafted up a new branch of the decision model with some updates, let's take a look.  To reduce manual processing, the rules manager adjusted the tables to remove some of the manual processing decisions.  Comparing the two versions shows that row 3 column 3 moved from manual to denied, for example.  Other rows were removed which results in an default approved decision.  We could also test and simulate the rule changes and compare historical results but we won't cover that here in this demo.
 
 #### Customer manual to approved
 
-After the **rules manager** deploys the new rules, let go back to being a customer and try them out.  Submitting the same order as before which resulted in a manual result now is approved!
+After the Rules Manager deploys the new rules, let go back to being a customer and try them out.  Submitting the same order as before which resulted in a manual result now is approved!
 
 #### Operations week 2
 
-After these new rules are in place for a week, the **Operations Specialist** sees some solid improvement with a reduction in half for manual requests and also lower manual processing time average from above 120, down to only 60 mins.
+After these new rules are in place for a week, the Operations Specialist sees some solid improvement with a reduction in half for manual requests and also lower manual processing time average from above 120, down to only 60 mins.
 
 #### Use Case Summary
 
 With combined workflow and decision automation, both capabilities within IBM Cloud Pak for Automation, and updated business rules, we reduce the manual processing queues significantly
 
 Increased straight through processing results in lower average completion time, lower costs, and more consistent communication with the customer throughout the process.  Now our processors can truly increase customer satisfaction.
+
+<br/>
+
+[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
