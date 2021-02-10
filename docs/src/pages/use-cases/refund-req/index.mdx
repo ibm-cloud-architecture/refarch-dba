@@ -3,78 +3,19 @@ title: Refund request use case
 description: Refund request use case
 ---
 
-<InlineNotification kind="warning">
-<strong>Updated 2021-02-07</strong> - Work in progress
-</InlineNotification>
-
-# Refund Request Automation
-
-**an IBM Cloud Pak for Business Automation entry point**
+### an IBM Cloud Pak for Business Automation entry point
 
 <AnchorLinks>
-  <AnchorLink>Scenario Overview</AnchorLink>
-  <AnchorLink>Preparation and Deployment</AnchorLink>
+  <AnchorLink>Introduction</AnchorLink>
   <AnchorLink>Use Case Guided Tour</AnchorLink>
+  <AnchorLink>Full Demo Narration</AnchorLink>
 </AnchorLinks>
-
-## Scenario Overview
-
-Imagine that a customer purchases your product, but is unfortunately unsatisfied and requests a refund. Today, your refund process has several manual steps. Managing high volumes of refunds that require manual investigation leads to slow average completion times, inconsistent status updates to customers, and higher costs for any errors made. Although you have guidelines that determine when a refund is approved or denied, there are still inconsistencies in the decision-making. This use case demonstrates the use of automation in the form of straight-through-processing to save time, money, and customer frustration.
-
-
-## Preparation and Deployment
-
-The [dba-refund-request](https://github.com/ibm-cloud-architecture/dba-refund-request.git) git repository includes the artifacts needed for this lab.
-
-### Environment
-
-We assume the following products are installed, up and running:
-
-- IBM Cloud Pak® for Automation version 20.0.2
-    - Business Automation Workflow (BAW) on VMs
-    - Operational Decision Manager (ODM) on OpenShift
-    - Business Automation Insights (BAI) on OpenShift (Optional, can be run without)
-
-### Deploy the artifacts
-
-1. Determine your credentials
-    1. For BAW, use your own credentials to login to Workflow Center and Process Portal
-    1. For ODM, create a service credential/account or use your own basic auth credentials to login to Rule Execution Server console
-    1. For BAI, set your password as required by your platform and login to Kibana
-1. Deploy ODM artifacts
-    1. Login to Decision Center Business console
-    1. On Library, click the import icon
-    1. Import `Refund Processing [main].zip`
-    1. Open the main branch, click Deployments and deploy to your Rule Execution Server (adjust the server within the deployment configuration as required)
-    1. Return to the branch list and click the plus sign to create a new branch based on main named Reduce Manual Processing
-    1. Import `Refund Processing [Reduce Manual Processing].zip` to the new branch and choose to replace the existing elements
-    1. Deploy the new branch as a second version
-1. (Optional) Deploy BAI artifacts
-    1. Login to Kibana
-    1. Management -> Saved Objects -> Import -> `RefundRequest YYYY.MM.DD_XX.json`
-1. Deploy BAW artifacts
-    1. Login to Workflow Center and navigate to Process Apps
-    1. Import `Refund_Request - YYYY.MM.DD_XX.twx`
-    1. Open the Refund Request process app and navigate to Process App Settings -> Servers
-    1. Edit the settings for hostname, port, authentication and so forth for your ODM server
-    1. (Optional) Open the BAI Generators team and add an appropriate user to the team
-    1. Go back to Workflow Center and create a new snapshot of the process application
-    1. Install the new snapshot to your Workflow Server unless you wish to run directly on Workflow Center's playback server (to support the optional BAI events, make sure the BAW server running the process app has BAI emitters enabled)
-1. (Optional) Setup BAI data
-    1. Login to Process Portal with the user specified in the above BAI Generators team
-    1. Under Launch, click Generate Week 1 BAI Data RR and wait for the spinner to complete in about 20 seconds
-    1. Do the same for Generate Week 2 BAI Data RR
-    1. Login to Kibana
-    1. Management -> Index Patterns -> process-sum* -> refresh icon
-    1. To improve the dashboard, edit the` `data.TG.pTime.integer` field and set the Format to `Number` and the Numeral.js format pattern to `0,0` and save
-    1. Open the Dashboard -> Refund Request (RR) - Week 1 and Week 2 and check that data is displayed.  If it is not, check your emitters are sending data and connected to the BAW server where the Process App is deployed.
-
 
 ***
 
+# Introduction
 
 **Business Challenge:** Customer demand is volatile ... requiring the ability to quickly scale up or down
-As the Focus Corp Demo Dashboard is currently embedded within the process app and deployed to the Process Portal, it is recommended that you make this your default dashboard.
 
 **Entry Point:** Handle spikes in demand with straight-through processing
 
@@ -165,7 +106,7 @@ This use case demonstrates the use of automation in the form of straight-through
 </Column>
 </Row>
 
-[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+[Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
@@ -178,7 +119,7 @@ Don't have a trial yet? <a href="https://www.ibm.com/account/reg/us-en/signup?fo
 
  ![10](./images/Slide3.png)
 
-[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+[Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
@@ -224,9 +165,7 @@ You will need to make sure you have the correct roles to use the environment.
 
 ### Setup Decision Center Business Console Servers
 
-You may need to setup new servers in the Decision Center Administation console to deploy and execute decisions.
-
-1. (step to be documented...)
+You may need to setup new servers in the Decision Center Administation console to deploy and execute decisions.  For more information, please see <a href="https://www.ibm.com/support/pages/node/6410818" target="_blank">this page</a>.
 
 ### Setup your Process Portal
 
@@ -244,7 +183,7 @@ It is recommended to make the Focus Corp Demo Dashboard your default dashboard.
 
 <br/>
 
-[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+[Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
@@ -275,7 +214,7 @@ When ready, click the green **Refund Request** button to launch the demo.
 
 <br/>
 
-[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+[Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
@@ -332,7 +271,7 @@ As a customer, you want quick answers to your refund requests, especially when t
 
 <br/>
 
-[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+[Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
@@ -368,7 +307,7 @@ Operations Specialists are able to easily monitor process performance and identi
 
 <br/>
 
-[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+[Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
@@ -412,7 +351,7 @@ The Rule Manager created a new branch to try out some rule adjustments.
 
 <br/>
 
-[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+[Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
@@ -449,7 +388,7 @@ The Rule Manager created a new branch to try out some rule adjustments.
 
 <br/>
 
-[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+[Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
@@ -466,7 +405,7 @@ Increased straight through processing results in lower average completion time, 
 
 <br/>
 
-[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+[Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
@@ -480,31 +419,6 @@ Increased straight through processing results in lower average completion time, 
 #### Focus Corp Demos Dashboard
 
 Reviewing the Focus Corp Demos Dashboard we see a text summary describing the demo, a discovery map diagram and a flow diagram for our reference.  OK, let's launch the demo...
-=======
-    * Submit approved return
-    * Turn on decision labels
-    * Submit denied return
-    * Submit manual return
-1.	Operations Specialist persona
-    * Week 1 dashboard
-1.	Rule Manager persona
-    * Decision model review
-    * Review time window table, type of goods table, and one final text rule
-    * Switch to the Reduce Manual Processing branch
-    * Review type of goods table, compare
-1.	Customer persona
-    * Turn on decision labels and auto update rules
-    * Submit manual return
-1.	Operations Specialist persona
-    * Week 2 dashboard
-1.	Use case review and value of straight-through processing
-
-
-### Demo Narration and Flow
-
-#### Corp Demos Dashboard
-
-Reviewing the `Focus Corp Demos Dashboard` we see a text summary describing the demo, a discovery map diagram and a flow diagram for our reference.  OK, let's launch the demo...
 
 #### Customer refund requests
 
@@ -540,4 +454,4 @@ Increased straight through processing results in lower average completion time, 
 
 <br/>
 
-[Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
+[Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
