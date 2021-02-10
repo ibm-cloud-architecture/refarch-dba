@@ -14,6 +14,12 @@
       path: https://ibm-cloud-architecture.github.io/odm-cp4d-integration/champchall/
     - title: Devising the data models
       path: /methodology/model/
+- title: Methodology
+  pages:
+    - title: Agile Business Rule Development
+      path: /methodology/abrd/
+    - title: Event Storming
+      path: https://ibm-cloud-architecture.github.io/refarch-eda/methodology/event-storming/
 - title: Technology
   pages:
     - title: Decision
