@@ -28,7 +28,7 @@
       path: /technology/rpa/
 - title: Use cases
   pages:
-    - title: Accounts Payable
+    - title: Accounts payable
       path: /use-cases/accounts-pay/
     - title: Car dealer
       path: /use-cases/car-dealer/
@@ -36,6 +36,8 @@
       path: https://ibm-cloud-architecture.github.io/odm-cp4d-integration/introduction
     - title: Refund request
       path: /use-cases/refund-req/
+    - title: Shared services
+      path: /use-cases/shared-ser/
 - title: Contribute to this site
   pages:
     - path: /contribute/
