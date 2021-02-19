@@ -21,7 +21,7 @@ h5.bx--article-card__subtitle {
   margin-bottom: 5px;
 }
 
-h1[class*='Markdown-module--h1'], h2[class*='Markdown-module--h2'], h3[class*='Markdown-module--h3'] {
+h1[class*='Markdown-module--h1'], h2[class*='Markdown-module--h2'], h3[class*='Markdown-module--h3'], h4[class*='Markdown-module--h4'] {
   width: 100%;
 }
 
@@ -67,3 +67,7 @@ div[class*='Main-module--main'] {
   width: 100%;
   max-width: 1600px !important;
 }
+
+/*[class*='Markdown-module--list-item'] {
+  font-size: 20px !important;
+}*/
