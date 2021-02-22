@@ -30,8 +30,6 @@
   pages:
     - title: Accounts payable
       path: /use-cases/accounts-pay/
-    - title: Car dealer
-      path: /use-cases/car-dealer/
     - title: ODM-WML integration
       path: https://ibm-cloud-architecture.github.io/odm-cp4d-integration/introduction
     - title: Refund request
