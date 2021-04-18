@@ -30,6 +30,8 @@
   pages:
     - title: Accounts payable
       path: /use-cases/accounts-pay/
+    - title: HR onboarding app
+      path: /use-cases/hr-onboard-app
     - title: ODM-WML integration
       path: https://ibm-cloud-architecture.github.io/odm-cp4d-integration/introduction
     - title: Refund request
