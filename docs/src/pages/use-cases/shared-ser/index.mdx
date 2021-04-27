@@ -22,7 +22,7 @@ description: Shared services use case
 **Choose an option:**
 
   * **Digital Business Automation on Cloud trial:** your environment is predeployed, continue to the [Guided Tour](#use-case-guided-tour) section below.
-  * **Install Yourself:** To run Shared Services on your own environment you just need to install <a href="https://www.ibm.com/support/knowledgecenter/SSYHZ8_20.0.x/com.ibm.dba.workstream/topics/con_rwf_intro.html" target="_blank">IBM Automation Workstream Services</a>, there are no additional artifacts to deploy.
+  * **Install Yourself:** To run Shared Services on your own environment you just need to install <a href="https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.x?topic=software-automation-workstream-services" target="_blank">IBM Automation Workstream Services</a>, there are no additional artifacts to deploy.
 
  ![10](./images/Slide2.png)
 
@@ -63,7 +63,7 @@ description: Shared services use case
 1. Focus Corp Demo Dashboard review
 1. Workstream Supervisor persona
     1. Workplace Tour
-    1. Manage Workstream teams
+    1. Confirm Workstreamsw access
     1. Create workstream
     1. Test workstream
     1. Publish workstream
@@ -94,47 +94,43 @@ description: Shared services use case
 </details>
 
 <details>
-<summary>2 - Login to Your Digital Business Automation on Cloud Trial</summary>
+<summary>2 - Login and Setup Your Environment</summary>
 
 <br/>
-
-Login to your Digital Business Automation on Cloud trial <a href="http://automationcloud.ibm.com" target="_blank">here</a> to access your portal.
-
-<br/>
-
-Don't have a trial yet? <a href="https://www.ibm.com/account/reg/us-en/signup?formid=urx-45706" target="_blank">Sign up</a> to get started or learn more about installing <a href="https://www.ibm.com/support/knowledgecenter/SSYHZ8_20.0.x/com.ibm.dba.workstream/topics/con_rwf_intro.html" target="_blank">IBM Automation Workstream Services</a> on your own platform.
-
- ![10](./images/Slide3.png)
-
-[Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
-
-</details>
 
 <details>
-<summary>3 - Setup Your Trial SaaS Environment</summary>
+<summary style="margin-left: 40px">Option 2A - Are you using a Digital Business Automation on Cloud Trial or Demo Environment?</summary>
 
 <br/>
 
-First time in your trial environment?  Here are some recommended setup steps to get the best experience!
+<p style="margin-left: 40px">
 
-### IMPORTANT - Assign Your Roles
+1. Login to your Digital Business Automation on Cloud trial or demo <a href="http://automationcloud.ibm.com" target="_blank">here</a> to access your portal.
+1. Administrator Users, expand the following section to access additional steps to setup access for yourself and others in your environment:
+
+</p>
 
 <br/>
 
-You will need to make sure you have the correct roles to use the environment.
+<details>
+<summary style="margin-left: 80px">Additional on Cloud Administrator Setup</summary>
+
+<p style="margin-left: 80px">
 
 1. Open the menu in the upper left.
 1. Under **Administer subscriptions**, click **Access management**.
 1. Locate or search for your user and ensure all environments (Development and so on) are activated.
-1. Click the pencil icon on the right side of your user row and ensure at least the required roles are selected.
-1. Optionally add all adinistrator roles as appropriate.
+1. Click the pencil icon on the right side of your user row and ensure the required roles are selected (below is an example set of roles for a user to access all capabilities).
+1. Optionally, add all adinistrator roles as appropriate (below for reference).
+
+</p>
 
 <br/>
 
 <Row>
 <Column colLg={4} colMd={4}>
 
-**Required Roles**
+**All User Access Roles**
 
 ![2](./images/required-roles.png)
 <br/>
@@ -150,20 +146,76 @@ You will need to make sure you have the correct roles to use the environment.
 </Column>
 </Row>
 
-### Setup your Process Portal
+<br/>
 
-It is recommended to make the Focus Corp Demo Dashboard your default dashboard.
+</details>
 
-1. Log in to your **Process Portal** environment.
-1. Under Dashboards click **Show more...** and click the icon next to **Focus Corp Demo Dashboard** and click the star icon.
-1. Drag the right-side handle of that dashboard row to the top so this will load when you start Process Portal.
+<br/>
 
-### Personalize your Process Portal
+<p style="margin-left: 40px">
 
-* Click the **Edit Profile** link in the upper left
-* Add a picture
-* Set notification settings as desired
+3. Standard Users, once your administrator (either trial or demo admin) completed setup of your access, please continue.
+4. Open the Focus Corp Demo Dashboard
+    1. Open the menu in the upper left
+    2. Select **Production** and then **Run**
+    3. Click the **Process Portal** tile
+    4. Wait for the portal to load in a new browser window/tab
 
+     ![11](./images/Slide4.png)
+
+    5. On the left menu, under the **Dashboards**, click **Show more/less…**
+    6. Click **Focus Corp Demos Dashboard**
+    7. Wait for the dashboard to load on the right
+
+     ![12](./images/Slide5.png)
+
+    8. Start by reviewing the available demos, they all represent an entry point to business automation so you can easily get started.
+    <br/>
+
+     ![13](./images/Slide6.png)
+
+    <br/>
+
+    9. When ready, click the green **Shared Services** button to launch the demo.
+
+     ![13](./images/Slide8.png)
+
+    <br/>
+
+    10. Check the tabs to learn more about the demo
+        1. **Storyboard Outline**
+        1. **Demo Discovery Map**
+
+     ![13](./images/Slide9.png)
+
+    11. Navigate to the **Launch the Demo** tab and then click on the picture of the **Line of Business Supervisor**
+
+     ![13](./images/Slide10.png)
+
+</p>
+
+</details>
+
+<br/>
+
+<details>
+<summary style="margin-left: 40px">Option 2B - Are You Using Your Own Environment (not an on Cloud trial/demo)?</summary>
+
+<br/>
+
+<p style="margin-left: 40px">
+
+1. Ask your administrator for the URL to Workplace (or the Navigator desktop for Workplace) and the login credentials.
+1. Log in to the URL provided
+1. Please continue to the next section
+
+</p>
+
+<br/>
+
+</details>
+
+<br/>
 <br/>
 
 [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
@@ -171,60 +223,18 @@ It is recommended to make the Focus Corp Demo Dashboard your default dashboard.
 </details>
 
 <details>
-<summary>4 - Open the Focus Corp Demo Dashboard</summary>
-
-1. Open the menu in the upper left
-2. Select **Production** and then **Run**
-3. Click the **Process Portal** tile
-4. Wait for the portal to load in a new browser window/tab
-
- ![11](./images/Slide4.png)
-
-5. On the left menu, under the **Dashboards**, click **Show more/less…**
-6. Click **Focus Corp Demos Dashboard**
-7. Wait for the dashboard to load on the right
-
- ![12](./images/Slide5.png)
-
-Start by reviewing the available demos, they all represent an entry point to business automation so you can easily get started.
-<br/>
-
- ![13](./images/Slide6.png)
-
-<br/>
-
-When ready, click the green **Shared Services** button to launch the demo.
-
-<br/>
-
-[Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
-
-</details>
-
-<details>
-<summary>5 - Tour Workplace</summary>
+<summary>3 - Tour Workplace</summary>
 
 #### Manage your work, don't let it manage you
 
 <br/>
 You are now a manager leading a Shared Services team that receives requests from other departments such as Accounts Payable or HR for assistance.
-As a Workplace Supervisor, you decide to create a lightweight workflow appllication to manage incoming requests and avoid a disorganized email inbox.
-
- ![13](./images/Slide8.png)
+As a Line of Business Supervisor, you decide to create a lightweight workflow appllication to manage incoming requests and avoid a disorganized email inbox.
 
 <br/>
+<br/>
 
-1. Check the tabs to learn more about the demo
-    1. **Storyboard Outline**
-    1. **Demo Discovery Map**
-
- ![13](./images/Slide9.png)
-
-2. Navigate to the **Launch the Demo** tab and then click on the picture of the **Workstreams Supervisor**
-
- ![13](./images/Slide10.png)
-
-3. Allow Workplace to fully load and then look around.  If no one has used Workplace yet, it might be empty similar to below
+1. Allow Workplace to fully load and then look around.  If no one has used Workplace yet, it might be empty similar to below
 
  ![13](./images/Slide11.png)
 
@@ -236,13 +246,13 @@ Once it is used, tasks and workflows will appear and the counters at the top wil
 
 <br/>
 
-4. Click on the blue **Start workflow** button highlighted in red above and review the activities and workflows available to launch, but do not launch any yet.
+2. Click on the blue **Start workflow** button highlighted in red above and review the activities and workflows available to launch, but do not launch any yet.
 
  ![13](./images/Slide13.png)
 
 <br/>
 
-5. When done, close the **Start workflow** dialog.
+3. When done, close the **Start workflow** dialog.
 
 <br/>
 
@@ -251,20 +261,34 @@ Once it is used, tasks and workflows will appear and the counters at the top wil
 </details>
 
 <details>
-<summary>6 - Manage workstream teams</summary>
+<summary>4 - Confirm Workstreams access</summary>
 
 <br/>
 
-To start using Workplace, you must first assign yourself, and any of your colleagues, a team; they control access to the Workplace environment.  You have administrative access previously set in **3 - Setup Your Trial SaaS Environment**, now let's add some Workstream teams.
+To start using Workplace, your administrator must first assign you, and any of your colleagues, a workstreams team which controls access in the Workplace environment.
 
 <br/>
 
-1. Click the menu grid icon in the upper right corner and select **Manage workstream teams** (Note, if you do not see this menu option, close the menu, wait a few seconds and try again, or check the roles you set in **3 - Setup Your Trial SaaS Environment** above)
+1. Click the menu grid icon in the upper right corner.
+2. If you see **Create workstreams** you have been given the required access to continue (Note, if you do not see this menu option, close the menu, wait 5-10 seconds and try again)
 
- ![13](./images/Slide14.png)
+ ![13](./images/Slide17.png)
 
 <br/>
 
+3. If you do not have **Create workstreams** in your menu, contact your administrator and ask for the Configurators workstream team to be added and be sure to refresh your browser window to make it effective.
+4. Administrator Users, expand the following section to access additional steps to setup access for yourself and others in Workplace:
+
+<br/>
+
+<details>
+<summary style="margin-left: 40px">Additional Workstreams Administrator Setup</summary>
+
+<p style="margin-left: 40px">
+
+<br/>
+
+1. Click the menu grid icon in the upper right corner and select **Manage workstream teams**.
 2. Click the radio button to the left of **Administrators** and wait for the right side list to load, which may be empty.
 
  ![13](./images/Slide15.png)
@@ -285,12 +309,18 @@ To start using Workplace, you must first assign yourself, and any of your collea
 
 <br/>
 
+</p>
+
+</details>
+
+<br/>
+
 [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
 <details>
-<summary>7 - Create a workstream</summary>
+<summary>5 - Create a workstream</summary>
 
 <br/>
 
@@ -304,7 +334,7 @@ As a Supervisor, you are now ready to create a new workstream and publish it so 
 
 <br/>
 
-2. Review the workstreams provided with the platform as examples that you can keep or edit.
+2. Review the workstreams provided with the platform as examples that you can keep or edit or wait and review once you create your own workstream.
 3. Once done reviewing, click the blue **New** button and configure your definition as pictured below, then click **Next** when ready.
 
  ![13](./images/Slide19.png)
@@ -318,6 +348,7 @@ As a Supervisor, you are now ready to create a new workstream and publish it so 
     1. The currently selected activity in your workflow is configurable on the right.
     1. A draft can be saved at any time
     1. The Save button will place the workflow in trial mode for testers to try out.
+5. Name the first activity **Skill profile** and select **Checklist** as the type.
 
 <br/>
 
@@ -325,50 +356,50 @@ As a Supervisor, you are now ready to create a new workstream and publish it so 
 
 <br/>
 
-5. Name the first activity **Skill profile** and select **Checklist** as the type.
 6. Scroll down on the right side to configure your workflow's first activity
     1. Add some checklist items.
     1. Select **Allow users to update the checklist at start** (it might make sense to use placeholders as depicted below).
-    1. Select to add data items and click the plus sign to add new data followed by selecting each of them to add them to this activity.
+     ![13](./images/Slide21.png)
+    1. Activate the data items clider, click **Select data items**, click the plus sign and add two data item as pictured below.
+    1. Select each data item and **Add selected items**.
+     ![13](./images/Slide22.png)
     1. Click **Who is responsible for this activity** and choose either **Shared Services**, if you created that optional team and added yourself, or **All users**.  Note, if you leave this screen to go check the teams, be sure to save a draft first.
-
-
- ![13](./images/Slide21.png)
+     ![13](./images/Slide23.png)
 
 <br/>
 
- ![13](./images/Slide22.png)
-
-<br/>
-
- ![13](./images/Slide23.png)
-
-<br/>
-
-7. When you are ready to create your second activity, click the plus icon at the bottom or you can also click the plus icon in the left side vertical workflow diagram.
+7. When you are done and ready to create your second activity, you can either:
+   * click the plus icon at the bottom, or
+   * scroll to the top and click the plus icon in the left side flow diagram.
 8. Name the second activity **Approve Resource** and select **Approval** as the type.  This creates a two-way branch in the flow.
 
  ![13](./images/Slide24.png)
 
 <br/>
 
-9. Click the plus sign next to **If approved** to add a third activity for that branch.
-10. Name the third activity **Approval Notification** and select **Form** as the type.  Optionally add some data to send back and select Read only.
+9. As above, click the plus sign next to **If approved** to add a third activity for that branch.
+    1. Name the third activity **Approval Notification**
+    1. Select **Form** as the type.
+    1. Optionally click **Select data items** to add some data and select Read only.
 
  ![13](./images/Slide25.png)
 
 <br/>
 
-11. In the left diagram, click **Approve Resource** to select it, then click the plus sign next to **If rejected** to add a fourth and final activity for the other approval branch.
-12. Name the fourth activity **Denial Notification** and select **Form** as the type.  Optionally add the data as Read only.
-13. You may wish to change the **Who is responsible for this activity** selection and set the two notification activities to **The user who starts the workstream** and/or the approval activity to **Team managers** (just make sure you are a member of the selected team).
-14. When complete, scroll to the top and click the blue **Save** button to put the workflow in trial mode
+10. In the left diagram, click the **Approve Resource** activity box, then click the plus sign next to **If rejected** to add a fourth and final activity for the other branch.
+    1. Name the fourth activity **Denial Notification**
+    1.  Select **Form** as the type.
+    1. Optionally add data as Read only.
+11. You may change the **Who is responsible for this activity** selection for the two notification activities to **The user who starts the workstream** and/or the approval activity to **Team managers** (just make sure you are a member of the selected team).
 
- ![13](./images/Slide26.png)
+### Congratulations, you created your first lightweight workflow!  Anyone can submit and route a workflow to the Shared Services team who respond with their skills and an approval with a notification sent to the submitter with the response.
 
 <br/>
+<br/>
 
-### Congratulations, you created your first lightweight workflow!
+12. When complete, scroll to the top and click the blue **Save** button to put the workflow in trial mode
+
+ ![13](./images/Slide26.png)
 
 <br/>
 
@@ -377,76 +408,73 @@ As a Supervisor, you are now ready to create a new workstream and publish it so 
 </details>
 
 <details>
-<summary>8 - Test the workstream</summary>
+<summary>6 - Test the workstream</summary>
 
 <br/>
 
-It is time to test your new workstream. There is a built in Testers group that allows you to delegate this role but for now, let us test ourselves.
+It is time to test your new workstream. There is a built-in Testers group that allows you to delegate this role but for now, let us test ourselves.
 
 <br/>
 
-1. You should be at the **Create workstreams** screen but if you are not, click the menu grid icon in the upper right corner and select **Create workstreams**.
+1. Click the menu grid icon in the upper right corner and select **Create workstreams**.
 2. Locate the new workstream you just created and click the three-dot menu on the right, then select **Test**.
 
  ![13](./images/Slide27.png)
 
 <br/>
 
-3. The initialization screen is specific to this workflow; read the instructions and scroll down to customize the checklist available to you as the workflow starter.
+3. The initialization screen is specific to this workflow; read the instructions and scroll down to customize the checklist available to you as the workflow starter.  An example is below
 
  ![13](./images/Slide28.png)
 
 <br/>
 
 4. Once ready, scroll to the top right and click the blue **Start workstream** button.
-5. To run the first task, click the menu grid icon in the upper right corner and select **Workplace**
+5. To test the first task as a Shared Services team member, click the menu grid icon in the upper right corner and select **Workplace**
 6. You should see a **Skill profile** task in the list, click the name and claim it.
 
-> Note: if you do not see the task in the list, you can either click the magnifying glass and search for **skill** or click the browser refresh button.  The task list may not refresh automatically in some browsers so searching should be faster than a full refresh.
+> Note: if you do not see the task in the list, you can either click the magnifying glass and search for `skill` or click the browser refresh button.  The task list may not refresh automatically in some browsers so searching should be faster than a full refresh.
 
  ![13](./images/Slide29.png)
 
 <br/>
 
-You are now a shared services resource on the team you lead, selecting a request to confirm your skill profile.
-
-<br/>
-
-7. Check off the items in the checklist, fill in the data fields, optionally upload a document or picture to include securely in the request, optionally add a comment and submit the task.
+7. You are now testing as a Shared Services resource on the team you lead.
+    1. Check off the items in the checklist
+    1. Fill in the data fields
+    1. Optionally upload a document or picture to securely include in the request.
+    1. Optionally add a comment.
+    1. Submit the task.
 
  ![13](./images/Slide30.png)
 
 <br/>
 
-8. Back at the task list, search for **Approve Resource** as needed and claim the task.
+8. Back at the task list, use the magnifying glass to search for **Approve Resource** and claim the task.
 
  ![13](./images/Slide31.png)
 
 <br/>
 
-You are now the shared services team manager again, time to approve or decline the request.
-
-<br/>
-
-9. Review the approval screen, note the data is read-only by default and the comments from the previous task are present.
-10. Either **Reject** or **Approve** the request.
+9. You are now the shared services team manager again, time to approve or decline the request.
+    1. Review the approval screen.
+    1. If you added data, it is read-only by default
+    1. If you added comments in the previous task, they are present.
+    1. Either **Reject** or **Approve** the request.
 
  ![13](./images/Slide32.png)
 
 <br/>
 
-You will now take on the role of the submitter/requestor such as Accounts Payable.
-
-<br/>
-
-11. Search for **Notification** as needed and claim the task.
+10. Back at the task list, use the magnifying glass to search for **Notification** and claim the task.
 
  ![13](./images/Slide33.png)
 
 <br/>
 
-12. Review the notification, including the data and comments.
-13. When done, click **Complete** at the upper right.
+11. You are now the original submitter/requestor such as an Accounts Payable team member.
+    1. Review the notification, including optional data and comments.
+    1. When done, click **Complete** at the upper right.
 
  ![13](./images/Slide34.png)
 
@@ -457,7 +485,7 @@ You will now take on the role of the submitter/requestor such as Accounts Payabl
 </details>
 
 <details>
-<summary>9 - Publish the workstream</summary>
+<summary>7 - Publish the workstream</summary>
 
 <br/>
 
@@ -472,7 +500,7 @@ After testing, you are ready to publish your new workflow.
 
 <br/>
 
-The system has a built-in workflow for approving and publishing: a workstream for publishing workstreams!
+### The system has a built-in workflow for approving and publishing -- a workstream for publishing workstreams!
 
 <br/>
 
@@ -482,32 +510,33 @@ The system has a built-in workflow for approving and publishing: a workstream fo
 
 <br/>
 
-You should see the workflow now in the **Published requested** status.
+4. Confirm the workflow is in the **Published requested** status as below.
 
  ![13](./images/Slide37.png)
 
 <br/>
 
-4. Click the menu grid icon in the upper right corner and select **Workplace**.
-5. Locate or search for the task titled **Workstream review...** and click to claim it.
+5. Click the menu grid icon in the upper right corner and select **Workplace**.
+6. Locate or search for the task titled **Workstream review...** and click to claim it.
 
  ![13](./images/Slide38.png)
 
 <br/>
 
-6. Review the workstream and note the **Read-only** notice next to the name.
-7. Once you are done, click to **Publish** the workflow.
+7. Review the workstream and note the **Read-only** notice next to the name since you are only revewing, not editing.
+8. Click to **Publish** the workflow.
 
  ![13](./images/Slide39.png)
 
 <br/>
 
-8. Click **Start workflow** and locate the just published workflow to launch.
+9. Click **Start workflow** and locate the just published workflow to launch.
 
  ![13](./images/Slide40.png)
 
 ### In just a few minutes, you created, tested and published a new, lightweight workflow available to anyone in your organization!
 
+<br/>
 <br/>
 
 [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
@@ -515,7 +544,7 @@ You should see the workflow now in the **Published requested** status.
 </details>
 
 <details>
-<summary>11 - Summary</summary>
+<summary>8 - Summary</summary>
 
 <br/>
 
