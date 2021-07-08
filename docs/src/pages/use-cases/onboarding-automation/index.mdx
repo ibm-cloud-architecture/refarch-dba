@@ -9,7 +9,7 @@ description: Onboarding Automation use case
   <AnchorLink>Introduction</AnchorLink>
   <AnchorLink>Getting Started Lab</AnchorLink>
   <AnchorLink>Full Demo Narration</AnchorLink>
-  <AnchorLink>Techincal Labs</AnchorLink>
+  <AnchorLink>Additional Assets</AnchorLink>
 </AnchorLinks>
 
 ***
@@ -21,6 +21,8 @@ description: Onboarding Automation use case
 **Use Case Overview:** Focus Corp must collaborate both internally and externally during the employee onboarding process as well as enforce structured and adhoc workflows. 
 
 Focus Corp accelerates the use of unstructured content in an employee onboarding use case using teamspaces and secure external file sharing. You will assume the role of Lucy, an HR employee onboarding specialist at Focus Corp. Lucy’s objective is to improve Focus Corp’s process and ensure various onboarding requirements are met in a secure, structured, consistent and timely manner to onboard the new employees.
+
+As a high-level overview, employee applicant (John Doe) has submitted an employee application and interview video along with other materials as part of the employement application process.  During this process, HR processors have initially reviewed the employement application making comments and annotations on the document along with entering video bookmarks allowing additional reviewers to quickly locate key responses.  Lucy along with other reviewers are able to review all the information and documents pertaining to applicant John Doe in the **Teamspace** in a consistent and secure manner using an intuitive user-interface. Some of the information such as the applicant's SSN is available on some of the documents but they are redacted so that only reviewers with the approrprate permission are able to see the redacted content.  The use of video bookmarks also allows Lucy to quickly jump to key sections of the the video without necessarily having to watch the entire video.  Finally, we are able to integrate with **IBM Business Automation Workflow** to launch additional manual and automated processes.
 
 
 **Choose an option:**
@@ -527,7 +529,7 @@ As displayed in the diagram below, we are now in the **Merge and Split** mode wh
 <br/>
 <br/>
 
-11.  Select the **Add document** icon from the top menu bar which will be used to create the separate I9 document
+11.  Select the **Add document** icon from the top menu bar so that we can create the separate document
 
 <br/>
 
@@ -535,7 +537,7 @@ As displayed in the diagram below, we are now in the **Merge and Split** mode wh
 
 <br/>
 
-As displayed in the diagram below, the **Add Document** window appears.  Select the **Employee Onboarding - Document** entry template which uses the default **Document** class.  Next, set the **Document Title**  property to **John Doe - I9** and finally click the **Add** button to add the document.
+As displayed in the diagram below, the **Add Document** window appears.  Select the **Employee Onboarding - Document** entry template which uses the default **Document** class.  Next, set the **Document Title** property to **John Doe - I9** and finally click the **Add** button to add the document.
 
 <br/>
 
@@ -557,7 +559,7 @@ As displayed in the diagram below, the **Add Document** window appears.  Select 
 
 <br/>
 
- ![13](./images/377-MergeSplit-I9CheckIn.png)
+ ![13](./images/377-1-MergeSplit-I9CheckIn.png)
 
 <br/>
 <br/>
@@ -566,11 +568,87 @@ As displayed in the diagram below, the **Add Document** window appears.  Select 
 
 <br/>
 
- ![13](./images/377-MergeSplit-EmployeeApp.png)
+ ![13](./images/377-2-MergeSplit-EmployeeApp.png)
 
 <br/>
 
-Congratulations, we have now completed the **View and Edit Documents** steps.  You can now exit the document viewer to return back to the **Teamspace**.
+You can now exit the document viewer to return back to the **Teamspace**.
+
+<br/>
+<br/>
+
+15.  Let's now take a look at the video viewer to view and stream videos and audio files.  From the **Teamspace**, click on the video name in the folder: **Employee Onboarding \ Application \ Video Interview**.
+
+<br/>
+
+ ![13](./images/380-Video-Launch.png)
+
+<br/>
+
+Note that selecting the video will also provide a short live preview of the video in the right pane along with the properties of the video.
+
+<br/>
+<br/>
+
+16. Click on the **Open in New Window** icon in the upper right corner of the viewer to open the viewer in a new window so we can access the video bookmark feature.
+
+<br/>
+
+ ![13](./images/382-Video-OpenNewWindow.png)
+
+<br/>
+<br/>
+
+17. Click on **Bookmarks** on the top left area of the viewer
+
+<br/>
+
+ ![13](./images/383-Video-Bookmarks.png)
+
+<br/>
+
+Afer selecting **Bookmarks**, the list of video bookmarks will be displayed.  These were manually entered by an HR specialist during the initial application review process.  Each bookmark identifies the name of the bookmark, bookmark desscirption, the time of the bookmark and the user who created the bookmark.  The use of video bookmarks is very valuable for Focus Corp to be able to quickly review key segments of the video without having view the entire video.  Additionally, the video viewer enables you to view, collaborate and easily stream large video files without requiring any browser plugins.
+
+<br/>
+
+Entering text in the **Filter** field also allows you to search on the name of the bookmark allowing for even faster location of a particular bookmark in the event there are numerous bookmarks.  For example, enter **strengths** to quickly go to the bookmark named **What is your greatest strengths**
+
+<br/>
+<br/>
+
+18. From the bookmark list, click on a bookmark and then cycle through the bookmarks by clicking on the **Previous** and/or **Next** buttons
+
+<br/>
+
+ ![13](./images/384-Video-PreviousNext.png)
+
+<br/>
+
+Notice that the video starts immediately as you click each bookmark with little or no lag.  When the video is initially opened, the video can be played right away as the video is streamed in the background when initially opened.
+
+<br/>
+<br/>
+
+19. Let's now create a new bookmark.  Locate a time in the video to create a bookmark.  This can be done by playing the video and pausing at the desired location. Once you have a good idea where to place the bookmark, click on **New Bookmark** and then enter **Bookmark Name** and **Description**.  If necessary, adjust the **Start Time** to the desired time in the video.
+
+<br/>
+
+ ![13](./images/385-Video-NewBookmark.png)
+
+<br/>
+
+Please note - for demonstration purposes, the interview video contains title pages to each question so that it aligns very nicely with the bookmarks.  Try adding a new video yourself and create some video bookmarks.
+
+<br/>
+<br/>
+
+Congratulations, we have now completed the **View and Edit Documents** steps.  Please note the additional features to view and edit documents:
+  1. IBM Content Navigator Edit Service – edit directly in any desktop application
+  1. IBM Navigator Sync – sync and collaborate on documents directly from a computer desktop or mobile device
+  1. IBM Navigator Mobile – access, manage and sync content on your mobile device
+  1. IBM Navigator for Microsoft Office –  access and manage content within Microsoft Office
+  1. Microsoft Online Editing –  collaborative editing using Microsoft Office 365 or Microsoft Office Online Server
+  1. IBM Enterprise Video Streaming - stream video with automatic caption generation with automated transcoding for multiple bitrates, video size and quality
 
 <br/>
 
@@ -583,71 +661,42 @@ Congratulations, we have now completed the **View and Edit Documents** steps.  Y
 
 <br/>
 
-It is time to test your new workstream. There is a built-in Testers group that allows you to delegate this role but for now, let us test ourselves.
+We are now ready to approve the employee applicant, let's trigger a workflow to start the official onboarding process.
+
+<br/>
+<br/>
+
+1. From the **Teamspace**, browse to the **Application** folder and right-click on the employeement appliction to select the menu option for **Workflow**, **Launch Process**
 
 <br/>
 
-1. Click the menu grid icon in the upper right corner and select **Create workstreams**.
-2. Locate the new workstream you just created and click the three-dot menu on the right, then select **Test**.
+ ![13](./images/600-LaunchProcess.png)
 
- ![13](./images/Slide27.png)
+<br/>
+<br/>
+
+2. Select **Onboard Employee** process and click the **Ok** button
 
 <br/>
 
-3. The initialization screen is specific to this workflow; read the instructions and scroll down to customize the checklist available to you as the workflow starter.  An example is below
+ ![13](./images/610-LaunchProcess-OnboardEmployee.png)
 
- ![13](./images/Slide28.png)
+<br/>
+<br/>
+
+3. Enter any comments in the **Review Request Details** and then click the **Launch Process** button to start the workflow process.
 
 <br/>
 
-4. Once ready, scroll to the top right and click the blue **Start workstream** button.
-5. To test the first task as a Shared Services team member, click the menu grid icon in the upper right corner and select **Workplace**
-6. You should see a **Skill profile** task in the list, click the name and claim it.
-
-> Note: if you do not see the task in the list, you can either click the magnifying glass and search for `skill` or click the browser refresh button.  The task list may not refresh automatically in some browsers so searching should be faster than a full refresh.
-
- ![13](./images/Slide29.png)
+ ![13](./images/620-LaunchProcess-LaunchUI.png)
 
 <br/>
 
-7. You are now testing as a Shared Services resource on the team you lead.
-    1. Check off the items in the checklist
-    1. Fill in the data fields
-    1. Optionally upload a document or picture to securely include in the request.
-    1. Optionally add a comment.
-    1. Submit the task.
-
- ![13](./images/Slide30.png)
+As shown in the diagram above, the launch screen is displayed with properties such as the **Document Name**, **First Name**, **Last Name**, and **Application Date** automatically populated from the document properties.  We are able to view the contents of employement application as a final check and ultimately trigger the workflow process by clicking on the **Launch Process** button.
 
 <br/>
 
-8. Back at the task list, use the magnifying glass to search for **Approve Resource** and claim the task.
-
- ![13](./images/Slide31.png)
-
-<br/>
-
-9. You are now the shared services team manager again, time to approve or decline the request.
-    1. Review the approval screen.
-    1. If you added data, it is read-only by default
-    1. If you added comments in the previous task, they are present.
-    1. Either **Reject** or **Approve** the request.
-
- ![13](./images/Slide32.png)
-
-<br/>
-
-10. Back at the task list, use the magnifying glass to search for **Notification** and claim the task.
-
- ![13](./images/Slide33.png)
-
-<br/>
-
-11. You are now the original submitter/requestor such as an Accounts Payable team member.
-    1. Review the notification, including optional data and comments.
-    1. When done, click **Complete** at the upper right.
-
- ![13](./images/Slide34.png)
+Although not configured in this demonstration, we are now ready to onboard the employee applicant which may also involve many manual and automated steps that are necessary to onboard an employee such as sending the offer letter and employee packet, preparing backend systems for enrollment such as benefits, payroll and IT accounts. In addition to using **Content Services**, we are also able to leverage other components of the **IBM Cloud Pak for Automation** such as **Business Automation Workflow** (BAW) to trigger these manual steps and also to perform or trigger automated steps to onbard the employee.
 
 <br/>
 
@@ -655,15 +704,18 @@ It is time to test your new workstream. There is a built-in Testers group that a
 
 </details>
 
-
-
 <details>
 <summary>7 - Summary</summary>
 
 <br/>
 
-As you saw, Workstream Services helps you manage remote work more effectively by allowing business users to create lightweight workflows that automate internal processes, no coding required. Get ready to improve your team's productivity by simplifying common tasks and decreasing the complexity and limitations of remote work.
+As you saw, Content Services enables secure and compliant content access through the use of **Teamspaces**, viewing and editing capabilities such as **Role-Based Redactions**, **Merge and Split**, **Video Bookmarks**  and finally workflow to automate additional processes.
 
+<br/>
+
+Please visit the **Additional Assets** section for additional features not covered in this lab.
+
+<br/>
 <br/>
 
 [Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
