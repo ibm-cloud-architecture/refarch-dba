@@ -217,7 +217,7 @@ As a high-level overview, employee applicant (John Doe) has submitted an employe
 
 <p style="margin-left: 40px">
 
-1. Ask your administrator for the URL to Workplace (or the Navigator desktop for Workplace) and the login credentials.
+1. Ask your administrator for the URL to IBM Business Automation Navigator (or the Navigator desktop for Workplace) and the login credentials.
 1. Log in to the URL provided
 1. Please continue to the next section
 
@@ -226,6 +226,81 @@ As a high-level overview, employee applicant (John Doe) has submitted an employe
 <br/>
 
 </details>
+
+<br/>
+
+<details>
+<summary style="margin-left: 40px">Setup Instructions</summary>
+
+<br/>
+
+<p style="margin-left: 40px">
+
+The following is an overview of the setup instuctions, please use the corresponding sections for step-by-step instructions:
+1. Create teamspace template (OPTIONAL)
+1. Create teamspace
+1. Add the employement application document into the teamspace.
+
+<br/>
+
+<details>
+<summary style="margin-left: 80px">OPTIONAL - Create teamspace template</summary>
+
+<p style="margin-left: 80px">
+
+<br/>
+
+An **Employee Onboarding** Teamspace Template should already be available.  If not or if you want to demonstrate the creation of a teamspace template, please follow the instructions in the **Teamspace Template Builder** sub-section in the **Additional Assets** section.
+
+</p>
+
+</details>
+
+<br/>
+
+<details>
+<summary style="margin-left: 80px">Create teamspace</summary>
+
+<p style="margin-left: 80px">
+
+<br/>
+
+To create your teamspace, please refer to the **Teamspace Builder** sub-section in the **Additional Assets** section.
+
+</p>
+
+<br/>
+
+<br/>
+
+</details>
+
+<br/>
+
+<details>
+<summary style="margin-left: 80px">Add employment application document</summary>
+
+<p style="margin-left: 80px">
+
+<br/>
+
+
+
+</p>
+
+<br/>
+
+<br/>
+
+</details>
+
+
+</p>
+
+<br/>
+
+</details>
+
 
 <br/>
 <br/>
@@ -391,7 +466,7 @@ On the right side of the screen, we see a thumbnail of the document selected in 
 
 <br/>
 
-Continuing from the previous Teamspace step, let's now review how to view and edit documents.
+Continuing from the previous **Review Teamspace** section, let's now review how to view and edit documents.
 > Note: Use the application document (**Focus Corp - Employment Application.pdf**) that was added to the Teamspace in section **2 - Login and Setup Your Environment**.  This document represents the employee applicant's employment application and also contains an I9 document which will we split into a second document using the **Merge and Split** option.
 
 1. From the **Teamspace**, click on the application document
@@ -433,7 +508,7 @@ As displayed in the diagram above, the page should now fit in the display window
 
 <br/>
 
-As displayed in the diagram above, the reason for the redaction is displayed and can also be set to a different reason if desired.  Redaction Reasons use role-based security so that only users within a configured role can see behind the redaction and/or manage the redaction. Additionally, the **IBM Datcap** capture solution can be configured to automatically redact values such as a Social Security Number and associate with the redaction reason.
+As displayed in the diagram above, the reason for the redaction is displayed and can also be set to a different reason if desired.  Redaction Reasons use role-based security so that only users within a configured role can see behind the redaction and/or manage the redaction. Additionally, data capture/processing solutions can be configured to automatically redact values such as a Social Security Number and associate with the redaction reason.
 
 <br/>
 
@@ -773,6 +848,157 @@ Please visit the **Additional Assets** section for additional features not cover
 # Additional Assets
 
 ## Optional - additional assets to explore
+
+<details>
+<summary>100 - Teamspace Template Builder</summary>
+
+<br/>
+
+This section covers the creation of a teamspace template using the Teamspace Template Builder.
+
+<br/>
+
+1. From the navigation menu, click on **Teamspaces**
+
+ ![13](./images/additional-assets/teamspace-template/100-Teamspace-Feature.png)
+
+<br/>
+<br/>
+
+2. Click on the **Templates** tab and then click on **New Template**
+
+ ![13](./images/additional-assets/teamspace-template/110-New-Teamspace-Template.png)
+
+<br/>
+
+As shown in the diagram below, the **Teamspace Template Builder** is displayed.
+
+<br/>
+
+The teamspace template builder uses a wizard-driven user interface that guides you through the following steps:
+- Define Teamspace Template
+- Select searches
+- Select Classes or Entry template
+- Folders and Documents three
+- Select Roles
+
+<br/>
+
+ ![13](./images/additional-assets/teamspace-template/120-Template-Builder.png)
+
+<br/>
+<br/>
+
+3. Teamspace Template Builder - Step 1 - Define Teamspace Template
+
+<br/>
+
+Enter any value for the **Template name** and **Template description**.  If you are using a shared environment and plan to share the template, please select a value that distinguishes your template from others. In the diagram below, we entered a generic template name and description for our employee onboarding use case. For this template, we have specified not to share the template.
+
+<br/>
+
+At this point, we can continue to the next step by clicking on the **Next** button for the remaining configuration items (searches, classes/entry templates, folders/documents and roles).  At any point, we can complete the configuration of the template by clicking on the **Finish** button and optionally edit the configuration at a later time.
+
+<br/>
+
+When complete, click on the **Next** button to continue to the next step.
+
+<br/>
+
+ ![13](./images/additional-assets/teamspace-template/130-Define-Teamspace-Template.png)
+
+<br/>
+<br/>
+
+4. Teamspace Template Builder - Step 2 - Select Searches
+
+<br/>
+
+Specifying a search name will allow members of the teamspace to use a saved search to easily find documents relevant to the teamspace project.  To add a search, specify a **Search Name** in the bottom list and then click the **Add** button. In the diagram below and in our main demo scenario, we have elected not to use a saved search.  When complete, click on the **Next** buton to continue to the next step.
+
+<br/>
+
+ ![13](./images/additional-assets/teamspace-template/140-Select-Searches.png)
+
+<br/>
+<br/>
+
+5. Teamspace Template Builder - Step 3 - Select Classes or Entry Templates
+
+<br/>
+
+This steps specifies either document classes or entry templates that can be used to store documents into the teamspace.  Configure this step using the class or entry template based on your use case.  As shown in the diagram below for our main demo use case, first click the option for **Use entry templates to add documents**.  Select the **Employee Onboarding - Application** and the **Employee Onboarding - Document** entry templates.  Finally, click on the **Add** button and then the **Next** button to continue to the next step.
+
+<br/>
+
+Please note that the **Employee Onboarding - Application** entry template uses the **Employment Application** document class and the **Employee Onboarding - Document** entry template uses the default **Document** class.
+
+<br/>
+
+ ![13](./images/additional-assets/teamspace-template/150-Select-Entry-Template.png)
+
+<br/>
+<br/>
+
+6. Teamspace Template Builder - Step 4 - Folder and Documents Tree
+
+<br/>
+
+This step configures the folder structure that should be used for the teamspace.  Additionally, documents can be added to the folder(s).  The use of a common folder structure and default documents provide a consistent process so that any teamspaces created with this template uses a consistent and standardized folder hierarchy and documents.
+
+<br/>
+
+Click **New Folder** and then build the folder structure based on your demo scenario.  To add a document to a folder, click on the **Add Document** button and add a document.  When complete, click on the **Next** button to continue to the last step.
+
+<br/>
+
+As shown in the diagram below, we have built the folder structure for the Automation Onboarding demo use case.
+
+<br/>
+
+ ![13](./images/additional-assets/teamspace-template/160-Folders-Documents-Tree.png)
+
+<br/>
+<br/>
+
+7. Teamspace Template Builder - Step 5 - Select Roles
+
+<br/>
+
+This steps allows us to create any custom roles for the template which can also be shared with other templates.  Click on **New Role** and then specify the **Role name** and **Role description**.  Next, set the desired permissions on the role.  To share the role with other templates, click on **Make Available**.  Click on the **Finish** button to complete the setup of the teamspace template. The teamspace temlate can be updated at a later time if desired.
+
+<br/>
+
+The teamspace template is now complete, please refer to the next section **Teamspace Builder** to create a teamspace from this template.
+
+<br/>
+
+ ![13](./images/additional-assets/teamspace-template/170-Select-Roles.png)
+
+<br/>
+<br/>
+
+[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+
+</details>
+
+<details>
+<summary>110 - Teamspace Builder</summary>
+
+<br/>
+
+This section covers how to crate a teamspace from the **Employee Onboarding Teamspace** template.
+
+<br/>
+
+
+ ![13](./images/100-Navigator-Browse2.png)
+
+<br/>
+
+[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+
+</details>
 
 <details>
 <summary>100 - Searching</summary>
