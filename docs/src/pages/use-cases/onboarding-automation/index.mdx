@@ -8,7 +8,6 @@ description: Onboarding Automation use case
 <AnchorLinks>
   <AnchorLink>Introduction</AnchorLink>
   <AnchorLink>Getting Started Lab</AnchorLink>
-  <AnchorLink>Full Demo Narration</AnchorLink>
   <AnchorLink>Additional Assets</AnchorLink>
 </AnchorLinks>
 
@@ -22,13 +21,10 @@ description: Onboarding Automation use case
 
 Focus Corp accelerates the use of unstructured content in an employee onboarding use case using teamspaces and secure external file sharing. You will assume the role of Lucy, an HR employee onboarding specialist at Focus Corp. Lucy’s objective is to improve Focus Corp’s process and ensure various onboarding requirements are met in a secure, structured, consistent and timely manner to onboard the new employees.
 
-As a high-level overview, employee applicant (John Doe) has submitted an employee application and interview video along with other materials as part of the employement application process.  During this process, HR processors have initially reviewed the employement application making comments and annotations on the document along with entering video bookmarks allowing additional reviewers to quickly locate key responses.  Lucy along with other reviewers are able to review all the information and documents pertaining to applicant John Doe in the **Teamspace** in a consistent and secure manner using an intuitive user-interface. Some of the information such as the applicant's SSN is available on some of the documents but they are redacted so that only reviewers with the approrprate permission are able to see the redacted content.  The use of video bookmarks also allows Lucy to quickly jump to key sections of the the video without necessarily having to watch the entire video.  Finally, we are able to integrate with **IBM Business Automation Workflow** to launch additional manual and automated processes.
-
-
 **Choose an option:**
 
   * **Digital Business Automation on Cloud trial:** your environment is predeployed, continue to the [Getting Started Lab](#getting-started-lab) section below.
-  * **Install Yourself:** To deploy Onboarding Automation on your own environment, and technical architecture information, see the <a href="https://github.com/ibm-cloud-architecture/dba-onboarding-auto.git" target="_blank">dba-onboarding-auto</a> git repository which includes the required deployment artifacts.
+  * **Install Yourself:** To deploy Onboarding Automation on your own environment, and technical architecture information, see the <a href="https://github.com/ibm-cloud-architecture/dba-onboarding-automation" target="_blank">dba-onboarding-automation</a> git repository which includes the required deployment artifacts.
 
  ![10](./images/010-Intro-OnboardingAutomation.png)
 
@@ -41,68 +37,32 @@ As a high-level overview, employee applicant (John Doe) has submitted an employe
 <details>
 <summary>1 - Scenario Introduction - Automation Onboarding</summary>
 
-<Row>
-<Column colLg={5} colMd={5}>
+<br/>
 
-**Demo Video**
-
-<ArticleCard
-    color="dark"
-    title="Demo Video - Onboarding Automation"
-    subTitle="In this demo, you will learn how to use content services to manage employee onboarding"
-    href="https://ibm.biz/cp4ba-shared-services-video"
-    actionIcon="arrowRight"
-    color="dark"
-    >
-
-![](./images/sharedServicesThumbnail.png)
-
-</ArticleCard>
-</Column>
-<Column colLg={7} colMd={7}>
-
-**Demo Outline**
-
-[Full Demo Narration](#full-demo-narration)
-
-1. Use Case Overview
-1. Focus Corp Demo Dashboard review
-1. Onboarding Specialist persona
-    1. IBM Navigator Tour
-    1. Review Teamspace
-    1. View and Edit Documents
-    1. Merge and Split
-    1. Review Video Bookmakrs
-    1. Launch Onboard Process
-1. Use case review and value of content services
+**Use Case Overview**
 
 <br/>
 
-</Column>
-</Row>
-<Row>
-<Column colLg={4} colMd={4}>
+Employee applicant (John Doe) has submitted an employee application and interview video along with other materials as part of the employement application process.  During this process, HR processors have initially reviewed the employement application making comments and annotations on the document along with entering video bookmarks allowing additional reviewers to quickly locate key responses.  Lucy along with other reviewers are able to review all the information and documents pertaining to applicant John Doe in the **Teamspace** in a consistent and secure manner using an intuitive user-interface. Some of the information such as the applicant's SSN is available on some of the documents but they are redacted so that only reviewers with the approrprate permission are able to see the redacted content.  The use of video bookmarks also allows Lucy to quickly jump to key sections of the the video without necessarily having to watch the entire video.  Finally, we are able to integrate with **IBM Business Automation Workflow** to launch additional manual and automated processes.
+
+<br/>
 
 **Discovery Map**
 
+<br/>
+
 ![1](./images/DiscoveryMap.png)
-<br/>
-
-</Column>
-<Column colLg={6} colMd={6}>
 
 <br/>
 
-</Column>
-</Row>
-
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top 59](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 </details>
 
 <details>
 <summary>2 - Login and Setup Your Environment</summary>
 
+<br/>
 <br/>
 
 <details>
@@ -217,7 +177,7 @@ As a high-level overview, employee applicant (John Doe) has submitted an employe
 
 <p style="margin-left: 40px">
 
-1. Ask your administrator for the URL to IBM Business Automation Navigator (or the Navigator desktop for Workplace) and the login credentials.
+1. Ask your administrator for the URL to IBM Business Automation Navigator and the login credentials.
 1. Log in to the URL provided
 1. Please continue to the next section
 
@@ -225,87 +185,9 @@ As a high-level overview, employee applicant (John Doe) has submitted an employe
 
 <br/>
 
-</details>
-
-<br/>
-
-<details>
-<summary style="margin-left: 40px">Setup Instructions</summary>
-
-<br/>
-
-<p style="margin-left: 40px">
-
-The following is an overview of the setup instuctions, please use the corresponding sections for step-by-step instructions:
-1. Create teamspace template (OPTIONAL)
-1. Create teamspace
-1. Add the employement application document into the teamspace.
-
-<br/>
-
-<details>
-<summary style="margin-left: 80px">OPTIONAL - Create teamspace template</summary>
-
-<p style="margin-left: 80px">
-
-<br/>
-
-An **Employee Onboarding** Teamspace Template should already be available.  If not or if you want to demonstrate the creation of a teamspace template, please follow the instructions in the **Teamspace Template Builder** sub-section in the **Additional Assets** section.
-
-</p>
+[Go to top 188](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 </details>
-
-<br/>
-
-<details>
-<summary style="margin-left: 80px">Create teamspace</summary>
-
-<p style="margin-left: 80px">
-
-<br/>
-
-To create your teamspace, please refer to the **Teamspace Builder** sub-section in the **Additional Assets** section.
-
-</p>
-
-<br/>
-
-<br/>
-
-</details>
-
-<br/>
-
-<details>
-<summary style="margin-left: 80px">Add employment application document</summary>
-
-<p style="margin-left: 80px">
-
-<br/>
-
-
-
-</p>
-
-<br/>
-
-<br/>
-
-</details>
-
-
-</p>
-
-<br/>
-
-</details>
-
-
-<br/>
-<br/>
-
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 </details>
 
@@ -314,6 +196,7 @@ To create your teamspace, please refer to the **Teamspace Builder** sub-section 
 
 #### IBM Navigator is a desktop for an organization's workers to find and organize information.
 
+<a name="lab-section-3"></a>
 
 <br/>
 
@@ -384,15 +267,340 @@ In the **Magazine** view, we can now we see the same content along with social f
 
 <br/>
 
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top](#lab-section-3) | [Go to Getting Started Lab](#getting-started-lab)
 </details>
 
 <details>
-<summary>4 - Review Teamspaces</summary>
+<summary>4 - Teamspaces</summary>
+
+#### Let’s now look at Teamspaces.  Teamspaces represent a focused view of the relevant folders, documents and searches that a team needs to complete their tasks.
 
 <br/>
 
-#### Let’s now look at Teamspaces.  Teamspaces represent a focused view of the relevant folders, documents and searches that a team needs to complete their tasks.
+Our use case scenario revolves around Lucy reviewing an existing teamspace for employee applicant John Doe.  Typicaly, the teamspace would have already been created, processed and reviewed by a few HR processors before reaching Lucy to further review and approve the applicant for onboarding.  In this section, we first create an employee onboarding teamspace for the employee applicant John Doe.  Next, we will review how a teamspace is used once it is created.
+
+<br/>
+
+<details>
+<summary style="margin-left: 40px">4.1 - Create Teamspace</summary>
+<p style="margin-left: 40px">
+
+<br/>
+
+An **Employee Onboarding** Teamspace Template should already be available.  If not or if you want to learn more about creating teamspace, please proceed to the next section below.  Otherwise, proceed to section **4.1.2 - Teamspace Builder**.
+
+<br/>
+
+</p>
+
+<details>
+<summary style="margin-left: 80px">4.1.1 - Teamspace Template Builder</summary>
+<p style="margin-left: 80px">
+
+<br/>
+
+This section covers the creation of a teamspace template using the **Teamspace Template Builder**.
+
+<br/>
+
+The use of **Teamspace Templates** allows for the configuration of the folder hierarchy, documents, search templates, and security in a user-friendly wizard interface which can then be used to create Teamspaces in a timely, secure and consistent manner.
+
+<br/>
+
+1. From the navigation menu, click on **Teamspaces**
+
+ ![13](./images/additional-assets/teamspace-template/100-Teamspace-Feature.png)
+
+<br/>
+<br/>
+
+2. Click on the **Templates** tab and then click on **New Template**
+
+ ![13](./images/additional-assets/teamspace-template/110-New-Teamspace-Template.png)
+
+<br/>
+
+As shown in the diagram below, the **Teamspace Template Builder** is displayed.
+
+<br/>
+
+The teamspace template builder uses a wizard-driven user interface that guides you through the following steps:
+- Define Teamspace Template
+- Select Searches
+- Select Classes or Entry Templates
+- Folders and Documents Tree
+- Select Roles
+
+<br/>
+
+ ![13](./images/additional-assets/teamspace-template/120-Template-Builder.png)
+
+<br/>
+<br/>
+
+3. Teamspace Template Builder - Step 1 - Define Teamspace Template
+
+<br/>
+
+Enter any value for the **Template name** and **Template description**.  If you are using a shared environment and plan to share the template, please select a value that distinguishes your template from others. In the diagram below, we entered a generic template name and description for our employee onboarding use case. For this template, we have specified not to share the template.
+
+<br/>
+
+At this point, we can continue to the next step by clicking on the **Next** button for the remaining configuration items (searches, classes/entry templates, folders/documents and roles).  At any point, we can complete the configuration of the template by clicking on the **Finish** button and optionally edit the configuration at a later time.
+
+<br/>
+
+When complete, click on the **Next** button to continue to the next step.
+
+<br/>
+
+ ![13](./images/additional-assets/teamspace-template/130-Define-Teamspace-Template.png)
+
+<br/>
+<br/>
+
+4. Teamspace Template Builder - Step 2 - Select Searches
+
+<br/>
+
+Specifying a search name will allow members of the teamspace to use a saved search to easily find documents relevant to the teamspace project.  To add a search, specify a **Search Name** in the bottom list and then click the **Add** button. In the diagram below and in our main demo scenario, we have elected not to use a saved search.  When complete, click on the **Next** buton to continue to the next step.
+
+<br/>
+
+ ![13](./images/additional-assets/teamspace-template/140-Select-Searches.png)
+
+<br/>
+<br/>
+
+5. Teamspace Template Builder - Step 3 - Select Classes or Entry Templates
+
+<br/>
+
+This steps specifies either document classes or entry templates that can be used to store documents into the teamspace.  Configure this step using the class or entry template based on your use case.  As shown in the diagram below for our main demo use case, first click the option for **Use entry templates to add documents**.  Select the **Employee Onboarding - Application** and the **Employee Onboarding - Document** entry templates.  Finally, click on the **Add** button and then the **Next** button to continue to the next step.
+
+<br/>
+
+Please note that the **Employee Onboarding - Application** entry template uses the **Employment Application** document class and the **Employee Onboarding - Document** entry template uses the default **Document** class.  If these entry templates are not available, either create them or simply select the other option of **Use classes to add documents** and specify the **Document** class and the **Employe Application** class.
+
+<br/>
+
+ ![13](./images/additional-assets/teamspace-template/150-Select-Entry-Template.png)
+
+<br/>
+<br/>
+
+6. Teamspace Template Builder - Step 4 - Folder and Documents Tree
+
+<br/>
+
+This step configures the folder structure that should be used for the teamspace.  Additionally, documents can be added to the folder(s).  The use of a common folder structure and default documents provide a consistent process so that any teamspaces created with this template uses a consistent and standardized folder hierarchy and documents.
+
+<br/>
+
+Click **New Folder** and then build the folder structure shown below or based on your demo scenario.  To add a document to a folder, click on the **Add Document** button and add a document.  When complete, click on the **Next** button to continue to the last step.
+
+<br/>
+
+As shown in the diagram below, we have built the folder structure for the Automation Onboarding demo use case.
+
+<br/>
+
+ ![13](./images/additional-assets/teamspace-template/160-Folders-Documents-Tree.png)
+
+<br/>
+<br/>
+
+7. Teamspace Template Builder - Step 5 - Select Roles
+
+<br/>
+
+This steps allows us to create any custom roles for the template which can also be shared with other templates.  Click on **New Role** and then specify the **Role name** and **Role description**.  Next, set the desired permissions on the role.  To share the role with other templates, click on **Make Available**.  Click on the **Finish** button to complete the setup of the teamspace template. The teamspace temlate can be updated at a later time if desired.
+
+<br/>
+
+The teamspace template is now complete, please refer to the next section **Teamspace Builder** to create a teamspace from this template.
+
+<br/>
+
+ ![13](./images/additional-assets/teamspace-template/170-Select-Roles.png)
+
+<br/>
+
+[Go to top 414](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+
+<br/>
+
+</p>
+
+</details>
+
+<br/>
+
+<details>
+<summary style="margin-left: 80px">4.1.2 - Teamspace Builder</summary>
+
+<p style="margin-left: 80px">
+
+<br/>
+
+This section covers how to create a teamspace from the **Employee Onboarding Teamspace** template that was created in the section above.
+
+<br/>
+
+Download the document below, we use this later to add the employment application document into the teamspace
+* Employment Appplication - [Focus Corp - Employment Application.pdf](https://github.com/ibm-cloud-architecture/dba-onboarding-automation/raw/main/content-services/sample-documents/Focus%20Corp%20-%20Employment%20Application.pdf)
+
+<br/>
+
+1. From the navigation menu, click on **Teamspaces**
+
+ ![13](./images/additional-assets/teamspace-template/100-Teamspace-Feature.png)
+
+<br/>
+
+2. Click on the **Teamspaces** tab and then click on **New Teamspace**
+
+ ![13](./images/additional-assets/teamspace-template/200b-New-Teamspace.png)
+
+<br/>
+
+As shown in the diagram below, the **Teamspace Builder** is displayed.
+
+<br/>
+
+Similiar to the **Teamspace Template Builder**, the **Teamspace Builder** uses a wizard-driven user interface that guides you through the following steps:
+- Define Teamspace
+- Select searches
+- Select Classes or Entry Templates
+- Folders and Documents Tree
+- Select Users
+
+<br/>
+
+ ![13](./images/additional-assets/teamspace-template/210-Teamspace-Builder.png)
+
+<br/>
+
+3. Teamspace Builder - Step 1 - Define Teamspace
+
+<br/>
+
+Enter any value for the **Template name** and **Template description**.  If you are using a shared environment, please select a value that distinguishes your teamspace from others. Next, select the **Employee Onboarding** template or the teamspace template that was created in the section above.
+
+<br/>
+
+When complete, review the information after the diagram below and then click on the **Next** button to continue to the next step.
+
+<br/>
+
+![13](./images/additional-assets/teamspace-template/220-Define-Teamspace.png)
+
+<br/>
+
+We can directly build the teamspace or we can specify the teamspace template that contains some pre-define configuration settings.  Using the template allows us to consistently build the teamspace ensuring the proper folder, documents, searches and roles are configured for every new project. At the same time, we are also able to slightly modify these settings as we create the teamspace for any additional configuration that may be needed for the specific teamspace.
+
+<br/>
+
+At this point, we can continue to the next step by clicking on the **Next** button for the remaining configuration items (searches, classes/entry templates, folders/documents and roles).  At any point, we can complete the configuration of the template by clicking on the **Finish** button and optionally edit the configuration at a later time.
+
+<br/>
+
+When complete, click on the **Next** button to continue to the next step.
+
+<br/>
+
+4. Teamspace Builder - Step 2 - Select Searches
+
+<br/>
+
+Any saved searches that were included in the teamspace template should be listed in the **Selected searches** area.  If desired, add any searches that you would like to be included in the teamspace.  When complete, click the **Next** button to continue to the next step.
+
+<br/>
+
+![13](./images/additional-assets/teamspace-template/230-Select-Searches.png)
+
+<br/>
+
+5. Teamspace Builder - Step 3 - Select Classes or Entry Templates
+
+<br/>
+
+This step identifies the classes or entry templates that were configured with the teamspace template.  Any document classes or entry templates that were included in the teamspace template should be listed in the **Selected Classes / Entry Templates** area.  If desired, add additional classes or entry templates that you would like to be included in the teamspace.  When complete, click the **Next** button to continue to the next step.
+
+<br/>
+
+![13](./images/additional-assets/teamspace-template/240-Select-Entry-Templates.png)
+
+<br/>
+
+6a. Teamspace Template - Step 4a - Folders and Documents Tree
+
+<br/>
+
+As shown below, the folder structure and associated documents were automatically created based on the teamspace template. In this step, we will add the [Emmployment Application](https://github.com/ibm-cloud-architecture/dba-onboarding-automation/raw/main/content-services/sample-documents/Focus%20Corp%20-%20Employment%20Application.pdf) into **Application** folder.
+
+<br/>
+
+Right-click on the **Application** folder and click on **Add Document from Local Drive**
+
+<br/>
+
+![13](./images/additional-assets/teamspace-template/250-Add-Application.png)
+
+<br/>
+
+6b. Teamspace Template - Step 4b - Folders and Documents Tree - Add Document
+
+<br/>
+
+As shown below in the diagram, enter the following:
+  1. Entry template - **Employe Onboarding - Application**
+  1. What do you want to save? - **Local document**
+  1. Choose Files - **Focus Corp - Employment Application.pdf**
+  1. First Name - **John**
+  1. Last Name - **Doe**
+  1. Application Date - select any date
+
+<br/>
+
+When complete, click on the **Add** button
+
+<br/>
+
+![13](./images/additional-assets/teamspace-template/255-Add-Document.png)
+
+<br/>
+
+7. Teamspace Template - Step 5 - Select Users
+
+<br/>
+
+As shown in the diagram below, your user name should be identified as an owner of the teamspace.  To add yourself to another role, click on a role in the **Available roles** area.  To add additional users to the teamspace, click on **Add Users and Groups...** and add any additional users or groups to the teamspace.
+
+<br/>
+
+When complete, click the **Finish** button to complete the setup of your teamspace.
+
+<br/>
+
+![13](./images/additional-assets/teamspace-template/260-Teamspace-Users.png)
+
+<br/>
+
+[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+
+</p>
+
+</details>
+
+</details>
+
+<br/>
+
+<details>
+<summary style="margin-left: 40px">4.2 - Review Teamspaces</summary>
+
+<p style="margin-left: 40px">
 
 <br/>
 
@@ -409,7 +617,7 @@ A list of Teamspaces should be displayed. In the diagram below, we have highligh
 <br/>
 
  ![13](./images/210-Teamspaces.png)
-> Note: Please use the Teamspace that was created in section **2 - Login and Setup Your Environment**.  We'll refer to this as **your teamspace** going forward.
+> Note: Please use the Teamspace that was created in **4.1.2 - Teamspace Builder**.  We'll refer to this as **your teamspace** going forward.
 
 <br/>
 
@@ -426,10 +634,6 @@ A Teamspace can be configured with custom roles for granular security permission
 <br/>
 
  ![13](./images/230-Teamspace-Roles-Security.png)
-
-<br/>
-
->Note: This lab covers the usage of a Teamspace, please refer to the **Teamspaces** asset in the **Additional Assets** section for information on the setup of **Teamspace Templates** and the general configuration of a Teamspace.  The use of **Teamspace Templates** allows for the configuration of the folder hierarchy, documents, search templates, and security in a user-friendly wizard interface which can then be used to create Teamspaces in a timely, secure and consistent manner.
 
 <br/>
 
@@ -457,7 +661,11 @@ On the right side of the screen, we see a thumbnail of the document selected in 
 
 <br/>
 
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top 645](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+
+</p>
+
+</details>
 
 </details>
 
@@ -467,7 +675,7 @@ On the right side of the screen, we see a thumbnail of the document selected in 
 <br/>
 
 Continuing from the previous **Review Teamspace** section, let's now review how to view and edit documents.
-> Note: Use the application document (**Focus Corp - Employment Application.pdf**) that was added to the Teamspace in section **2 - Login and Setup Your Environment**.  This document represents the employee applicant's employment application and also contains an I9 document which will we split into a second document using the **Merge and Split** option.
+> Note: Use the application document (**Focus Corp - Employment Application.pdf**) that was added to the Teamspace in section **2 - Login and Setup Your Environment - Setup Instructions - Add employment application document**.  This document represents the employee applicant's employment application and also contains an I9 document which will we split into a second document using the **Merge and Split** option.
 
 1. From the **Teamspace**, click on the application document
 
@@ -761,7 +969,7 @@ Please note - for demonstration purposes, the interview video contains title pag
 
 <br/>
 
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top952](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 </details>
 
@@ -772,7 +980,6 @@ Please note - for demonstration purposes, the interview video contains title pag
 
 Lucy is now ready to approve the employee applicant, let's trigger a workflow to start the official onboarding process.
 
-<br/>
 <br/>
 
 1. From the **Teamspace**, browse to the **Application** folder and right-click on the employeement appliction to select the menu option for **Workflow**, **Launch Process**
@@ -818,7 +1025,7 @@ Although not fully implemented within this scenario, the process just launched w
 
 <br/>
 
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top 1008](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 </details>
 
@@ -836,7 +1043,7 @@ Please visit the **Additional Assets** section for additional features not cover
 <br/>
 <br/>
 
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top 1026](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 </details>
 
@@ -849,167 +1056,25 @@ Please visit the **Additional Assets** section for additional features not cover
 
 ## Optional - additional assets to explore
 
-<details>
-<summary>100 - Teamspace Template Builder</summary>
 
-<br/>
-
-This section covers the creation of a teamspace template using the Teamspace Template Builder.
-
-<br/>
-
-1. From the navigation menu, click on **Teamspaces**
-
- ![13](./images/additional-assets/teamspace-template/100-Teamspace-Feature.png)
-
-<br/>
-<br/>
-
-2. Click on the **Templates** tab and then click on **New Template**
-
- ![13](./images/additional-assets/teamspace-template/110-New-Teamspace-Template.png)
-
-<br/>
-
-As shown in the diagram below, the **Teamspace Template Builder** is displayed.
-
-<br/>
-
-The teamspace template builder uses a wizard-driven user interface that guides you through the following steps:
-- Define Teamspace Template
-- Select searches
-- Select Classes or Entry template
-- Folders and Documents three
-- Select Roles
-
-<br/>
-
- ![13](./images/additional-assets/teamspace-template/120-Template-Builder.png)
-
-<br/>
-<br/>
-
-3. Teamspace Template Builder - Step 1 - Define Teamspace Template
-
-<br/>
-
-Enter any value for the **Template name** and **Template description**.  If you are using a shared environment and plan to share the template, please select a value that distinguishes your template from others. In the diagram below, we entered a generic template name and description for our employee onboarding use case. For this template, we have specified not to share the template.
-
-<br/>
-
-At this point, we can continue to the next step by clicking on the **Next** button for the remaining configuration items (searches, classes/entry templates, folders/documents and roles).  At any point, we can complete the configuration of the template by clicking on the **Finish** button and optionally edit the configuration at a later time.
-
-<br/>
-
-When complete, click on the **Next** button to continue to the next step.
-
-<br/>
-
- ![13](./images/additional-assets/teamspace-template/130-Define-Teamspace-Template.png)
-
-<br/>
-<br/>
-
-4. Teamspace Template Builder - Step 2 - Select Searches
-
-<br/>
-
-Specifying a search name will allow members of the teamspace to use a saved search to easily find documents relevant to the teamspace project.  To add a search, specify a **Search Name** in the bottom list and then click the **Add** button. In the diagram below and in our main demo scenario, we have elected not to use a saved search.  When complete, click on the **Next** buton to continue to the next step.
-
-<br/>
-
- ![13](./images/additional-assets/teamspace-template/140-Select-Searches.png)
-
-<br/>
-<br/>
-
-5. Teamspace Template Builder - Step 3 - Select Classes or Entry Templates
-
-<br/>
-
-This steps specifies either document classes or entry templates that can be used to store documents into the teamspace.  Configure this step using the class or entry template based on your use case.  As shown in the diagram below for our main demo use case, first click the option for **Use entry templates to add documents**.  Select the **Employee Onboarding - Application** and the **Employee Onboarding - Document** entry templates.  Finally, click on the **Add** button and then the **Next** button to continue to the next step.
-
-<br/>
-
-Please note that the **Employee Onboarding - Application** entry template uses the **Employment Application** document class and the **Employee Onboarding - Document** entry template uses the default **Document** class.
-
-<br/>
-
- ![13](./images/additional-assets/teamspace-template/150-Select-Entry-Template.png)
-
-<br/>
-<br/>
-
-6. Teamspace Template Builder - Step 4 - Folder and Documents Tree
-
-<br/>
-
-This step configures the folder structure that should be used for the teamspace.  Additionally, documents can be added to the folder(s).  The use of a common folder structure and default documents provide a consistent process so that any teamspaces created with this template uses a consistent and standardized folder hierarchy and documents.
-
-<br/>
-
-Click **New Folder** and then build the folder structure based on your demo scenario.  To add a document to a folder, click on the **Add Document** button and add a document.  When complete, click on the **Next** button to continue to the last step.
-
-<br/>
-
-As shown in the diagram below, we have built the folder structure for the Automation Onboarding demo use case.
-
-<br/>
-
- ![13](./images/additional-assets/teamspace-template/160-Folders-Documents-Tree.png)
-
-<br/>
-<br/>
-
-7. Teamspace Template Builder - Step 5 - Select Roles
-
-<br/>
-
-This steps allows us to create any custom roles for the template which can also be shared with other templates.  Click on **New Role** and then specify the **Role name** and **Role description**.  Next, set the desired permissions on the role.  To share the role with other templates, click on **Make Available**.  Click on the **Finish** button to complete the setup of the teamspace template. The teamspace temlate can be updated at a later time if desired.
-
-<br/>
-
-The teamspace template is now complete, please refer to the next section **Teamspace Builder** to create a teamspace from this template.
-
-<br/>
-
- ![13](./images/additional-assets/teamspace-template/170-Select-Roles.png)
-
-<br/>
-<br/>
-
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
-
-</details>
-
-<details>
-<summary>110 - Teamspace Builder</summary>
-
-<br/>
-
-This section covers how to crate a teamspace from the **Employee Onboarding Teamspace** template.
-
-<br/>
-
-
- ![13](./images/100-Navigator-Browse2.png)
-
-<br/>
-
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
-
-</details>
 
 <details>
 <summary>100 - Searching</summary>
 
+
+
 <br/>
+
+Seamlessly connect Salesforce with FileNet Content Manager to eliminate a content silo and manage Salesforce content within the leading, modern FileNet Content Manager platform. This native integration allows Salesforce users to store and manage related content seamlessly in FileNet Content Manager as it relates to Salesforce accounts, cases, opportunities, and more.  They will no longer need to switch applications to find related information. With a Salesforce-oriented user experience, this connector will require minimal to no training, and IT teams can take advantage of the feature-rich content management capabilities of FileNet and govern enterprise content in one place.
+
+<br/>
+
 
  ![13](./images/100-Navigator-Browse2.png)
 
 <br/>
 
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top 1050](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 </details>
 
@@ -1022,7 +1087,7 @@ This section covers how to crate a teamspace from the **Employee Onboarding Team
 
 <br/>
 
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top 1063](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 </details>
 
@@ -1035,7 +1100,7 @@ This section covers how to crate a teamspace from the **Employee Onboarding Team
 
 <br/>
 
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top 1076](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 </details>
 
@@ -1048,7 +1113,7 @@ This section covers how to crate a teamspace from the **Employee Onboarding Team
 
 <br/>
 
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top 1089](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 </details>
 
@@ -1061,7 +1126,7 @@ This section covers how to crate a teamspace from the **Employee Onboarding Team
 
 <br/>
 
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top 1102](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 </details>
 
@@ -1074,7 +1139,7 @@ This section covers how to crate a teamspace from the **Employee Onboarding Team
 
 <br/>
 
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top 1115](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 </details>
 
@@ -1087,7 +1152,7 @@ This section covers how to crate a teamspace from the **Employee Onboarding Team
 
 <br/>
 
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top 1128](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 </details>
 
@@ -1100,7 +1165,7 @@ This section covers how to crate a teamspace from the **Employee Onboarding Team
 
 <br/>
 
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top 1141](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 </details>
 
@@ -1113,56 +1178,6 @@ This section covers how to crate a teamspace from the **Employee Onboarding Team
 
 <br/>
 
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top 1154](#introduction) | [Go to Getting Started Lab](#getting-started-lab) | [go to ](#additional-assets)
 
 </details>
-
-
-***
-
-<br/>
-<br/>
-
-
-# Full Demo Narration
-
-#### Intro
-
-Working in a remote environment adds complexity to most tasks.  Imagine you lead a shared services team and receive requests from other departments such as Accounts Payable or HR. In person, it's simple to collect information and share status.
-
-However, in a remote environment, organizing work is more challenging.  Relying on email and phone is just not enough. Work can be duplicated or executed inconsistently, resulting in lost data and delays.  You need a lightweight workflow to manage incoming requests.
-
-#### Demo Start Page
-
-After reviewing the demo launch page including the outline and discovery map, we are ready to launch the Line of Business Supervisor's Workplace interface, the single place you manage all your work.
-
-#### Manage workstream teams
-
-You check out the start workflow list and see great starting activities and workflows such as approval, checklist and more.
-
-You start by managing the teams.  It's a good idea to add yourself to at least Administrators and Supervisors and maybe Team managers.  You can also create a Shared Services team so you can assign work to them later.
-
-#### Create a workstream
-
-Now it's time to create a workstream for incoming shared services requests.  We'll set it so everyone can start and give a description.  The simple, no-code editor allows you to assemble a workflow in just a few clicks.  Start with a checklist activity to represent the skill profile requested.  To make this reusable, we add checklist items with placeholders and allow the user that launches the flow to update and add more.  Let's also add a couple data items for the country and date available.  Once the request is submitted, the shared services team member will complete this form and confirm their skills.  Your first activity is complete!
-
-We add another step to get manager approval and setup a simple branch flow.  For the approval branch we add a form to notify of the result.  Then, head back to our approval and add the rejection branch.  So simple!  To complete the workstream, we save and we're ready to go.
-
-#### Test a workstream
-
-The new flow starts in trial mode for the author or a testing group to try it out safely before the end users.  Simple to test, we see the launch screen specific to this workstream where the user starting the flow, such as an Accounts Payable clerk, will configure available options including checklist items, and also any activity assignments allowed by the workstream, which we did not activate yet.
-
-Once started, we go back to the main Workplace.  Let's take on the role of a shared services team member and see how easy it is to complete the first step. Claim and open the task, check the checklist items, fill in the data, optionally attach a document for review, type a comment and submit.  This is much easier and more organized than email.  Now taking on my team manager role for approval, all looks good and I accept.  Finally, the original requestor receives an approval notification to complete the request. Back at the task list we can switch to workflows and without any customization, the tool provides a complete audit trail of all work by default.
-
-#### Publish a workstream
-
-Once ready, I can request a publish to share my workstream with other teams.  The platform has a built-in approval workstream for workstreams!  So we head to the same task list, click to review the workstream definition.  As a publisher, I may send it back with comments or publish directly.  And in just a few minutes, I created, tested and published a new, lightweight workflow available to anyone in my organization: ready to launch!
-
-#### Use Case Summary
-
-As you saw, Workstream Services helps you manage remote work more effectively by allowing business users to create lightweight workflows that automate internal processes, no coding required. Get ready to improve your team's productivity by simplifying common tasks and decreasing the complexity and limitations of remote work.
-
-
-<br/>
-
-[Go to top](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
