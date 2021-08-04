@@ -41,7 +41,7 @@ description: Onboarding Automation use case
 
 <br/>
 
-Employee applicant (John Doe) submitted an employee application and interview video along with other materials as part of the employment application process.  During this process, HR processors initially reviewed the employment application making comments and annotations on the document along with entering video bookmarks, allowing additional reviewers to quickly locate key responses.  Lucy along with other reviewers are able to review all the information and documents pertaining to applicant John Doe in the teamspace in a consistent and secure manner using an intuitive user-interface. Some of the information such as the applicant's SSN is available on some of the documents but they are redacted so that only reviewers with the approrprate permission are able to see the redacted content.  The use of video bookmarks also allows Lucy to quickly jump to key sections of the video without necessarily having to watch the entire video.  Finally, Lucy is able to integrate with IBM Business Automation Workflow to launch additional manual and automated processes.
+Employee applicant (John Doe) submitted an employee application and Video Interview along with other materials as part of the employment application process.  During this process, HR processors initially reviewed the employment application making comments and annotations on the document along with entering video bookmarks, allowing additional reviewers to quickly locate key responses.  Lucy along with other reviewers are able to review all the information and documents pertaining to applicant John Doe in the teamspace in a consistent and secure manner using an intuitive user-interface. Some of the information such as the applicant's SSN is available on some of the documents but they are redacted so that only reviewers with the approrprate permission are able to see the redacted content.  The use of video bookmarks also allows Lucy to quickly jump to key sections of the video without necessarily having to watch the entire video.  Finally, Lucy is able to integrate with IBM Business Automation Workflow to launch additional manual and automated processes.
 
 <br/>
 
@@ -269,7 +269,7 @@ See the <a href="https://github.com/ibm-cloud-architecture/dba-onboarding-automa
 
 <br/>
 
-You are now a Human Resources (HR) Onboarding Specialist, Lucy, at Focus Corp reviewing an applicant, John Doe, for employment. As an onboarding specialist, Lucy will use the IBM Navigator user interface to review content submitted by John such as the employment application and interview video.
+You are now a Human Resources (HR) Onboarding Specialist, Lucy, at Focus Corp reviewing an applicant, John Doe, for employment. As an onboarding specialist, Lucy will use the IBM Navigator user interface to review content submitted by John such as the employment application and video interview.
 
 <br/>
 
@@ -531,7 +531,7 @@ The teamspace template is now complete, please refer to the next section **4.1.2
 
 <br/>
 
-[Go to top](#lab-section-4) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top (Teamspace Template Builder)](#lab-section-411) | [Go to Getting Started Lab](#getting-started-lab)
 
 <br/>
 
@@ -553,7 +553,7 @@ This section covers how to create a teamspace from the **Employee Onboarding Tea
 
 Download the items below, these items will be added later to the teamspace:
 * Employment Application - [Focus Corp - Employment Application.pdf](https://github.com/ibm-cloud-architecture/dba-onboarding-automation/raw/main/content-services/sample-content/Focus%20Corp%20-%20Employment%20Application.pdf)
-* Interview Video - <a href="https://ibm.box.com/s/wrg8tk9cx7bi4g23wjk19esxi1rmnl8l" target="_blank">Focus Corp - Video Interview - John Doe - KT.mp4</a>
+* Video Interview - <a href="https://ibm.box.com/s/wrg8tk9cx7bi4g23wjk19esxi1rmnl8l" target="_blank">Focus Corp - Video Interview - John Doe - KT.mp4</a>
 
 <br/>
 
@@ -681,11 +681,11 @@ When complete, click on the **Add** button
 
 <br/>
 
-8. Teamspace Builder - Folders and Documents Tree - Add Document - Interview Video
+8. Teamspace Builder - Folders and Documents Tree - Add Document - Video Interview
 
 <br/>
 
-Using the same process as the step above, add the <a href="https://ibm.box.com/s/wrg8tk9cx7bi4g23wjk19esxi1rmnl8l" target="_blank">Interview Video</a> into the **Application / Video Interview** folder.
+Using the same process as the step above, add the <a href="https://ibm.box.com/s/wrg8tk9cx7bi4g23wjk19esxi1rmnl8l" target="_blank">Video Interview</a> into the **Application / Video Interview** folder.
 
 <br/>
 
@@ -727,7 +727,7 @@ When complete, click the **Finish** button to complete the setup of your teamspa
 
 <p style="margin-left: 40px">
 
-[Go to top (Create Teamspace)](#lab-section-4) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top (Create Teamspace)](#lab-section-41) | [Go to Getting Started Lab](#getting-started-lab)
 </p>
 </details>
 
@@ -806,8 +806,159 @@ On the right side of the screen, you will see a thumbnail of the document select
  ![13](./images/240-Teamspace-View.png)
 
 <br/>
+<br/>
 
 [Go to top (Review Teamspace)](#lab-section-42) | [Go to Getting Started Lab](#getting-started-lab)
+</p>
+</details>
+
+<br/>
+
+<a name="lab-section-43"></a>
+<br/>
+<details>
+<summary style="margin-left: 40px">4.3- Prepare Teamspace Content*</summary>
+<p style="margin-left: 40px">
+<br/>
+
+This optional section covers preparing the following content in your teamspace so that it ready for target sections of this lab:
+
+<br/>
+
+* **Employment Application**: prepare the document with initial annotations for target section **5 - View and Edit Documents**.
+  * If you do not complete this section, you can use the diagrams in the target section to view the annotations.  The target section also includes the creation of annotations.
+
+<br/>
+
+* **Video Interview**: prepare the video with intial bookmarks for target section **7 - Review Video**.
+  * If you do not complete this section, you can use the diagrams in the target section to view the bookmarks and complete the last step to create additional bookmarks.
+
+<br/>
+
+<a name="lab-section-431"></a>
+<br/>
+<details>
+<summary style="margin-left: 80px">4.3.1 - Prepare Employment Application</summary>
+<p style="margin-left: 80px">
+<br/>
+
+> Note: this section assumes familiarity with the creation of annotations.  If this is not the case, please review the target section first and then come back to this section.
+
+You will create annotations to the application document in prepartion for section **5 - View and Edit Documents** (target section)
+
+<br/>
+
+1. Continuing from section [4.2 - Review Teamspace](#lab-section-42) - open your teamspace and open the application document (Focus Corp - Employment Application.pdf)
+
+<br/>
+
+![13](./images/300-Application-Document.png)
+
+<br/>
+
+2. Although not necessary, the viewing of annotations such as stamps and comments is better represented when they are created by different users.  If you have access to multiple user accounts, please use the following as a reference when creating annotations and comments in the next step.
+    1. User 1 (Carly) - HR Preprocessor
+    1. User 2 (Dave) - HR Reviewer
+    1. User 3 (Lucy) - HR Approver (your primary user account)
+
+<br/>
+
+If you do not have access to multiple user accounts, please your primary user account to create all the annotations and comments.
+
+<br/>
+
+3. Using the diagram below as a reference please note the following annotations/comments that will be create:
+    1. Redaction annotation on the Social Security Number with redaction reason **Social Security Number**
+    1. Highlight annotation on the salary desired amount (85,00)
+    1. Sticky note annotation with text: Salary request exceeds job posting - please review
+    1. Text annotation with text: Salary request exceeds job posting - please review
+    1. Stamp annotation with the **Received date** stamp
+    1. Document comment with comment: Salary request execeeds job posting - please review
+    1. Stamp annotation with the **Reviewed date** stamp
+    1. Document comment with comment: Salary adjust was approved, please proceed with this candidate
+    1. Document comment with comment: This is a test comment, right-click this comment and select Edit/Delete to edit or delete this comment
+
+<br/>
+
+If you will only be using one user account, create the annotations/comments in any order above.
+If you are using multipe user accounts, create items a - f using User 1 (Carly) first.  Next, using User 2 (Dave) - create items g and h.  Lastly, using User 4 (Lucy) - create item i.
+
+<br/>
+
+3. When complete, click on the **Save** icon to save your updates and then the **X** icon to exit the viewer.
+
+<br/>
+
+![13](./images/302-Annotation-Save.png)
+
+<br/>
+
+[Go to top (Prepare Employment Application)](#lab-section-431) | [Go to Getting Started Lab](#getting-started-lab)
+
+<br/>
+
+</p>
+
+</details>
+
+<a name="lab-section-432"></a>
+<br/>
+<details>
+<summary style="margin-left: 80px">4.3.2 - Prepare Video Interview</summary>
+<p style="margin-left: 80px">
+
+<br/>
+
+You will create video bookmarks to the video interview in prepartion for section **7 - Review Video** (target section)
+
+<br/>
+
+1.  From your teamspace, click on the video name (Focus Corp - Video Interview - John Doe - KT.mp4) in the folder: **Employee Onboarding \ Application \ Video Interview**.
+
+<br/>
+
+ ![13](./images/380-Video-Launch.png)
+
+<br/>
+
+2. Click on the **Open in New Window** icon in the upper right corner of the viewer to open the viewer in a new window so you can access the video bookmark feature.
+
+<br/>
+
+ ![13](./images/382-Video-OpenNewWindow.png)
+
+<br/>
+
+3. Locate a time in the video to create a bookmark.  This can be done by playing the video and pausing at the desired location. Once you have a good idea where to place the bookmark, click on **Bookmarks**, **New Bookmark** and then enter the **Name** and optionally the **Description**.  If necessary, adjust the **Start Time** to the desired time in the video. Lastly, click on the **Ok** button to save the bookmark.
+
+<br/>
+
+These are the bookmarks that should be created:
+  1. Tell me about yourself (00:00:07)
+  1. Why shoud we hire you? (00:00:31)
+  1. Why did you leave your last job? (00:00:51)
+  1. What is your greatest weakness? (00:01:05)
+  1. What are your greatest strength? (00:01:21)
+  1. Where do you see yourself in 5 years? (00:01:42)
+  1. What do you like to do outside of work? (00:01:57)
+  
+<br/>
+
+ ![13](./images/383-Video-New-Bookmark-Add.png)
+
+<br/>
+
+When complete, exit the viewer.
+
+<br/>
+
+[Go to top (Prepare Video Interview)](#lab-section-432) | [Go to Getting Started Lab](#getting-started-lab)
+</p>
+</details>
+
+<br/>
+
+[Go to top (Prepare Teamspace Content)](#lab-section-43) | [Go to Getting Started Lab](#getting-started-lab)
 </p>
 </details>
 
@@ -816,15 +967,13 @@ On the right side of the screen, you will see a thumbnail of the document select
 [Go to top (Create and Review Teamspace)](#lab-section-4) | [Go to Getting Started Lab](#getting-started-lab)
 </details>
 
+
 <a name="lab-section-5"></a>
 <br/>
 <details>
 <summary>5 - View and Edit Documents</summary>
 
-<br/>
-
-Continuing from the previous section, **4.2 Review Teamspace**, you will now review how to view and edit documents.
-> Note: Use the application document (**Focus Corp - Employment Application.pdf**) that was added to the teamspace in section **4.1.2 - Teamspace Builder**.  This document represents the employee applicant's employment application and also contains an I9 document which will you split into a second document using the **Merge and Split** option.
+> Note: Use the application document (**Focus Corp - Employment Application.pdf**) that was added to the teamspace in section [4.1.2 - Teamspace Builder](#lab-section-412).  This document represents the employee applicant's employment application and also contains an I9 document which will you split into a second document using the **Merge and Split** option.  Additional, please review section [4.3.1 - Prepare Employment Application](#lab-section-431) for the initial annotations that should be placed on the application document.
 
 1. From your teamspace, click on the application document (Focus Corp - Employment Application.pdf)
 
@@ -1081,13 +1230,13 @@ You can now exit the document viewer to return back to the teamspace.
 <details>
 <summary>7 - Review Video*</summary>
 
-> *Note: this section is optional, if you do not want to perform this section, please proceed to the next section.
+> *Note: this section is optional, if you do not want to perform this section, please proceed to the next section.  If you perform this section, please review section [4.3.2 Prepare Video Interview](#lab-section-432) to prepare the video with bookmarks.
 
 Let's now take a look at the video viewer to view and stream videos and audio files.
 
 <br/>
 
-1.  From the teamspace, click on the video name in the folder: **Employee Onboarding \ Application \ Video Interview**.
+1.  From your teamspace, click on the video name in the folder: **Employee Onboarding \ Application \ Video Interview**.
 
 <br/>
 
@@ -1139,7 +1288,7 @@ Notice that the video starts immediately as you click each bookmark with little 
 <br/>
 <br/>
 
-5. Let's now create a new bookmark.  Locate a time in the video to create a bookmark.  This can be done by playing the video and pausing at the desired location. Once you have a good idea where to place the bookmark, click on **New Bookmark** and then enter **Bookmark Name** and **Description**.  If necessary, adjust the **Start Time** to the desired time in the video.
+5. Let's now create a new bookmark.  Locate a time in the video to create a bookmark.  This can be done by playing the video and pausing at the desired location. Once you have a good idea where to place the bookmark, click on **New Bookmark** and then enter the **Name** and optionally the **Description**.  If necessary, adjust the **Start Time** to the desired time in the video.
 
 <br/>
 
@@ -1161,7 +1310,7 @@ Lucy is now ready to approve the employee applicant, let's trigger a workflow to
 
 <br/>
 
-1. From the teamspace, browse to the **Application** folder and right-click on the employment appliction to select the menu option for **Workflow**, **Launch Process**
+1. From your teamspace, browse to the **Application** folder and right-click on the employment appliction to select the menu option for **Workflow**, **Launch Process**
 
 <br/>
 
