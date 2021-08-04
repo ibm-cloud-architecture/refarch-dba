@@ -15,7 +15,7 @@ description: Onboarding Automation use case
 
 # Introduction
 
-**Use Case:** Enable secure, compliant content access with content services
+**Use Case:** Content and documents services
 
 **Use Case Overview:** Focus Corp accelerates the use of unstructured content in an employee onboarding use case using teamspaces and secure external file sharing. You will assume the role of Lucy, an HR employee onboarding specialist at Focus Corp. Lucy’s objective is to improve Focus Corp’s process and ensure various onboarding requirements are met in a secure, structured, consistent and timely manner to onboard the new employees.  Focus Corp must collaborate both internally and externally during the employee onboarding process as well as enforce structured and adhoc workflows. 
 
@@ -29,8 +29,6 @@ description: Onboarding Automation use case
 ***
 
 # Getting Started Lab
-
-## Are you ready to enable secure, compliant content access with content services?
 
 <a name="lab-section-1"></a>
 <br/>
@@ -251,7 +249,7 @@ See the <a href="https://github.com/ibm-cloud-architecture/dba-onboarding-automa
 
 <p style="margin-left: 40px">
 
-[Go to top (2b)](#lab-section-2b) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top (Option 2b)](#lab-section-2b) | [Go to Getting Started Lab](#getting-started-lab)
 
 </p>
 
@@ -343,7 +341,7 @@ For onboarded employee – **Selena Swift**, you can see custom folder propertie
 
 <br/>
 
-In our example, Focus Corp maintains an **Employee Packet** folder that contains new employee info documents such as the **Confidentially Agreement** and **Employee Manual**.  In the **Details** view, you are able to see the thumbnail and properties of the selected content.
+In our example, Focus Corp maintains an **Employee Packet** folder that contains new employee info documents such as the **Confidentiality Agreement** and **Employee Manual**.  In the **Details** view, you are able to see the thumbnail and properties of the selected content.
 
 <br/>
 
@@ -379,7 +377,7 @@ In the **Magazine** view, you can now see the same content along with social fea
 
 <br/>
 
-Our use case scenario revolves around Lucy reviewing an existing teamspace for employee applicant John Doe.  Typicaly, the teamspace would have already been created, processed and reviewed by a few HR processors before reaching Lucy to further review and approve the applicant for onboarding.  In this section, you first create an employee onboarding teamspace for the employee applicant John Doe.  Next, you will review how a teamspace is used once it is created.
+Our use case revolves around Lucy reviewing an existing teamspace for employee applicant John Doe.  Typicaly, the teamspace would have already been created, processed and reviewed by a few HR processors before reaching Lucy to further review and approve the applicant for onboarding.  In this section, you first create an employee onboarding teamspace for the employee applicant John Doe.  Next, you will review how a teamspace is used once it is created.
 
 <br/>
 
@@ -391,7 +389,7 @@ Our use case scenario revolves around Lucy reviewing an existing teamspace for e
 
 <br/>
 
-An **Employee Onboarding** teamspace template should already be available.  If not or if you want to learn more about creating teamspace template, please proceed to the next section below.  Otherwise, proceed to section **4.1.2 - Teamspace Builder**.
+An **Employee Onboarding** teamspace template should already be available.  If not or if you want to learn more about creating teamspace templates, please proceed to the section below - **4.1.1 - Teamspace Template Builder**.  Otherwise, proceed to section **4.1.2 - Teamspace Builder**.
 
 <br/>
 
@@ -444,7 +442,7 @@ The teamspace template builder uses a wizard-driven user interface that guides y
 <br/>
 <br/>
 
-3. Teamspace Template Builder - Step 1 - Define Teamspace Template
+3. Teamspace Template Builder - Define Teamspace Template
 
 <br/>
 
@@ -465,11 +463,11 @@ When complete, click on the **Next** button to continue to the next step.
 <br/>
 <br/>
 
-4. Teamspace Template Builder - Step 2 - Select Searches
+4. Teamspace Template Builder - Select Searches
 
 <br/>
 
-You will not specify any searches for the teamspace, click the **Add** button to continue to the next step
+You will not specify any searches for the teamspace, click the **Next** button to continue to the next step
 
 <br/>
 
@@ -478,24 +476,28 @@ You will not specify any searches for the teamspace, click the **Add** button to
 <br/>
 <br/>
 
-5. Teamspace Template Builder - Step 3 - Select Classes or Entry Templates
+5. Teamspace Template Builder - Select Classes or Entry Templates
 
 <br/>
 
-This steps specifies either document classes or entry templates that can be used to store documents into the teamspace.  Configure this step using the class or entry template based on your use case.  As shown in the diagram below, first click the option for **Use entry templates to add documents**.  Select the **Employee Onboarding - Application** and the **Employee Onboarding - Document** entry templates.  Finally, click on the **Add** button and then the **Next** button to continue to the next step.
+This step specifies either document classes or entry templates that can be used to store documents into the teamspace.  You will configure this step using classes. As shown in the diagram below, first click the option for **Use classes to add documents**. Select the **Employment Application** and the **Document** classes and click the **Add** button.  Finally, click on the **Next** button to continue to the next step.
 
 <br/>
 
- ![13](./images/additional-assets/teamspace-template/150-Select-Entry-Template.png)
+ ![13](./images/additional-assets/teamspace-template/150-Template-Select-Classes.png)
 
 <br/>
 
-Please note that the **Employee Onboarding - Application** entry template uses the **Employment Application** document class and the **Employee Onboarding - Document** entry template uses the default **Document** class.  If these entry templates are not available, either create them or simply select the other option of **Use classes to add documents** and specify the **Document** class and the **Employee Application** class.
+>Note: if the **Employment Application** class is not available, please contact your Administrator to make it available to you.  Otherwise, selecting the default **Document** is sufficient - you will just not see the custom properties (First Name, Last Name, Application Date) when adding the application document to the teamspace.
 
 <br/>
 <br/>
 
-6. Teamspace Template Builder - Step 4 - Folders and Documents Tree
+6. Teamspace Template Builder - Folders and Documents Tree
+
+<br/>
+
+This step configures the folder structure that will be used for the teamspace.  Additionally, documents can be added to the folder(s).  The use of a common folder structure and default documents provides a consistent process so that any teamspaces created with this template uses a consistent and standardized folder hierarchy and documents.
 
 <br/>
 
@@ -505,18 +507,19 @@ Click **New Folder** and then build the folder structure shown below or create y
 
  ![13](./images/additional-assets/teamspace-template/160-Folders-Documents-Tree.png)
 
-<br/>
-
-This step configures the folder structure that should be used for the teamspace.  Additionally, documents can be added to the folder(s).  The use of a common folder structure and default documents provides a consistent process so that any teamspaces created with this template uses a consistent and standardized folder hierarchy and documents.
 
 <br/>
 <br/>
 
-7. Teamspace Template Builder - Step 5 - Select Roles
+7. Teamspace Template Builder - Select Roles
 
 <br/>
 
-This steps allows us to create any custom roles for the template which can also be shared with other templates.  Click on **New Role** and then specify the **Role name** and **Role description**.  Next, set the desired permissions on the role.  To share the role with other templates, click on **Make Available**.  Click on the **Finish** button to complete the setup of the teamspace template. The teamspace template can be updated at a later time if desired.
+This steps allows you to either associate existing role templates or create custom roles for the teamspace template.  Click **New Role**, enter a **Role Name** / **Role Description** and then set the desired permissions for the role.
+
+<br/>
+
+As shown in the diagram below, create one or more the following custom roles: HR - Human Resources, Payroll - Payroll, Manager - Department Manager, IT - Information Technology. Alternatively, you can also select an existing role template available at the bottom and add them to the teamspace template. When complete, click on the **Finish** button to complete the setup of the teamspace template. The teamspace template can be updated at a later time if desired.
 
 <br/>
 
@@ -524,7 +527,7 @@ This steps allows us to create any custom roles for the template which can also 
 
 <br/>
 
-The teamspace template is now complete, please refer to the next section **Teamspace Builder** to create a teamspace from this template.
+The teamspace template is now complete, please refer to the next section **4.1.2 Teamspace Builder** to create a teamspace from this template.
 
 <br/>
 
@@ -535,8 +538,6 @@ The teamspace template is now complete, please refer to the next section **Teams
 </p>
 
 </details>
-
-<br/>
 
 <a name="lab-section-412"></a>
 <br/>
@@ -550,8 +551,8 @@ This section covers how to create a teamspace from the **Employee Onboarding Tea
 
 <br/>
 
-Download the items below, you will use this later to add the employment application document into the teamspace
-* Employment Appplication - [Focus Corp - Employment Application.pdf](https://github.com/ibm-cloud-architecture/dba-onboarding-automation/raw/main/content-services/sample-documents/Focus%20Corp%20-%20Employment%20Application.pdf)
+Download the items below, these items will be added later to the teamspace:
+* Employment Application - [Focus Corp - Employment Application.pdf](https://github.com/ibm-cloud-architecture/dba-onboarding-automation/raw/main/content-services/sample-content/Focus%20Corp%20-%20Employment%20Application.pdf)
 * Interview Video - <a href="https://ibm.box.com/s/wrg8tk9cx7bi4g23wjk19esxi1rmnl8l" target="_blank">Focus Corp - Video Interview - John Doe - KT.mp4</a>
 
 <br/>
@@ -585,11 +586,11 @@ Similiar to the **Teamspace Template Builder**, the **Teamspace Builder** uses a
 
 <br/>
 
-3. Teamspace Builder - Step 1 - Define Teamspace
+3. Teamspace Builder - Define Teamspace
 
 <br/>
 
-Enter a value for the **Template name** and **Template description**.  If you are using a shared environment, please select a value that distinguishes your teamspace from others. Next, select the **Employee Onboarding** template or the teamspace template that was created in the section above.
+Enter a value for the **Template name** and **Template description**.  If you are using a shared environment, please select a value that distinguishes your teamspace from others. Next, select the **Employee Onboarding** template or the teamspace template that was created in section **4.1.1 Teamspace Template Builder**.
 
 <br/>
 
@@ -613,7 +614,7 @@ When complete, click on the **Next** button to continue to the next step.
 
 <br/>
 
-4. Teamspace Builder - Step 2 - Select Searches
+4. Teamspace Builder - Select Searches
 
 <br/>
 
@@ -625,15 +626,7 @@ Any saved searches that were included in the teamspace template should be listed
 
 <br/>
 
-5. Teamspace Builder - Step 3 - Select Classes or Entry Templates
-
-<br/>
-
-Click the **Next** button
-
-<br/>
-
-![13](./images/additional-assets/teamspace-template/240-Select-Entry-Templates.png)
+5. Teamspace Builder - Select Classes or Entry Templates
 
 <br/>
 
@@ -641,11 +634,20 @@ This step identifies the classes or entry templates that were configured with th
 
 <br/>
 
-6a. Teamspace Builder - Step 4a - Folders and Documents Tree
+Click the **Next** button
 
 <br/>
 
-As shown below, the folder structure and associated documents were automatically created based on the teamspace template. In this step, you will add the [Employment Application](https://github.com/ibm-cloud-architecture/dba-onboarding-automation/raw/main/content-services/sample-documents/Focus%20Corp%20-%20Employment%20Application.pdf) into **Application** folder.
+![13](./images/additional-assets/teamspace-template/240-Teamspace-Select-Classes.png)
+
+
+<br/>
+
+6a. Teamspace Builder - Folders and Documents Tree
+
+<br/>
+
+As shown below, the folder structure and associated documents were automatically created based on the teamspace template. In this step, you will add the [Employment Application](https://github.com/ibm-cloud-architecture/dba-onboarding-automation/raw/main/content-services/sample-content/Focus%20Corp%20-%20Employment%20Application.pdf) into **Application** folder.
 
 <br/>
 
@@ -657,7 +659,7 @@ Right-click on the **Application** folder and click on **Add Document from Local
 
 <br/>
 
-6b. Teamspace Builder - Step 4b - Folders and Documents Tree - Add Document - Employment Application
+6b. Teamspace Builder - Folders and Documents Tree - Add Document - Employment Application
 
 <br/>
 
@@ -679,7 +681,7 @@ When complete, click on the **Add** button
 
 <br/>
 
-6c. Teamspace Builder - Step 4c - Folders and Documents Tree - Add Document - Interview Video
+6c. Teamspace Builder - Folders and Documents Tree - Add Document - Interview Video
 
 <br/>
 
@@ -701,7 +703,7 @@ When complete, click on the **Add** button
 
 <br/>
 
-7. Teamspace Builder - Step 5 - Select Users
+7. Teamspace Builder - Select Users
 
 <br/>
 
@@ -717,7 +719,7 @@ When complete, click the **Finish** button to complete the setup of your teamspa
 
 <br/>
 
-[Go to Teamspace Builder](#lab-section-412) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top (Teamspace Builder)](#lab-section-412) | [Go to Getting Started Lab](#getting-started-lab)
 </p>
 </details>
 
@@ -725,7 +727,7 @@ When complete, click the **Finish** button to complete the setup of your teamspa
 
 <p style="margin-left: 40px">
 
-[Go to Create Teamspace](#lab-section-4) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top (Create Teamspace)](#lab-section-4) | [Go to Getting Started Lab](#getting-started-lab)
 </p>
 </details>
 
@@ -785,7 +787,7 @@ A teamspace can be configured with custom roles for granular security permission
 
 <br/>
 
-As shown in the digram below, this is the teamspace - note the three sections on the left side of the screen for **Browse** to manage content, **Search** to manage saved searches, **Team** to view members of the teamspace.
+As shown in the digram below, this is your teamspace - note the three sections on the left side of the screen for **Browse** to manage content, **Search** to manage saved searches, **Team** to view members of the teamspace.
 
 <br/>
 
@@ -805,13 +807,13 @@ On the right side of the screen, you will see a thumbnail of the document select
 
 <br/>
 
-[Go to top](#lab-section-42) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top (Review Teamspace)](#lab-section-42) | [Go to Getting Started Lab](#getting-started-lab)
 </p>
 </details>
 
 <br/>
 
-[Go to top](#lab-section-4) | [Go to Getting Started Lab](#getting-started-lab)
+[Go to top (Create and Review Teamspace)](#lab-section-4) | [Go to Getting Started Lab](#getting-started-lab)
 </details>
 
 <a name="lab-section-5"></a>
@@ -821,10 +823,10 @@ On the right side of the screen, you will see a thumbnail of the document select
 
 <br/>
 
-Continuing from the previous **Review teamspace** section, let's now review how to view and edit documents.
-> Note: Use the application document (**Focus Corp - Employment Application.pdf**) that was added to the teamspace in section **2 - Login and Setup Your Environment - Setup Instructions - Add employment application document**.  This document represents the employee applicant's employment application and also contains an I9 document which will you split into a second document using the **Merge and Split** option.
+Continuing from the previous section, **4.2 Review Teamspace**, you will now review how to view and edit documents.
+> Note: Use the application document (**Focus Corp - Employment Application.pdf**) that was added to the teamspace in section **4.1.2 - Teamspace Builder**.  This document represents the employee applicant's employment application and also contains an I9 document which will you split into a second document using the **Merge and Split** option.
 
-1. From the **Teamspace**, click on the application document (Focus Corp - Employment Application.pdf)
+1. From your teamspace, click on the application document (Focus Corp - Employment Application.pdf)
 
 <br/>
 
@@ -1115,7 +1117,7 @@ Note that selecting the video will also provide a short live preview of the vide
 
 <br/>
 
-Afer selecting **Bookmarks**, the list of video bookmarks will be displayed.  These were manually entered by an HR specialist during the initial application review process.  Each bookmark identifies the name of the bookmark, bookmark description, the time of the bookmark and the user who created the bookmark.  The use of video bookmarks is very valuable for Focus Corp to be able to quickly review key segments of the video without viewing the entire video.  Additionally, the video viewer enables you to view, collaborate and easily stream large video files without requiring any browser plugins.
+After selecting **Bookmarks**, the list of video bookmarks will be displayed.  These were manually entered by an HR specialist during the initial application review process.  Each bookmark identifies the name of the bookmark, bookmark description, the time of the bookmark and the user who created the bookmark.  The use of video bookmarks is very valuable for Focus Corp to be able to quickly review key segments of the video without viewing the entire video.  Additionally, the video viewer enables you to view, collaborate and easily stream large video files without requiring any browser plugins.
 
 <br/>
 
@@ -1159,7 +1161,7 @@ Lucy is now ready to approve the employee applicant, let's trigger a workflow to
 
 <br/>
 
-1. From the teamspace, browse to the **Application** folder and right-click on the employeement appliction to select the menu option for **Workflow**, **Launch Process**
+1. From the teamspace, browse to the **Application** folder and right-click on the employment appliction to select the menu option for **Workflow**, **Launch Process**
 
 <br/>
 
@@ -1212,11 +1214,11 @@ Although not fully implemented within this scenario, the process just launched w
 
 <br/>
 
-As you saw, Content Services enables secure and compliant content access through the use of teamspaces, viewing and editing capabilities such as Role-Based Redactions, Merge and Split, Video Bookmarks and finally workflow to automate additional processes.  The Cloud Pak for Business Automation provides a powerful, pre-integrated platform including Content Services alongside additional business automation services such as Workflow (BAW), RPA, Decisions (ODM and ADS) and more.
+As you saw, content services enables secure and compliant content access through the use of teamspaces, viewing and editing capabilities such as role-based Redactions, merge and split, video bookmarks and finally workflow to automate additional processes.  The Cloud Pak for Business Automation provides a powerful, pre-integrated platform including Content Services alongside additional business automation services such as Workflow (BAW), RPA, Decisions (ODM and ADS) and more.
 
 <br/>
 
-Please visit the **Additional Assets** section for additional features not covered in this lab.
+Please visit the [Additional Assets](#additional-assets) section for additional features not covered in this lab.
 
 <br/>
 
