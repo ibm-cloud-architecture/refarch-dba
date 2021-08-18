@@ -44,7 +44,7 @@ This use case demonstrates the use of automation in the form of straight-through
 <ArticleCard
     color="dark"
     title="Demo Video - Refund Request Automation"
-    subTitle="In this demo, you will learn how to handle spikes in demand with straight-through processing through business automation"
+    subTitle="In this demo, you will learn how to handle spikes in demand with straight-through processing through business automation.  Note, this video uses an older version of the use case than the current Getting Started Lab."
     href="https://ibm.biz/cp4ba-refund-request-video"
     actionIcon="arrowRight"
     color="dark"
@@ -115,6 +115,8 @@ This use case demonstrates the use of automation in the form of straight-through
 
 <br/>
 
+<a name="lab-section-2a"></a>
+<br/>
 <details>
 <summary style="margin-left: 40px">Option 2A - Are you using a Cloud Pak for Business Automation as a Service demo environment (likely an IBMer)?</summary>
 
@@ -129,6 +131,8 @@ This use case demonstrates the use of automation in the form of straight-through
 
 <br/>
 
+<a name="lab-section-2aa"></a>
+<br/>
 <details>
 <summary style="margin-left: 80px">Additional Cloud Administrator Setup</summary>
 
@@ -146,6 +150,8 @@ This use case demonstrates the use of automation in the form of straight-through
 </p>
 
 <br/>
+
+<p style="margin-left: 80px">
 
 <Row>
 <Column colLg={4} colMd={4}>
@@ -166,7 +172,15 @@ This use case demonstrates the use of automation in the form of straight-through
 </Column>
 </Row>
 
+</p>
+
 <br/>
+
+<p style="margin-left: 80px">
+
+[Go to top](#lab-section-2aa) | [Go to Getting Started Lab](#getting-started-lab)
+
+</p>
 
 </details>
 
@@ -177,6 +191,7 @@ This use case demonstrates the use of automation in the form of straight-through
 3. Login to your Cloud Pak for Business Automation as a Service demo environment <a href="http://automationcloud.ibm.com" target="_blank">here</a> to access your portal.
 4. Open the menu in the upper left
 5. Select **Production** and then **Run**
+6. Click the **Business Automation Apps** tile to launch the Business Automation Navigator desktop
 
 <br/>
 
@@ -184,9 +199,9 @@ This use case demonstrates the use of automation in the form of straight-through
 
 <br/>
 
-6. Click the **Business Automation Apps** tile to launch the Business Automation Navigator desktop
 7. Wait for the desktop to load in a new browser window/tab (it can take some time)
 8. Start by reviewing the available demos, they all represent a business automation use case so you can easily get started.
+
 <br/>
 
  ![13](./images/Slide4.png)
@@ -195,19 +210,23 @@ This use case demonstrates the use of automation in the form of straight-through
 
 9. When ready, click the **Refund Request** tile to launch the use case.
 10. You have two options to navigate the Refund Request use case:
-    1. **Step by step**: the default interface will provide you step by step guidance with instructions, step completion check boxes, and a summary of what you learned in each step.  If you choose this option, _please **STOP** reading here and continue in the application_.
-    1. **Deep dive**: If you are an experienced user, you may prefer to explore using the launchpad.  To activate it, scroll to the bottom of the app and locate the Control Panel section, expand it and select the first switch followed by the new second switch that appears.
-
-    <br/>
-
-    > Note: The below image is for deep dive users only
+    1. **Technical deep dive**: the default interface is configured for experienced users who explore using the launchpad that provides easy access to the product interfaces for each part of the use case.
+    1. **Guided or Live Walkthrough**: you may wish to have the application provide you with a single page view of the use case across multiple steps so you do not have to go to mulitple interfaces.
+        * There is both a **Guided** approach with instructions, step completion check boxes, and a summary of what you learned in each step, or a **Live Walkthrough** approach that includes the same single page app without instructions which is great for showing someone else the use case.
+        * To activate these options, scroll to the bottom of the app and locate the Control Panel section (if hidden, click just above the grey footer to show it), expand the Control Panel and select your choice.
+        * If you choose this option, _please **STOP** reading this page here and continue in the application_.
 
     <br/>
 
      ![13](./images/Slide5.png)
 
     <br/>
-11. If you chose the **Deep dive** option, continue to use the below documentation and explore.
+
+11. If you chose the **Technical deep dive** option, continue to use the below documentation and explore.
+
+<br/>
+
+[Go to top](#lab-section-2a) | [Go to Getting Started Lab](#getting-started-lab)
 
 </p>
 
@@ -215,6 +234,8 @@ This use case demonstrates the use of automation in the form of straight-through
 
 <br/>
 
+<a name="lab-section-2b"></a>
+<br/>
 <details>
 <summary style="margin-left: 40px">Option 2B - Are You Using Your Own Environment (not a demo environment)?</summary>
 
@@ -251,7 +272,11 @@ See the <a href="https://github.com/ibm-cloud-architecture/dba-refund-request.gi
 1. Ask your administrator for the URL to the desktop in Business Automation Navigator and your login credentials
 1. Wait for the desktop to load in a new browser window/tab (it can take some time) and log in
 
- ![11](./images/Slide4.png)
+<br/>
+
+ ![13](./images/Slide3.png)
+
+<br/>
 
 1. Start by reviewing the available demos, they all represent a business automation use case so you can easily get started.
 1. When ready, click the **Refund Request** tile to launch the use case
@@ -259,6 +284,12 @@ See the <a href="https://github.com/ibm-cloud-architecture/dba-refund-request.gi
 </p>
 
 > Please continue to the next section...
+
+<p style="margin-left: 40px">
+
+[Go to top (Option 2b)](#lab-section-2b) | [Go to Getting Started Lab](#getting-started-lab)
+
+</p>
 
 </details>
 
@@ -280,18 +311,18 @@ See the <a href="https://github.com/ibm-cloud-architecture/dba-refund-request.gi
 You are now a customer that just purchased a product, but unfortunately you are unsatisfied and request a refund.  What do you experience?
 As a customer, you want quick answers to your refund requests, especially when there are no special circumstances that should cause a delay.  Straight through processing would be ideal for you.
 
-> Note: you should only continue with these steps if you choose the **Deep dive** option listed above in section 2!
+> Note: you should only continue with these steps if you choose the **Technical deep dive** option listed above in section 2!
 
 1. Check the tabs to learn more about the demo
     1. **Storyboard Outline**
     1. **Demo Discovery Map**
     1. **Demo Diagram**
 
- ![13](./images/replace.png)
+ ![13](./images/Slide6.png)
 
-1. Navigate to the **Launch the Demo** tab and then click on the picture of the **Customer**
+1. Navigate to the **Run the demo!** tab and then click on the picture of the **Customer**
 
- ![13](./images/replace.png)
+ ![13](./images/Slide7.png)
 
 1. Use the drop down to select the order ending in **AP**.
 
@@ -300,24 +331,43 @@ As a customer, you want quick answers to your refund requests, especially when t
 > * DE = denied
 > * MA = manually investigated
 
- ![13](./images/replace.png)
+ ![13](./images/Slide8.png)
 
 <br/>
 
 1. Click **Submit** to see the results
+
+<br/>
+
+ ![13](./images/Slide9.png)
+
+<br/>
+
 1. Choose to submit another refund request
 1. Select the order ending in **DE**
 1. At the bottom, expand the **Demo Control Panel**
 1. Turn on the decision labels to see which data is used to make the decision
+
+<br/>
+
+ ![13](./images/Slide10.png)
+
+<br/>
+
+1. Review the data used to make the decisions
+
+<br/>
+
+ ![13](./images/Slide11.png)
+
+<br/>
+
 1. Submit the refund if desired
-
- ![13](./images/Slide12.png)
-
-1. Submit another refund request
+1. Choose to submit another refund request
 1. Select the order ending in **MA**
 1. Submit the refund and see that a manual investigation is required
 
- ![13](./images/Slide13.png)
+ ![13](./images/Slide12.png)
 
 <br/>
 
@@ -338,18 +388,36 @@ You are now a Focus Corp employee, first an Refund Investigator and later an Ope
 
 Refund Invesigators are busy people as they not only process refunds that cannot be automatically approved or denied, but they also look into trends and perform data analysis across the Focus Corp organization.  When they need to take time out from their high priority work to perform a refund request, they are not too happy.  Luckily, Cloud Pak for Business Automation provides them all the information they need in one place and streamlines the investigation process.
 
-<br/>
-
- ![13](./images/replace.png)
-
-<br/>
-
 1. Click **Return to launchpad**
 2. Click the picture of the **Refund Investigator**
-3. Choose your preferred interface, if prompted
+3. Depending on your platform you may see one or more of the new Workplace interface or Navigator's Work Dashboard or Process Portal (below will use Navigator's Work Dashboard)
 4. Review the list of tasks and click on the most recent Investigation task to claim and complete it
 
 > Note the data is passed from the application to the process which then retrieved additional information and routed the work to the appropriate Refund Investigator
+
+### Workplace
+
+<br/>
+
+ ![13](./images/Slide13.png)
+
+<br/>
+
+### Navigator's Work Dashboard
+
+<br/>
+
+ ![13](./images/Slide14.png)
+
+<br/>
+
+### Process Portal
+
+<br/>
+
+ ![13](./images/Slide15.png)
+
+<br/>
 
 6. Complete the task by approving or denying the refund
 
@@ -365,24 +433,29 @@ Refund Invesigators are busy people as they not only process refunds that cannot
 <summary>5 - Review the Operations Dashboard</summary>
 
 <br/>
-You are now a different Focus Corp employee, an Operations Specialist.  How can you help to improve straight through processing?
+You are now a different Focus Corp employee, a Business Analyst.  How can you help to improve straight through processing?
 <br/>
-Operations Specialists are able to easily monitor business automation performance and identify problems before they become large.
-
- ![13](./images/replace.png)
+Business Analysts are able to easily monitor business automation performance and identify problems before they become large.
 
 <br/>
 
 1. Navigate back to the Refund Request application browser window/tab
-2. Click the picture of the **Operations Specialist**
+2. Click the picture of the **Business Analyst**
 3. Click to open the **Refund Request (RR) - Week 1** dashboard
+
+<br/>
+
+ ![13](./images/Slide16.png)
+
+<br/>
+
 4. Review the week 1 dashboard metrics and note the following:
     1. A large number of manual requests in the pie chart
     1. The high time for average manual investigation processing (~120 minutes)
 
 <br/>
 
- ![13](./images/replace.png)
+ ![13](./images/Slide17.png)
 
 <br/>
 
@@ -404,7 +477,6 @@ Now, take on the role of a Focus Corp Rule Manager who can adjust rules, validat
 1. Navigate back to the Refund Request application browser window/tab
 2. Click the picture of the **Rule Manager**
 3. Click **Refund Processing** followed by **main** to open the decision model
-4. Review the decision model, green ovals are input data and blue boxes are decisions, each with their own business logic leading to the **Final Refund Decision**
 
 <br/>
 
@@ -412,23 +484,38 @@ Now, take on the role of a Focus Corp Rule Manager who can adjust rules, validat
 
 <br/>
 
+4. Review the decision model, green ovals are input data and blue boxes are decisions, each with their own business logic leading to the **Final Refund Decision**
 5. Click the blue **Validate Time Window** decision node
 6. On the left pane, scroll to the bottom and click to open the **Validate Time Window** logic
-7. Review the decision table and note multiple rows that lead to manual review.
 
 <br/>
 
  ![13](./images/Slide19.png)
 
+<br/>
+
+7. Review the decision table and note multiple rows that lead to manual review.
+
+<br/>
+
+ ![13](./images/Slide20.png)
+
 > The Rule Manager already created a new branch to try some rule adjustments.
 
 8. At the upper left, click the down arrow next to **main** and select **Reduce Manual Processing**
+
+<br/>
+
+ ![13](./images/Slide21.png)
+
+<br/>
+
 9. Open the same **Validate Time Window** decision node and table
 10. Review the decision table and note there are less manual review rows.
 
 > NOTE: In the full lifecycle, a Rule Manager runs test suites and simulations before deploying the rules.  If you wish and feel comfortable, you can explore this on your own.
 
- ![13](./images/Slide20.png)
+ ![13](./images/Slide22.png)
 
 <br/>
 
@@ -443,19 +530,24 @@ Now, take on the role of a Focus Corp Rule Manager who can adjust rules, validat
 
 <br/>
 
-1. Close the rules browser window/tab
+1. Navigate back to the Refund Request application browser window/tab
 2. Click the picture of the **Customer**
 3. Scroll to the bottom and expand the **Demo Control Panel**
 4. Turn on the improved straight through processing scenario
-5. Select the recent order ending with **MA** and submit
 
- ![13](./images/Slide21.png)
+<br/>
+
+ ![13](./images/Slide23.png)
+
+<br/>
+
+5. Select the recent order ending with **MA** and submit
 
 ## The "MA" order was previously categorized as a manually processed refund request, now it is APPROVED!
 
 <br/>
 
- ![13](./images/Slide22.png)
+ ![13](./images/Slide24.png)
 
 <br/>
 
@@ -472,14 +564,14 @@ Now, take on the role of a Focus Corp Rule Manager who can adjust rules, validat
 
 <br/>
 
-1. Click **Return to launchpad**
-2. Click the picture of the **Operations Specialist**
+1. Navigate back to the Refund Request application browser window/tab
+2. Click the picture of the **Business Analyst**
 3. Click to open the **Refund Request (RR) - Week 2** dashboard
 4. Review the dashboard metrics and note the following
     1. a smaller number of manual requests in the pie chart
     1. a lower time for average manual investigation processing (~60 minutes)
 
- ![13](./images/Slide23.png)
+ ![13](./images/Slide25.png)
 
 ## The improved straight through processing is working!
 
@@ -513,7 +605,9 @@ Increased straight through processing results in lower average completion time, 
 <br/>
 <br/>
 
-# Full Demo Narration
+# Full Use Case Video Narration
+
+The below uses an older version of the use case than the current [Getting Started Lab](#getting-started-lab).
 
 #### Focus Corp Demos Dashboard
 
