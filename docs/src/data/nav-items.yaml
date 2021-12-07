@@ -28,17 +28,17 @@
       path: /technology/rpa/
 - title: Use cases
   pages:
-    - title: Accounts payable
+    - title: Accounts Payable
       path: /use-cases/accounts-pay/
-    - title: HR onboarding app
+    - title: HR Onboarding App
       path: /use-cases/hr-onboard-app
     - title: ODM-WML integration
       path: https://ibm-cloud-architecture.github.io/odm-cp4d-integration/introduction
-    - title: Refund request
+    - title: Refund Request
       path: /use-cases/refund-req/
     - title: Onboarding Automation
       path: /use-cases/onboarding-automation/
-    - title: Shared services
+    - title: Shared Services
       path: /use-cases/shared-ser/
 - title: Contribute to this site
   pages:
