@@ -5,12 +5,6 @@ description: Onboarding Automation use case
 
 ### an IBM Cloud Pak for Business Automation use case
 
-<AnchorLinks>
-  <AnchorLink>Introduction</AnchorLink>
-  <AnchorLink>Getting Started Lab</AnchorLink>
-  <AnchorLink>Additional Assets</AnchorLink>
-</AnchorLinks>
-
 ***
 
 # Introduction
