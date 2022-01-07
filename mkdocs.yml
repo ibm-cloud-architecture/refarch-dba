@@ -1,0 +1,55 @@
+site_name: Digital Business Automation
+site_description: Knowledge sharing on digital business automation
+repo_url: https://github.com/jbcodeforce/refarch-dba
+docs_dir: docs
+site_dir: public
+edit_uri: edit/master/docs
+theme: 
+  name: material
+  feature:
+    tabs: true
+  palette:
+    scheme: default
+    primary: black
+  language: en
+  custom_dir: overrides
+  features:
+      - navigation.tabs
+      - navigation.instant
+      - navigation.tracking
+      - navigation.tabs.sticky
+      - navigation.top
+      - navigation.sections
+extra_css: ["extra.css"]
+use_directory_urls: true
+plugins:
+  - search:
+      lang: en
+  - minify:
+      minify_html: true
+      
+markdown_extensions:
+  - attr_list
+  - admonition
+  - codehilite
+  - footnotes
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.snippets:
+      base_path: docs/snippets
+copyright: Copyright © 2022 IBM
+nav:
+  - Home: index.md
+  - Introduction:
+    - Overview: introduction/overview/index.md
+    - Reference architecture: introduction/reference-architecture/index.md
+  - Methodology:
+    - Overview: methodology/overview/index.md
+    - Agile Business Rule Development: methodology/abrd/index.md
+    - Event Storming: https://ibm-cloud-architecture.github.io/refarch-eda/methodology/event-storming/

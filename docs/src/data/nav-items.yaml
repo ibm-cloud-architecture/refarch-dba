@@ -1,11 +1,3 @@
-- title: Introduction
-  pages:
-    - title: Overview
-      path: /introduction/overview/
-    - title: Reference architecture
-      path: /introduction/reference-architecture/
-    - title: Target audiences
-      path: /introduction/target-audiences/
 - title: Patterns in DBA
   pages:
     - title: Overview
