@@ -22,10 +22,11 @@ description: Accounts Payable use case
 
 # Use Case Guided Tour
 
-## Are you ready to see flexible business decisions in action?
+**Are you ready to see flexible business decisions in action?**
 
-<details>
-<summary>1 - Scenario Introduction - Accounts Payable</summary>
+## 1. Scenario Introduction - Accounts Payable
+<details markdown="1">
+<summary>+</summary>
 
 <Row>
 <Column colLg={5} colMd={5}>
@@ -91,22 +92,19 @@ description: Accounts Payable use case
 **Discovery Map**
 
 ![1](./images/accountsPayableInvoiceValidation_map.png)
-<br/>
 
 </Column>
 <Column colLg={6} colMd={6}>
-
-<br/>
-
-</Column>
+ </Column>
 </Row>
 
 [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
-<details>
-<summary>2 - Login to Your Digital Business Automation on Cloud Trial</summary>
+## 2. Login to Your Digital Business Automation on Cloud Trial
+<details markdown="1">
+<summary>+</summary>
 
 Login to your Digital Business Automation on Cloud trial <a href="http://automationcloud.ibm.com" target="_blank">here</a> to access your portal.
 <br/>
@@ -118,16 +116,14 @@ Don't have a trial yet? <a href="https://www.ibm.com/account/reg/us-en/signup?fo
 
 </details>
 
-<details>
-<summary>3 - Setup Your Trial SaaS Environment</summary>
+## 3. Setup Your Trial SaaS Environment
+<details markdown="1">
+<summary>+</summary>
 
-<br/>
 
 First time in your trial environment?  Here are some recommended setup steps to get the best experience!
 
-### IMPORTANT - Assign Your Roles
-
-<br/>
+**IMPORTANT - Assign Your Roles**
 
 You will need to make sure you have the correct roles to use the environment.
 
@@ -137,23 +133,18 @@ You will need to make sure you have the correct roles to use the environment.
 1. Click the pencil icon on the right side of your user row and ensure at least the required roles are selected.
 1. Optionally add all adinistrator roles as appropriate.
 
-<br/>
-
 <Row>
 <Column colLg={4} colMd={4}>
 
 **Required Roles**
 
 ![2](./images/required-roles.png)
-<br/>
-
 </Column>
 <Column colLg={4} colMd={4}>
 
 **All Administrator Roles**
 
 ![2](./images/all-admin-roles.png)
-<br/>
 
 </Column>
 </Row>
@@ -176,14 +167,14 @@ It is recommended to make the Focus Corp Demo Dashboard your default dashboard.
 * Add a picture
 * Set notification settings as desired
 
-<br/>
 
 [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
-<details>
-<summary>4 - Open the Focus Corp Demo Dashboard</summary>
+## 4. Open the Focus Corp Demo Dashboard
+<details markdown="1">
+<summary>Expand to view</summary>
 
 1. Open the menu in the upper left
 2. Select **Production** and then **Run**
@@ -199,22 +190,20 @@ It is recommended to make the Focus Corp Demo Dashboard your default dashboard.
  ![12](./images/Slide5.png)
 
 Start by reviewing the available demos, they all represent an entry point to business automation so you can easily get started.
-<br/>
 
  ![13](./images/Slide6.png)
 
-<br/>
 
 When ready, click the green **Accounts Payable** button to launch the demo.
 
-<br/>
 
 [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
-<details>
-<summary>5 - Submit invoices and review rules</summary>
+## 5. Submit invoices and review rules
+<details markdown="1">
+<summary>Expand to view</summary>
 
 #### Be your customer!
 
@@ -224,7 +213,6 @@ As a customer, you want to be paid for your services on time and make sure you a
 
  ![13](./images/Slide8.png)
 
-<br/>
 
 1. Check the tabs to learn more about the demo
     1. **Storyboard Outline**
@@ -242,7 +230,6 @@ As a customer, you want to be paid for your services on time and make sure you a
 
  ![13](./images/Slide11.png)
 
-<br/>
 
 4. Click **Validate Invoice** to see the results, the invoice is rejected
 5. If you want, you can read the reason code and resubmit the invoice to fix the error
@@ -254,19 +241,18 @@ As a customer, you want to be paid for your services on time and make sure you a
 
  ![13](./images/Slide12.png)
 
-<br/>
 
 [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
-<details>
-<summary>6 - Review the Operations Dashboard</summary>
+## 6 - Review the Operations Dashboard
+<details markdown="1">
+<summary>Expand to view</summary>
 
 <br/>
 You are now a Focus Corp employee, first an Operations Specialist and later a Rule Manager.  Time to see how invoice validation works.
 
-<br/>
 
 1. Navigate back to the Focus Corp Demos Dashboard browser window/tab
 2. Click on **Week 1** under the picture of the **Operations Specialist**
@@ -276,72 +262,59 @@ You are now a Focus Corp employee, first an Operations Specialist and later a Ru
 
  ![13](./images/Slide13.png)
 
-<br/>
 
 4. Review the Week 1 dashboard metrics and note the following:
     1. Average invoice processing time is unmanageable at above 100 minutes
     1. The rules deviated from the final result on more than 60 invoices this week
 
-<br/>
 
  ![13](./images/Slide14.png)
 
-<br/>
 
 [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
-<details>
-<summary>7 - Review the business rules</summary>
+## 7. Review the business rules
+<details markdown="1">
+<summary>+</summary>
 
-<br/>
 
 Continuing as the Focus Corp Rule Manager, how can you adapt your rules to reduce rework and process invoices faster with less exceptions?
 <br/>
 Rule Managers can adjust rules, validate and simulate the decision service and deploy quickly and easily.
-
-<br/>
-
 1. Navigate back to the Focus Corp Demos Dashboard browser window/tab
 2. Click the picture of the **Rule Manager**
 3. Click **Validate Invoice** followed by **main** to open the decision model
 4. Review the decision model, green ovals are input data and blue boxes are decisions, each with their own business logic leading to the **Final Result** decision
 
-<br/>
 
  ![13](./images/Slide15.png)
 
-<br/>
 
 5. Click the blue **Validate PO against Supplier** decision node
 6. On the left pane, scroll to the bottom and click to open the **Validate PO against Supplier** logic
 7. Review the decision table and note there is no row addressing Inc. suppliers.
 
-<br/>
 
  ![13](./images/Slide16.png)
 
-<br/>
 
 [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
-<details>
-<summary>8 - Update and simulate the business rules</summary>
-
-<br/>
+## 8. Update and simulate the business rules
+<details markdown="1">
+<summary>+</summary>
 
 1. At the upper left, click **Validate Invoice**
 2. On the left, just above **main**, click the plus icon
 3. Create a new branch name using a unique phrase such as your name, ensure **main** is the parent branch and click **Create**
 
-<br/>
 
  ![13](./images/Slide18.png)
 
-<br/>
 
 4. On the upper right, click the pencil to edit the decision model
 5. Open the same **Validate PO against Supplier** decision node and table
@@ -350,58 +323,48 @@ Rule Managers can adjust rules, validate and simulate the decision service and d
 
 > NOTE: you can copy and paste cells as you would in a spreadsheet editor
 
-<br/>
 
  ![13](./images/Slide19.png)
 
-<br/>
 
 8. On the upper right, Save and Close when done editing the rules
 
-<br/>
 
 In the full lifecycle, a Rule Manager runs validations and test suites before deploying the rules, if you wish, explore by clicking Validate on the left side of the editor or selecting the Tests tab at the top to run the test suite provided.
 
-<br/>
 
 9. Click the **Simulations** tab and **Simulations** sub tab
 10. Place the mouse over the **Accounts Payable Simulation** and click the run icon on the right
 11. After clicking **OK**, you will see the simulation running with a spinning status icon
 12. Once a checkmark appears, place the mouse over the report name and click the compare icon on the right
 
-<br/>
 
  ![13](./images/Slide20.png)
 
-<br/>
 
 13. Under **main**, select the simulation report that is furthest in the past
 14. Click **Compare**
 
-<br/>
 
 On the left are the results for the new rules and the right are the results for the original rules
 
-<br/>
 
 15. Compare and notice some important differences:
     1. (pie chart) more invoices were rejected (the new rule rejects a new incorrect pattern)
     1. (orange bar chart) higher value invoices are rejected more
 
-<br/>
 
  ![13](./images/Slide21.png)
 
-<br/>
 
 [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
-<details>
-<summary>9 - Deploy the business rules and see the results</summary>
+## 9. Deploy the business rules and see the results
+<details markdown="1">
+<summary>+</summary>
 
-<br/>
 
 1. On the upper left, to the right of **Validate Invoice**, click the name of the branch you created
 2. Click the **Deployments** tab and **Configurations** sub tab
@@ -419,16 +382,14 @@ On the left are the results for the new rules and the right are the results for 
 
  ![13](./images/Slide23.png)
 
-<br/>
 
 [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
-<details>
-<summary>10 - Review latest operational performance</summary>
-
-<br/>
+## 10. Review latest operational performance
+<details markdown="1">
+<summary>+</summary>
 
 1. Navigate back to the **Focus Corp Demos Dashboard** browser window/tab
 2. Click on **Week 2** under the picture of the **Operations Specialist**
@@ -438,24 +399,20 @@ On the left are the results for the new rules and the right are the results for 
 
 ## The upgraded rules are reducing rework already!
 
-<br/>
 
  ![13](./images/Slide24.png)
 
-<br/>
 
 [Go to top](#refund-request-automation) | [Go to Guided Tour](#use-case-guided-tour)
 
 </details>
 
-<details>
-<summary>11 - Summary</summary>
-
-<br/>
+## 11. Summary
+<details markdown="1">
+<summary>+</summary>
 
 We just used decision automation, a capability within IBM Cloud Pak for Automation, to automate an accounts payable process.  With growing volumes of invoices, business rule automation helps reduce the amount of human intervention for account processing, detect issues earlier, and incorporate changes quickly when needed.
 
-<br/>
 
 [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
@@ -464,17 +421,16 @@ We just used decision automation, a capability within IBM Cloud Pak for Automati
 ***
 
 <br/>
-<br/>
 
 # Full Demo Narration
 
-### Demo Narration and Flow
+** Demo Narration and Flow **
 
-#### Demo Start Page
+## Demo Start Page
 
 Reviewing the demo launch page we see a text summary describing the demo and a discovery map diagram for our reference.  We will only focus on the Validate Invoice Data step in the flow.  OK, let's launch the demo.
 
-#### Customer invoice submissions
+## Customer invoice submissions
 
 We start by becoming the customer.  From the Focus Corp Accounts Payable Invoices portal, we select an invoice ending with R (therefore it should be rejected) and submit for rule validation.  We review five key data fields extracted from the invoice using intelligent document processing and then submit for validation.  This invoice is rejected by the business rules as the total amount must be greater than 0.
 
@@ -482,11 +438,11 @@ Let's resubmit that invoice by fixing the total amount to $100 and see what the 
 
 We have various other invoices to try, let's select another one ending in R that should be rejected, but this time the rules do not find an issue and it is accepted.  This type of result means more rework in downstream business processes as humans are involved in more review and the invoice is routed back and forth to be fixed.
 
-#### Operations week 1
+## Operations week 1
 
 Further, we can see from the Operations Specialist's Accounts Payable dashboard that the average invoice processing time in the upper right is unmanageable at above 100 minutes.  Further, the rules deviated from the final result on more than 60 invoices this week, adding to rework. Rules must change at the speed of the changing business so let's see how we can improve the business rules.
 
-#### Rules manager
+## Rules manager
 
 As a rules manager, we have access to the invoice validation decision model. The invoice data move from the oval at the bottom through multiple sub-decisions including a text rule to check the total amount is more than $0 which resulted in our first invoice being rejected.  Another decision table looks for combinations of PO numbers and supplier types that do not follow the correct pattern (update!).  This is where the second invoice should have be rejected but the table is missing a new invalid pattern.
 
@@ -498,18 +454,17 @@ Once they save the new decision model for audit and compliance, the rule manager
 
 After running a new simulation and comparing side by side, the business can make an informed decision about the impact of new rules before ever deploying to production.  Yes, this looks as expected so we are ready to deploy.  In this case, the business can deploy on their own but this can be configured for only certain safe rules and others must go through IT testing.
 
-#### Customer approved to rejected
+## Customer approved to rejected
 
 After the rules manager deploys the new rules, we go back to the invoice submission and choose the same invoice that should now be rejected.  We see the invalid pattern of PO number and supplier type and we select in the demo control panel to upgrade to the latest rule version.  The results, rejected with the reason code deployed by the business rule manager.
 
-#### Operations week 2
+## Operations week 2
 
 After these new rules are in place for a week, the Operations Specialist reviews their updated dashboard and sees solid improvement with a reduction of average invoice processing time from less invoice rework and also less deviation between the rules and the final invoice decision.  Our rules are more accurate.
 
-#### Use Case Summary
+## Use Case Summary
 
 We just used decision automation, a capability within IBM Cloud Pak for Automation, to automate an accounts payable process.  With growing volumes of invoices, business rule automation helps reduce the amount of human intervention for account processing, detect issues earlier, and incorporate changes quickly when needed.
 
-<br/>
 
 [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
