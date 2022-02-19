@@ -4,7 +4,7 @@ repo_url: https://github.com/jbcodeforce/refarch-dba
 docs_dir: docs
 site_dir: public
 edit_uri: edit/master/docs
-theme: 
+theme:
   name: material
   feature:
     tabs: true
@@ -41,6 +41,8 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.highlight
   - pymdownx.details
+  - md_in_html
+  - extra
   - pymdownx.snippets:
       base_path: docs/snippets
 copyright: Copyright © 2022 IBM
