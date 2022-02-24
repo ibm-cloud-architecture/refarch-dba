@@ -25,7 +25,7 @@ description: HR Onboarding Application use case
 ** Are you ready to build low-code business applications? **
 
 ## 1. Scenario Introduction - HR Onboarding Application
-??? note SUMMARY "+"
+??? note SUMMARY "Expand to view"
 
     <Row>
     <Column colLg={5} colMd={5}>
@@ -86,7 +86,7 @@ description: HR Onboarding Application use case
     [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 ## 2. Login to Your Digital Business Automation on Cloud Trial
-??? note SUMMARY "+"
+??? note SUMMARY "Expand to view"
 
     Login to your Digital Business Automation on Cloud trial <a href="http://automationcloud.ibm.com" target="_blank">here</a> to access your portal.
 
@@ -98,7 +98,7 @@ description: HR Onboarding Application use case
     [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 ## 3. Setup Your Trial SaaS Environment
-??? note SUMMARY "+"
+??? note SUMMARY "Expand to view"
 
     First time in your trial environment?  Here are some recommended setup steps to get the best experience!
 
@@ -148,7 +148,7 @@ description: HR Onboarding Application use case
     [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
 
 ## 4. Open the Focus Corp Demo Dashboard
-??? note SUMMARY "+"
+??? note SUMMARY "Expand to view"
 
     1. Open the menu in the upper left
     2. Select **Production** and then **Run**
