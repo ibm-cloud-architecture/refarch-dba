@@ -444,52 +444,53 @@ description: HR Onboarding Application use case
 
 # Full Demo Narration
 
-## Intro
+??? note SUMMARY "Expand to view"
+    ## Intro
 
-HR teams manage adhoc processes outside their systems of record, gathering data, performing reviews, sending offers, looping around to do rework unfortunately before finally obtaining the goal to onboard an employee.  Additionally, HR Specialists use multiple, disparate systems to complete their work and can easily lose track of the process.
+    HR teams manage adhoc processes outside their systems of record, gathering data, performing reviews, sending offers, looping around to do rework unfortunately before finally obtaining the goal to onboard an employee.  Additionally, HR Specialists use multiple, disparate systems to complete their work and can easily lose track of the process.
 
-It's time for an easy to use low-code build environment where HR can create dynamic, unified business applications that connect to existing systems and deliver value quickly.
+    It's time for an easy to use low-code build environment where HR can create dynamic, unified business applications that connect to existing systems and deliver value quickly.
 
-## Demo Start Page
+    ## Demo Start Page
 
-Reviewing the demo launch page we see a text summary describing the demo along with a discovery map and diagram for our reference.  OK, let's launch the demo.
+    Reviewing the demo launch page we see a text summary describing the demo along with a discovery map and diagram for our reference.  OK, let's launch the demo.
 
-## Studio Intro
+    ## Studio Intro
 
-Welcome to the Studio low-code build environment.  As an Application Assembler you can use Studio to create Applications and connect to Business Automations.
+    Welcome to the Studio low-code build environment.  As an Application Assembler you can use Studio to create Applications and connect to Business Automations.
 
-## Automation service creation
+    ## Automation service creation
 
-Before we build our application, let's find and connect to some existing workflow and decision services that we want to use.  Studio can connect to external business automation services you already have today and unify them in a single application user experience with the low-code Application Designer.
+    Before we build our application, let's find and connect to some existing workflow and decision services that we want to use.  Studio can connect to external business automation services you already have today and unify them in a single application user experience with the low-code Application Designer.
 
-After we connect to Business Automation Workflow HR environment, Studio prompts us to select our the application and operations to automatically import.  We'll select send offer letter and calculate salary range.  The Studio imports and automatically publishes a service and we can confirm the operations and relevant inputs and outputs.  Now we are ready to create our application!
+    After we connect to Business Automation Workflow HR environment, Studio prompts us to select our the application and operations to automatically import.  We'll select send offer letter and calculate salary range.  The Studio imports and automatically publishes a service and we can confirm the operations and relevant inputs and outputs.  Now we are ready to create our application!
 
-## Preview onboarding application template
+    ## Preview onboarding application template
 
-Studio includes multiple templates to start from, let's preview and try out the Onboarding Application template.  The app pulls in our sample requisition and candidate data and provides an easy to use search and filter on the left.  After selecting a candidate, we see their details and status; let's mark Alicia as Prepare to onboard, and then change some document status values.
+    Studio includes multiple templates to start from, let's preview and try out the Onboarding Application template.  The app pulls in our sample requisition and candidate data and provides an easy to use search and filter on the left.  After selecting a candidate, we see their details and status; let's mark Alicia as Prepare to onboard, and then change some document status values.
 
-## Create application from template
+    ## Create application from template
 
-This template looks good, let's use it to create our own application.
+    This template looks good, let's use it to create our own application.
 
-## Add automation service
+    ## Add automation service
 
-We start in the low-code Application Designer and it's time to import our automation services from before so we can add them to the app.  It's as simple as drag and drop.  Let's add a button for send offer letter at the upper right, we select the operation, map the data since it already exists in our app from the template, and my button is automatically added.  Don't like grey buttons?  Change it to yellow, rename it, add an icon and make it a little smaller.  All with no code, we just integrated to an existing external workflow from inside our app!
+    We start in the low-code Application Designer and it's time to import our automation services from before so we can add them to the app.  It's as simple as drag and drop.  Let's add a button for send offer letter at the upper right, we select the operation, map the data since it already exists in our app from the template, and my button is automatically added.  Don't like grey buttons?  Change it to yellow, rename it, add an icon and make it a little smaller.  All with no code, we just integrated to an existing external workflow from inside our app!
 
-We also need to add that calculation service that uses business rules to decide a recommended salary range.  Let's drag it just below the right header and map the data in very much the same way as the other service.  This service returns an output so we let Application Designer create a new variable to hold it and add it to the page automatically, so simple.  With multiple elements on the screen, let's do some simple layout by adding a panel and dragging the fields into it.  We can also do advanced formatting such as setting the field to currency for the symbols and decimal places or moving to advanced mode to set a read only status and much more.  After doing the same to the second field, and formatting the button, we are ready to preview our app!
+    We also need to add that calculation service that uses business rules to decide a recommended salary range.  Let's drag it just below the right header and map the data in very much the same way as the other service.  This service returns an output so we let Application Designer create a new variable to hold it and add it to the page automatically, so simple.  With multiple elements on the screen, let's do some simple layout by adding a panel and dragging the fields into it.  We can also do advanced formatting such as setting the field to currency for the symbols and decimal places or moving to advanced mode to set a read only status and much more.  After doing the same to the second field, and formatting the button, we are ready to preview our app!
 
-## Preview and use automation services
+    ## Preview and use automation services
 
-Now in the running app, after selecting one of the candidates we immediately see our edits live.  First, let's calculate the salary range and see the values that the decision service brings back based on the candidate data.  Now, before we launch the send offer letter process, let's bring up the current work list.  On the right we see one task from an older process.  Now when we click to send a new offer letter, another task appears on the right for the assignee to complete.  For testing, we can even open the task and see the application passed along the required data.  Looks good to me.
+    Now in the running app, after selecting one of the candidates we immediately see our edits live.  First, let's calculate the salary range and see the values that the decision service brings back based on the candidate data.  Now, before we launch the send offer letter process, let's bring up the current work list.  On the right we see one task from an older process.  Now when we click to send a new offer letter, another task appears on the right for the assignee to complete.  For testing, we can even open the task and see the application passed along the required data.  Looks good to me.
 
-## Run in Navigator
+    ## Run in Navigator
 
-After deploying to the production runtime, called Navigator, we can see the app appear on our home screen, run it and use it as before during the preview but now in a unified Navigator environment with multiple applications and tabs all in one experience and interface!
+    After deploying to the production runtime, called Navigator, we can see the app appear on our home screen, run it and use it as before during the preview but now in a unified Navigator environment with multiple applications and tabs all in one experience and interface!
 
-#### Use Case Summary
+    #### Use Case Summary
 
-We just used the low-code Studio environment and its Application Designer to create a dynamic business application from a pre-built template to accelerate time to value.  Then we connected to external automation services including existing workflows and decision services, to help automate the onboarding process.  It's time to remove frustration and slow business results and replace them with productive and happy employees and customers.
+    We just used the low-code Studio environment and its Application Designer to create a dynamic business application from a pre-built template to accelerate time to value.  Then we connected to external automation services including existing workflows and decision services, to help automate the onboarding process.  It's time to remove frustration and slow business results and replace them with productive and happy employees and customers.
 
 
 
-[Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
+    [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
