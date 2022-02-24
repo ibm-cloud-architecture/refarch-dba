@@ -119,87 +119,22 @@ IBM maintains multiple SaaS tenants that can be reserved and accessed by both IB
 Please login to IBM Technology Zone and navigate to <a href="https://techzone.ibm.com/collection/5fdfcf8b99cf35001ee4954d" target="_blank">here</a> to reserve an environment.
 
 <br/>
-Once you have access to an environment, please continue here:
 
-1\. Enablement Users, your environment setup should already be completed, please continue.
-
-2\. Demo Users, once your account administrator completes the below setup and provides you access, please continue.
-
-3\. Administrator Users, expand the following section to access additional steps to setup access for yourself and others in your environment.
-
-</p>
+1\. Once you have access to an environment, please continue here:  
+&nbsp; &nbsp; &nbsp; • &nbsp; Enablement Users, your environment setup should already be completed, please continue.  
+&nbsp; &nbsp; &nbsp; • &nbsp; Demo Users, once your account administrator completes the below setup and provides you access, please continue.  
+&nbsp; &nbsp; &nbsp; • &nbsp; Administrator Users, please reference the <a href="https://techzone.ibm.com/collection/business-automation-saas#tab-2" target="_blank">Administration Guide</a> (IBM only) for any additional setup information including onboarding users.  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Note: navigate to the **Demo tenants** tab after login.  
 
 <br/>
 
-<a name="lab-section-2aa"></a>
-<br/>
-<details>
-<summary style="margin-left: 80px">Additional Cloud Administrator Setup</summary>
+2\. Login to your Cloud Pak for Business Automation as a Service demo environment <a href="http://automationcloud.ibm.com" target="_blank">here</a> to access your portal.
 
-<p style="margin-left: 80px">
+3\. Open the menu in the upper left.
 
-<br/>
+4\. Select **Production** and then **Run**.
 
-1\. Login to your Cloud Pak for Business Automation as a Service demo environment <a href="http://automationcloud.ibm.com" target="_blank">here</a> to access your portal.
-
-2\. Open the menu in the upper left.
-
-3\. Under **Administer subscriptions**, click **Access management**.
-
-4\. Locate or search for your user and ensure all environments (Development and so on) are activated.
-
-5\. Click the pencil icon on the right side of your user row and ensure the appropriate roles are selected (below is an example set of roles).
-
-6\. Repeat this process for all users that need access using the below for reference.
-
-</p>
-
-<br/>
-
-<p style="margin-left: 80px">
-
-<Row>
-<Column colLg={4} colMd={4}>
-
-**All User Access Roles**
-
-![2](./images/required-roles.png)
-<br/>
-
-</Column>
-<Column colLg={4} colMd={4}>
-
-**All Administrator Roles**
-
-![2](./images/all-admin-roles.png)
-<br/>
-
-</Column>
-</Row>
-
-</p>
-
-<br/>
-
-<p style="margin-left: 80px">
-
-[Go to top](#lab-section-2aa) | [Go to Getting Started Lab](#getting-started-lab)
-
-</p>
-
-</details>
-
-> Enablement and Demo Users, continue here...
-
-<p style="margin-left: 40px">
-
-4\. Login to your Cloud Pak for Business Automation as a Service demo environment <a href="http://automationcloud.ibm.com" target="_blank">here</a> to access your portal.
-
-5\. Open the menu in the upper left.
-
-6\. Select **Production** and then **Run**.
-
-7\. Click the **Business Automation Apps** tile to launch the Business Automation Navigator desktop
+5\. Click the **Business Automation Apps** tile to launch the Business Automation Navigator desktop
 
 <br/>
 
@@ -207,11 +142,11 @@ Once you have access to an environment, please continue here:
 
 <br/>
 
-8\. Wait for the desktop to load in a new browser window/tab (it can take some time)
+6\. Wait for the desktop to load in a new browser window/tab (it can take some time)
 
 <br/>
 
-9\. Start by reviewing the available demos, they all represent a business automation use case so you can easily get started.
+7\. Start by reviewing the available demos, they all represent a business automation use case so you can easily get started.
 
 <br/>
 
@@ -219,7 +154,7 @@ Once you have access to an environment, please continue here:
 
 <br/>
 
-10\. When ready, click the **Refund Request** tile to launch the use case.
+8\. When ready, click the **Refund Request** tile to launch the use case.
 
 <br/>
 
@@ -297,7 +232,7 @@ See the <a href="https://github.com/ibm-cloud-architecture/dba-refund-request.gi
 
 5\. Start by reviewing the available demos, they all represent a business automation use case so you can easily get started.
 
-6\. When ready, click the **Onboarding Automation** tile to launch the demo and continue to [the next section](#lab-section-3).
+6\. When ready, click the **Refund Request** tile to launch the demo and continue to [the next section](#lab-section-3).
 
 </p>
 

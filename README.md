@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+# Digital Business Automation body of knowledge
+=======
 # [IBM Business Automation Reference Architecture](https://ibm-cloud-architecture.github.io/refarch-dba)
+>>>>>>> 815988bc23ddde067183948fe97bca3d070c7abd
 
 This project represents the body of knowledge around business automation solution implementation and
 reference architecture and can be considered as a living book, we are writing on a daily basis from the experience gathered with our engagements.
