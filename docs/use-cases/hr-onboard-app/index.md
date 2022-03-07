@@ -1,10 +1,5 @@
----
-title: HR Onboarding Application use case
-description: HR Onboarding Application use case
----
-
-### an IBM Cloud Pak for Business Automation use case
-
+## HR Onboarding Application
+**an IBM Cloud Pak for Business Automation use case**
 ***
 
 # Introduction
@@ -13,42 +8,27 @@ description: HR Onboarding Application use case
 
 **Choose an option:**
 
-  * **Digital Business Automation on Cloud trial:** your environment is predeployed, continue to the [Guided Tour](#use-case-guided-tour) section below.
+  * **Digital Business Automation on Cloud trial:** your environment is predeployed, continue to the [Getting Start Lab](#getting-started-lab) section below.
   * **Install Yourself:** To deploy HR Onboarding Application on your own environment, and technical architecture information, see the <a href="https://github.com/ibm-cloud-architecture/dba-hr-onboarding-app.git" target="_blank">dba-hr-onboarding-app</a> git repository which includes the required deployment artifacts.
 
  ![10](./images/Slide2.png)
 
 ***
 
-# Use Case Guided Tour
+# Getting Started Lab
 
-** Are you ready to build low-code business applications? **
+**Are you ready to build low-code business applications?**
 
 ## 1. Scenario Introduction - HR Onboarding Application
-??? note SUMMARY "Expand to view"
-
-    <Row>
-    <Column colLg={5} colMd={5}>
-
+??? note summary "Expand to view"
     **Demo Video**
 
-    <ArticleCard
-        color="dark"
-        title="Demo Video - HR Onboarding Application"
-        subTitle="In this demo, you will build a low-code business application that connect to existing systems for workflow and decisions"
-        href="http://ibm.biz/cp4ba-hr-onboarding-video"
-        actionIcon="arrowRight"
-        color="dark"
-        >
-
-    ![](./images/hrOnboardingAppThumbnail.png)
-
-    </ArticleCard>
-    </Column>
-    <Column colLg={7} colMd={7}>
+    In this demo, you will build a low-code business application that connect to existing systems for workflow and decisions
+    
+    [![HR Onboarding Appplication](./images/hrOnboardingAppThumbnail.png)](http://ibm.biz/cp4ba-hr-onboarding-video)
 
     **Demo Outline**
-
+    
     [Full Demo Narration](#full-demo-narration)
 
     1. Use Case Overview
@@ -63,30 +43,16 @@ description: HR Onboarding Application use case
         1. Run the application
     1. Use case review and value of low-code applications
 
+    ??? note summary "Discovery Map"
+        ![HR Onboarding App - Discovery Map](./images/hrOnboardingApp-discoveryMap.png)
 
-    </Column>
-    </Row>
-    <Row>
-    <Column colLg={4} colMd={4}>
+    ??? note summary "Process Diagram"
+        ![HR Onboarding App - Process Diagram](./images/hrOnboardingApp-diagram.png)
 
-    **Discovery Map**
-
-    ![1](./images/hrOnboardingApp-discoveryMap.png)
-
-    </Column>
-    <Column colLg={6} colMd={6}>
-
-    **Process Diagram**
-
-    ![2](./images/hrOnboardingApp-diagram.png)
-
-    </Column>
-    </Row>
-
-    [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
+    [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
 ## 2. Login to Your Digital Business Automation on Cloud Trial
-??? note SUMMARY "Expand to view"
+??? note summary "Expand to view"
 
     Login to your Digital Business Automation on Cloud trial <a href="http://automationcloud.ibm.com" target="_blank">here</a> to access your portal.
 
@@ -95,10 +61,10 @@ description: HR Onboarding Application use case
 
      ![10](./images/Slide3.png)
 
-    [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
+    [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
 ## 3. Setup Your Trial SaaS Environment
-??? note SUMMARY "Expand to view"
+??? note summary "Expand to view"
 
     First time in your trial environment?  Here are some recommended setup steps to get the best experience!
 
@@ -144,11 +110,10 @@ description: HR Onboarding Application use case
     * Add a picture
     * Set notification settings as desired
 
-
-    [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
+    [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
 ## 4. Open the Focus Corp Demo Dashboard
-??? note SUMMARY "Expand to view"
+??? note summary "Expand to view"
 
     1. Open the menu in the upper left
     2. Select **Production** and then **Run**
@@ -171,10 +136,10 @@ description: HR Onboarding Application use case
     When ready, click the green **HR Onboarding App** button to launch the demo.
 
 
-    [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
+    [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
 ## 5. Tour Business Automation Studio
-??? note SUMMARY "Expand to view"
+??? note summary "Expand to view"
 
     **Create your own business app and drive automation**
 
@@ -202,10 +167,10 @@ description: HR Onboarding Application use case
      ![13](./images/Slide11.png)
 
 
-    [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
+    [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
 ## 6 - Create an automation service
-??? note SUMMARY "Expand to view"
+??? note summary "Expand to view"
 
     Before you build your application, let's find and connect to some existing workflow and decision services to use within the application.  Studio can connect to external business automation services you already have today and unify them in a single application user experience with the low-code Application Designer.
 
@@ -255,10 +220,10 @@ description: HR Onboarding Application use case
      ![13](./images/Slide18.png)
 
 
-    [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
+    [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
 ## 7. Preview onboarding application template
-??? note SUMMARY "Expand to view"
+??? note summary "Expand to view"
 
     Now that you published the external automation services, you are ready to create your busienss application.  You decide to look for a template to accelerate application assembly.
 
@@ -301,11 +266,11 @@ description: HR Onboarding Application use case
 
     <br/>
 
-    [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
+    [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
 
 ## 8. Add automation services to your application
-??? note SUMMARY "Expand to view"
+??? note summary "Expand to view"
 
     Now that you have an application, you can add the automation services you published so you can use them in the low-code build environment.
 
@@ -389,11 +354,11 @@ description: HR Onboarding Application use case
     ![13](./images/Slide33.png)
 
 
-    [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
+    [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
 
 ## 9. Preview the completed application
-??? note SUMMARY "Expand to view"
+??? note summary "Expand to view"
 
     Let's preview the application again and try out the automation services you added.
 
@@ -430,21 +395,21 @@ description: HR Onboarding Application use case
 
      ![13](./images/Slide38.png)
 
-     [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
+     [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
 
 ## 10. Summary
-??? note SUMMARY "Expand to view"
+??? note summary "Expand to view"
 
     In just a few minutes, you created, tested and published a new, low-code business application from a template and connected it to existing workflow and decision automation services.  This low-code experience enables greater control and simplicity in application authoring while accelerating time to value for the business teams that use the applications.
     
-    [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
+    [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
 ***
 
 # Full Demo Narration
 
-??? note SUMMARY "Expand to view"
+??? note summary "Expand to view"
     ## Intro
 
     HR teams manage adhoc processes outside their systems of record, gathering data, performing reviews, sending offers, looping around to do rework unfortunately before finally obtaining the goal to onboard an employee.  Additionally, HR Specialists use multiple, disparate systems to complete their work and can easily lose track of the process.
@@ -493,4 +458,4 @@ description: HR Onboarding Application use case
 
 
 
-    [Go to top](#introduction) | [Go to Guided Tour](#use-case-guided-tour)
+    [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
