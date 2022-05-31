@@ -19,8 +19,8 @@ The following are key capabilities available in the platform:
 * [Decision management](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.3?topic=software-automation-decision-services)
 * [Workflow automation](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.3?topic=software-business-automation-workflow)
 * [Robotic Process Automation (RPA)](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.3?topic=software-robotic-process-automation)
-* [Process Mining](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.3?topic=software-process-mining)
-* [Operational Intelligence](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.3?topic=software-business-automation-insights)
+* [Process mining](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.3?topic=software-process-mining)
+* [Operational intelligence](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.3?topic=software-business-automation-insights)
 
 In this repository we are developing new content for integrating cloud native applications, DevOps practices and business automation components.
 
