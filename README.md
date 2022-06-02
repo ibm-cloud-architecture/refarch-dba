@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# Digital Business Automation body of knowledge
-=======
+
 # [IBM Business Automation Reference Architecture](https://ibm-cloud-architecture.github.io/refarch-dba)
 >>>>>>> 815988bc23ddde067183948fe97bca3d070c7abd
 
@@ -35,6 +33,7 @@ This project includes a `.github` folder to define a git action workflow to buil
 
 ## Contributors
 
-* Lead content developer [Pierre Berlandier](https://www.linkedin.com/in/pierreberlandier/)
+* Lead Content developer [Jeff Goodhue](https://www.linkedin.com/in/jeffreygoodhue/)
+* Content developer [Thomas Yang](https://www.linkedin.com/in/thomasyang44/)
 * Content developer [Jerome Boyer](https://www.linkedin.com/in/jeromeboyer/)
-* Content developer [Jeff Goodhue](https://www.linkedin.com/in/jeffreygoodhue/)
+* Content developer [Pierre Berlandier](https://www.linkedin.com/in/pierreberlandier/)
