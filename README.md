@@ -15,7 +15,7 @@ The content of this repository is the source of the digital business automation 
 The content of this repository is written with markdown files, packaged with [MkDocs](https://www.mkdocs.org/) and can be built into a book-readable format by MkDocs build processes.
 
 1. Install MkDocs locally following the [official documentation instructions](https://www.mkdocs.org/#installation).
-1. Install Material plugin for mkdocs:  `pip install mkdocs-material` 
+1. Install Material plugin for mkdocs:  `pip install mkdocs-material`
 2. `git clone https://github.com/jbcodeforce/jbcodeforce.github.io.git` _(or your forked repository if you plan to edit)_
 3. `cd jbcodeforce.github.io`
 4. `mkdocs serve`
@@ -38,3 +38,4 @@ This project includes a `.github` folder to define a git action workflow to buil
 * Lead content developer [Pierre Berlandier](https://www.linkedin.com/in/pierreberlandier/)
 * Content developer [Jerome Boyer](https://www.linkedin.com/in/jeromeboyer/)
 * Content developer [Jeff Goodhue](https://www.linkedin.com/in/jeffreygoodhue/)
+* Content developer [Thomas Yang](https://www.linkedin.com/in/thomasyang44/)
