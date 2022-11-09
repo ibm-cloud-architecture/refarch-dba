@@ -107,7 +107,7 @@
 
         ??? note summary "Additional Administrator Setup For Your Own Environment"
 
-            See the <a href="https://github.com/ibm-cloud-architecture/dba-refund-request.git" target="_blank">dba-refund-request</a> git repository to deploy on your own platform.
+            See the <a href="https://github.com/ibm-cloud-architecture/dba-onboarding-automation.git" target="_blank">dba-onboarding-automation</a> git repository to deploy on your own platform.
 
         > Standard Users, continue here...
 

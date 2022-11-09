@@ -35,5 +35,4 @@ This project includes a `.github` folder to define a git action workflow to buil
 
 * Lead Content developer [Jeff Goodhue](https://www.linkedin.com/in/jeffreygoodhue/)
 * Content developer [Thomas Yang](https://www.linkedin.com/in/thomasyang44/)
-* Content developer [Jerome Boyer](https://www.linkedin.com/in/jeromeboyer/)
 * Content developer [Pierre Berlandier](https://www.linkedin.com/in/pierreberlandier/)
