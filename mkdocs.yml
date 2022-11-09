@@ -1,6 +1,6 @@
 site_name: Digital Business Automation
 site_description: Knowledge sharing on digital business automation
-repo_url: https://github.com/jbcodeforce/refarch-dba
+repo_url: https://github.com/ibm-cloud-architecture/refarch-dba
 docs_dir: docs
 site_dir: public
 edit_uri: edit/master/docs
