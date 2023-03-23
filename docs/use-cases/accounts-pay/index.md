@@ -235,47 +235,59 @@
     ![open root project](./images/openRootProject.png)
 
     2\. Make sure you are in the **Branches** tab  and just above **main**, click the plus icon to create a new branch name using a unique phrase such as your name, ensure **main** is the parent branch and click **Create**
+
      ![create branch](./images/createBranch.png)
 
     **If the decision table discussed below already contains a row dealing with Inc suppliers then someone has made an update on the main branch, please refer to the instructions in the cleanup section to restore an earlier version of this rule before proceeding.**
 
     3\. Click the **supplier** folder and then hover over the rule called **Validate PO against supplier** and click the **pencil** icon to open the rule for editing.
+
     ![open supplier rule](./images/openValidateSupplier.png)
 
     4\. Right click on the last row and select **Insert row** -> **Below**
+
     ![insert row](./images/insertRow.png)
 
     7\. Enter values in the new row to look for **IN** when suppliers are **Inc** type as pictured. Ensure the message is entered exactly as shown **PO number must start with IN for Inc suppliers**
+
     ![new row](./images/newRow.png)
 
     > NOTE: you can copy and paste cells as you would in a spreadsheet editor
 
     8\. On the upper right, click the **Save** icon, provide a comment and click **create new verison**
+
     ![save rule](./images/saveRule.png)
 
     9\. In the full lifecycle, a Rule Manager runs test suites before deploying the rules, click **Tests** in the menu bar and click the **run** icon on the Test Suite. 
+
     ![run tests](./images/runTests.png)
 
-    10\. The updated rules will be deployed and the test scenario will run, once it has completed open the report and review the results. 
+    10\. The updated rules will be deployed and the test scenario will run, once it has completed open the report and review the results.
+
     ![open test results](./images/openTestReport.png)
 
     11\.If you created the new rule correctly the test report should show no errors.
+
     ![view test results](./images/testResults.png)
 
     If you wish, go back to the **Test Suite** tab and open the Test Suite for editing.  
+
     ![edit test suite](./images/editTestSuite.png)
 
     You can also download the scenario Excel file and see how the test is performed by looking at the scenarios worksheet and the expected results worksheet.
 
     12\. Click the **Simulations** tab and **Simulations** sub tab. Place the mouse over the **Accounts Payable Simulation** and click the run icon.
+
     ![run simulation](./images/runSimulation.png)
 
     13\. After clicking **OK**, you will see the simulation running with a spinning status icon
 
     14\. Once a checkmark appears, place the mouse over the report name and click the compare icon on the right
+
     ![open simulation](./images/openSimReport.png)
 
     13\. Under **main**, select the simulation report that is furthest in the past and click compare
+
     ![compare simulation](./images/compareReports.png)
 
     On the left are the results for the new rules and the right are the results for the original rules
@@ -293,25 +305,30 @@
 ??? note summary "Expand to view"
 
     1. Click the **Deployments** tab and **Configurations** sub tab
-    1. Place the mouse over **Validate Invoice Production Deployment** and click the deploy icon on the right
-        ![deploy](./images/deploy.png)
-    1. Review the deployment details and click **Deploy**, take a note of the new version that will be created as a result of this deployment.
-    1. Once a checkmark appears, click the name of the deployment report to open it and take note of the number under **New Version** at the bottom (such as **1.3**)
+    2. Place the mouse over **Validate Invoice Production Deployment** and click the deploy icon on the right
 
-    6\. Navigate back to the Accounts Payable  browser window/tab and click on the picture of the **Customer**
+    ![deploy](./images/deploy.png)
+
+    3. Review the deployment details and click **Deploy**, take a note of the new version that will be created as a result of this deployment.
+    4. Once a checkmark appears, click the name of the deployment report to open it and take note of the number under **New Version** at the bottom (such as **1.3**)
+
+    5. Navigate back to the Accounts Payable  browser window/tab and click on the picture of the **Customer**
+
     ![customer demo](./images/accountsPayableApp_run.png)
 
-    7\. Select the same invoice that was accepted earlier, ending in **105R**
+    6. Select the same invoice that was accepted earlier, ending in **105R**
 
-    8\. At the bottom, expand the **Control Panel** and activate the **Upgrade rules scenario**
+    7. At the bottom, expand the **Control Panel** and activate the **Upgrade rules scenario**
 
-    9\. In the **Your ruleset version** field that appears, enter the version you deployed (such as **1.3**) and click Validate Invoice
+    8. In the **Your ruleset version** field that appears, enter the version you deployed (such as **1.3**) and click Validate Invoice
+
     ![submit again](./images/submitAgain.png)
 
-    10\. Confirm the invoice is rejected with the reason code from your new rule table row
+    9. Confirm the invoice is rejected with the reason code from your new rule table row
+
     ![confirm rejection](./images/confirmRejection.png)
 
-    11\. Click **Back to Launchpad**
+    10. Click **Back to Launchpad**
 
     [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
@@ -347,19 +364,24 @@
     If this happens your new branch will have the update rule already. The simple fix for this is revert the rule back to an earlier version. 
 
     1. Open the **Validate PO aginst supplier** decision table, this is typically the only rule that is updated. 
+
     ![select rule](./images/cleanupSelect.png)
 
-    2. Confirm that the table already has a row for **IN Inc** invoices and click the icon to expand the window. 
+    2. Confirm that the table already has a row for **IN Inc** invoices and click the icon to expand the window.
+
     ![cleanup confirm](./images/cleanupConfirm.png)
 
     3. Open the timeline view for this rule 
+
     ![open timeline](./images/openTimeline.png)
 
-    4. Browse through the history of the rule until you find an earlier version with just 6 rows, that doesn't contain the new row. Just click on the card to open a specific version. 
+    4. Browse through the history of the rule until you find an earlier version with just 6 rows, that doesn't contain the new row. Just click on the card to open a specific version.
+
     ![browse timeline](./images/timelineBrowse.png)
 
     3. If the rule contains the new row just go back to the timeline by clicking on the **Timeline** icon again and select another version. 
-    If the rule does not contain the new row click the **Restore** icon, and then the **Restore Version** button. 
+    If the rule does not contain the new row click the **Restore** icon, and then the **Restore Version** button.
+
     ![open timeline](./images/openTimeline.png)
 
     Your rules should now be back at the starting state. It would be helpful to others if you could do the same restoration to the main branch. 
