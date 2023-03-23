@@ -11,7 +11,7 @@
   * **Cloud Pak for Business Automation as a Service demo environment (predeployed for IBMers only):** continue to the [Getting Started Lab](#getting-started-lab) section below.
   * **Install Yourself:** To deploy Accounts Payable on your own environment, and technical architecture information, see the <a href="https://github.com/ibm-cloud-architecture/dba-accounts-payable.git" target="_blank">dba-accounts-payable</a> git repository which includes the required deployment artifacts.
 
- ![10](./images/Slide2.png)
+ ![storyboard overview](./images/storyboard_overview.png)
 
 ***
 
@@ -87,25 +87,13 @@
 
         4\. Select **Production** and then **Run**.
 
-        5\. Click the **Process Portal** tile
+        5\. Click the **Business Automation Apps** tile
 
-        6\. Wait for the portal to load in a new browser window/tab
+        6\. Wait for the Business Automation Apps to load in a new browser window/tab
 
-         ![11](./images/Slide4.png)
+         ![business automation apps](./images/businessAutomationApps.png)
 
-        7\. On the left menu, under the **Dashboards**, click **Show more/less…**
-
-        8\. Click **Focus Corp Demos Dashboard**
-
-        9\. Wait for the dashboard to load on the right
-
-        ![12](./images/Slide5.png)
-
-        10\. Start by reviewing the available demos, they all represent a business automation use case so you can easily get started.
-
-        ![13](./images/Slide6.png)
-
-        11\. When ready, click the green **Accounts Payable** button to launch the use case.
+        7\. Click the **Accounts Payable** tile
 
         [Go to top (Option 2a)](#lab-section-2a) | [Go to Getting Start Lab](#getting-started-lab)
 
@@ -124,19 +112,19 @@
 
         3\. Ask your administrator for the Process Portal URL and your login credentials
 
-        4\. Wait for the desktop to load in a new browser window/tab (it can take some time) and log in
+        4\. Select **Production** and then **Run**.
 
-         ![13](./images/Slide4.png)
+        5\. Click the **Business Automation Apps** tile
 
-        5\. Start by reviewing the available demos, they all represent a business automation use case so you can easily get started.
+        6\. Wait for the Business Automation Apps to load in a new browser window/tab
 
-        6\. When ready, click the **Accounts Payable** tile to launch the demo and continue to [the next section](#lab-section-3).
+          ![business automation apps](./images/businessAutomationApps.png)
 
         [Go to top (Option 2b)](#lab-section-2b) | [Go to Getting Started Lab](#getting-started-lab)
 
     [Go to top](#lab-section-2) | [Go to Getting Started Lab](#getting-started-lab)
 
-## 3\. Submit invoices and review rules
+## 3\. Submit invoices and review results from business rules
 ??? note summary "Expand to view"
 
     #### Be your customer!
@@ -145,69 +133,60 @@
     You are now a customer with an invoice to submit for payment and you want to make sure it is valid.  What do you experience?
     As a customer, you want to be paid for your services on time and make sure you are doing your part to submit valid invoice data.  Clear and consistent business rules ensure you know what you need to do.
 
-     ![13](./images/Slide8.png)
+     ![accounts payable app](./images/accountsPayableApp.png)
 
     1. Check the tabs to learn more about the demo
         1. **Storyboard Outline**
-        1. **Demo Discovery Map**
+        1. **Discovery Map**
 
-     ![13](./images/Slide9.png)
+     ![accounts payable app links](./images/accountsPayableApp_links.png)
 
-    2\. Navigate to the **Launch the Demo** tab and then click on the picture of the **Customer**
+    2\. Navigate to the **Run the Demo** tab and then click on the picture of the **Customer**
 
-     ![13](./images/Slide10.png)
+     ![13](./images/accountsPayableApp_run.png)
 
     3\. Use the drop down to select the first invoice ending in **101R**.
 
     > NOTE: invoices ending in R should be rejected and A should be approved
 
-     ![13](./images/Slide11.png)
+     ![submit first invoice](./images/firstInvoice.png)
 
     4\. Click **Validate Invoice** to see the results, the invoice is rejected
 
-    5\. If you want, you can read the reason code and resubmit the invoice to fix the error
+    5\. Choose to **Submit Another Invoice**
 
-    6\. Choose to **Submit Another Invoice**
+    6\. Select the invoice ending in **105R**
 
-    7\. Select the invoice ending in **105R**
+    7\. Submit the invoice and see that it is not rejected as expected which leads to rework in downstream business processes, we will examine the rules for this invoice in detail so make a note of the invoice information we'll assess in the business rules
 
-    8\. At the bottom, expand the **Demo Control Panel**
-
-    9\. Turn on the decision labels to see which data is used to make the decision
-
-    10\. Submit the invoice and see that it is not rejected as expected which leads to rework in downstream business processes
-
-    ![13](./images/Slide12.png)
+    ![submit second invoice](./images/secondInvoice.png)
 
     [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
 ## 4\. Review the Operations Dashboard
 ??? note summary "Expand to view"
 
-    > NOTE: If your environment does not have Kibana dashboards, you may need to skip executing this section and just read it as Business Performance Center dasbboards are not available at this time.
+    
+    You are now a Focus Corp employee, first an Operations Specialist and later a Rule Manager. First, lets review the operations dashboards
 
-    You are now a Focus Corp employee, first an Operations Specialist and later a Rule Manager.  Time to see how invoice validation works.
+    1\. Navigate back to the main Accounts Payable App and click on the picture of the Operations Specialist
 
-    1\. Navigate back to the Focus Corp Demos Dashboard browser window/tab
+    ![operations specialist](./images/accountsPayableApp_operations.png)
 
-    2\. Click on **Week 1** under the picture of the **Operations Specialist**
+    2\. Find the **Accounts Payable(AP) Week 1** dasboard in the list and click to open it
 
-    3\. Login to the **Insights Dashboard**
+    ![dashboard list week 1](./images/dashboards_week1_highlighted.png)
 
-    > NOTE: If this is your FIRST TIME, your password may not work; go back to the SaaS portal, mouse over your name in the upper right and click Set Password.  Once complete, come back and login to the Open Distro for Elasticsearch / Kibana.
+    3\. The Week 1 dashboard will open
 
-     ![13](./images/Slide13.png)
-
+    ![week 1 dashboard](./images/dashboards_week1_open.png)
 
     4\. Review the Week 1 dashboard metrics and note the following:
-        1. Average invoice processing time is unmanageable at above 100 minutes
-        1. The rules deviated from the final result on more than 60 invoices this week
 
+    1. Average invoice processing time is unmanageable at above 100 minutes
+    1. The rules deviated from the final result on more than 60 invoices this week
 
-     ![13](./images/Slide14.png)
-
-
-    [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
+       [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
 
 ## 5\. Review the business rules
@@ -215,98 +194,124 @@
 
     **Continuing as the Focus Corp Rule Manager, how can you adapt your rules to reduce rework and process invoices faster with less exceptions?**
 
-    Rule Managers can adjust rules, validate and simulate the decision service and deploy quickly and easily.
+    Rule Managers can adjust rules, validate and simulate the decision service and deploy quickly and easily. Navigate back to the main Accounts Payable App and click on the picture of the Rule Manager
 
-    1. Navigate back to the Focus Corp Demos Dashboard browser window/tab
-    1. Click the picture of the **Rule Manager**
-    1. Click **Validate Invoice** followed by **main** to open the decision model
-    1. Review the decision model, green ovals are input data and blue boxes are decisions, each with their own business logic leading to the **Final Result** decision
+    ![rule manager](./images/accountsPayableApp_ruleManager.png)
 
-    ![13](./images/Slide15.png)
+    This launches Decision Center, an application used by rule managers to create, update and manage their business rules.
 
-    5\. Click the blue **Validate PO against Supplier** decision node
+    1. Enter "Validate Invoice" into the filter text box and then click on the decision service **Validate Invoice Service**
+    ![decision services](./images/decisionServices.png)
 
-    6\. On the left pane, scroll to the bottom and click to open the **Validate PO against Supplier** logic
+    1. Click on **main** to open the main branch decision model
+    ![main branch](./images/mainBranch.png)
 
-    7\. Review the decision table and note there is no row addressing Inc. suppliers.
+    1. Click on **Types** to open type selction window.
+    ![types](./images/types.png)
 
-    ![13](./images/Slide16.png)
+    1. Click on **Ruleflows** then click the **Apply** button. This will display the ruleflow.
+    ![main branch](./images/showRuleflows.png)
+
+    1. Review the ruleflow, processing starts by setting default values, then execution splits into two tasks, Amount and Supplier. Each task contains a single rule.
+    ![ruleflow](./images/ruleflow.png)
+
+    5\. Click the **amount** folder on the left then click on the **$0 Total Amount** rule. Read through the rule so you are familiar with its logic.
+    ![amount rule](./images/amountRule.png)
+
+    6\. Click the **supplier** folder on the left then click on the **Validate PO against supplier** rule to open the decision table. 
+    ![supplier rule](./images/validateSupplier.png)
+
+    7\. Review the decision table and note there are six rows, there is no row addressing Inc. suppliers. 
+    ![supplier decision table](./images/validateSupplier_start.png)
+
+    If the decision table already contains a row dealing with Inc suppliers then someone has made an update on the main branch. We will describe how to reset this rule back to its starting state in the Cleanup section.
 
     [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
 ## 6\. Update and simulate the business rules
 ??? note summary "Expand to view"
 
-    1. At the upper left, click **Validate Invoice**
-    1. On the left, just above **main**, click the plus icon
-    1. Create a new branch name using a unique phrase such as your name, ensure **main** is the parent branch and click **Create**
+    1\. At the upper left, click **Validate Invoice Service**
+    ![open root project](./images/openRootProject.png)
 
-     ![13](./images/Slide18.png)
+    2\. Make sure you are in the **Branches** tab  and just above **main**, click the plus icon to create a new branch name using a unique phrase such as your name, ensure **main** is the parent branch and click **Create**
+     ![create branch](./images/createBranch.png)
 
+    **If the decision table discussed below already contains a row dealing with Inc suppliers then someone has made an update on the main branch, please refer to the instructions in the cleanup section to restore an earlier version of this rule before proceeding.**
 
-    4\. On the upper right, click the pencil to edit the decision model
+    3\. Click the **supplier** folder and then hover over the rule called **Validate PO against supplier** and click the **pencil** icon to open the rule for editing.
+    ![open supplier rule](./images/openValidateSupplier.png)
 
-    5\. Open the same **Validate PO against Supplier** decision node and table
+    4\. Right click on the last row and select **Insert row** -> **Below**
+    ![insert row](./images/insertRow.png)
 
-    6\. Right click on the row number for row 3 and select **Insert row** -> **Below**
-
-    7\. Enter values in the new row 4 to look for **IN** when suppliers are **Inc** type as pictured
+    7\. Enter values in the new row to look for **IN** when suppliers are **Inc** type as pictured. Ensure the message is entered exactly as shown **PO number must start with IN for Inc suppliers**
+    ![new row](./images/newRow.png)
 
     > NOTE: you can copy and paste cells as you would in a spreadsheet editor
 
-    ![13](./images/Slide19.png)
+    8\. On the upper right, click the **Save** icon, provide a comment and click **create new verison**
+    ![save rule](./images/saveRule.png)
 
-    8\. On the upper right, Save and Close when done editing the rules
+    9\. In the full lifecycle, a Rule Manager runs test suites before deploying the rules, click **Tests** in the menu bar and click the **run** icon on the Test Suite. 
+    ![run tests](./images/runTests.png)
 
-    In the full lifecycle, a Rule Manager runs validations and test suites before deploying the rules, if you wish, explore by clicking Validate on the left side of the editor or selecting the Tests tab at the top to run the test suite provided.
+    10\. The updated rules will be deployed and the test scenario will run, once it has completed open the report and review the results. 
+    ![open test results](./images/openTestReport.png)
 
-    9\. Click the **Simulations** tab and **Simulations** sub tab
+    11\.If you created the new rule correctly the test report should show no errors.
+    ![view test results](./images/testResults.png)
 
-    10\. Place the mouse over the **Accounts Payable Simulation** and click the run icon on the right
+    If you wish, go back to the **Test Suite** tab and open the Test Suite for editing.  
+    ![edit test suite](./images/editTestSuite.png)
 
-    11\. After clicking **OK**, you will see the simulation running with a spinning status icon
+    You can also download the scenario Excel file and see how the test is performed by looking at the scenarios worksheet and the expected results worksheet.
 
-    12\. Once a checkmark appears, place the mouse over the report name and click the compare icon on the right
+    12\. Click the **Simulations** tab and **Simulations** sub tab. Place the mouse over the **Accounts Payable Simulation** and click the run icon.
+    ![run simulation](./images/runSimulation.png)
 
-    ![13](./images/Slide20.png)
+    13\. After clicking **OK**, you will see the simulation running with a spinning status icon
 
-    13\. Under **main**, select the simulation report that is furthest in the past
+    14\. Once a checkmark appears, place the mouse over the report name and click the compare icon on the right
+    ![open simulation](./images/openSimReport.png)
 
-    14\. Click **Compare**
+    13\. Under **main**, select the simulation report that is furthest in the past and click compare
+    ![compare simulation](./images/compareReports.png)
 
     On the left are the results for the new rules and the right are the results for the original rules
 
-    15\. Compare and notice some important differences:
-        1. (pie chart) more invoices were rejected (the new rule rejects a new incorrect pattern)
-        1. (orange bar chart) higher value invoices are rejected more
+    14\. Compare and notice some important differences:
 
-    ![13](./images/Slide21.png)
+    1. (pie chart) more invoices were rejected (the new rule rejects a new incorrect pattern)
+    1. (orange bar chart) higher value invoices are rejected more
+
+    ![simulation results](./images/simResults.png)
 
     [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
 ## 7\. Deploy the business rules and see the results
 ??? note summary "Expand to view"
 
-    1. On the upper left, to the right of **Validate Invoice**, click the name of the branch you created
     1. Click the **Deployments** tab and **Configurations** sub tab
-    1. Place the mouse over **Validate Invoice Dev Deployment** and click the deploy icon on the right
-    1. Review the deployment details and click **Deploy**
-    1. Once a checkmark appears, click the name of the deployment report to open it and take note of the number under **New Version** at the bottom (such as **1.1**)
+    1. Place the mouse over **Validate Invoice Production Deployment** and click the deploy icon on the right
+        ![deploy](./images/deploy.png)
+    1. Review the deployment details and click **Deploy**, take a note of the new version that will be created as a result of this deployment.
+    1. Once a checkmark appears, click the name of the deployment report to open it and take note of the number under **New Version** at the bottom (such as **1.3**)
 
-     ![13](./images/Slide22.png)
-
-    6\. Navigate to the Customer’s browser window/tab or back to the **Focus Corp Demos Dashboard** browser window/tab and click on the picture of the **Customer**
+    6\. Navigate back to the Accounts Payable  browser window/tab and click on the picture of the **Customer**
+    ![customer demo](./images/accountsPayableApp_run.png)
 
     7\. Select the same invoice that was accepted earlier, ending in **105R**
 
-    8\. At the bottom, expand the **Demo Control Panel** and activate the **Upgrade rules scenario**
+    8\. At the bottom, expand the **Control Panel** and activate the **Upgrade rules scenario**
 
-    9\. In the **Your ruleset version** field that appears, enter the version you deployed (such as **1.1**)
+    9\. In the **Your ruleset version** field that appears, enter the version you deployed (such as **1.3**) and click Validate Invoice
+    ![submit again](./images/submitAgain.png)
 
-    10\. Submit the invoice and confirm it is rejected with the reason code from your new rule table row
+    10\. Confirm the invoice is rejected with the reason code from your new rule table row
+    ![confirm rejection](./images/confirmRejection.png)
 
-     ![13](./images/Slide23.png)
-
+    11\. Click **Back to Launchpad**
 
     [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
@@ -314,17 +319,15 @@
 ## 8\. Review latest operational performance
 ??? note summary "Expand to view"
 
-    > NOTE: If your environment does not have Kibana dashboards, you may need to skip executing this section and just read it as Business Performance Center dasbboards are not available at this time.
-
     1. Navigate back to the **Focus Corp Demos Dashboard** browser window/tab
-    2. Click on **Week 2** under the picture of the **Operations Specialist**
-    3. Review the dashboard metrics and note the following:
+    2. Click on the picture of the **Operations Specialist**
+    3. Open the **Accounts Payable(AP) - Week 2** dashboard and note the following:
         1. Lower average invoice processing time below 100 minutes
         1. Less deviation from the final result per week
 
     **The upgraded rules are reducing rework already!**
 
-     ![13](./images/Slide24.png)
+     ![week2 dashboard](./images/dashboards_week2_open.png)
 
     [Go to top](#refund-request-automation) | [Go to Getting Start Lab](#getting-started-lab)
 
@@ -332,6 +335,39 @@
 ??? note summary "Expand to view"
 
     We just used decision automation, a capability within IBM Cloud Pak for Automation, to automate an accounts payable process.  With growing volumes of invoices, business rule automation helps reduce the amount of human intervention for account processing, detect issues earlier, and incorporate changes quickly when needed.
+
+    [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
+
+***
+
+## 10\. Cleanup and Reset
+??? note summary "Expand to view"
+
+    When you create your own branch you are helping to keep your work seperate from the main branch. However, there is a possibility that someone has made their updates to the main branch.
+    If this happens your new branch will have the update rule already. The simple fix for this is revert the rule back to an earlier version. 
+
+    1. Open the **Validate PO aginst supplier** decision table, this is typically the only rule that is updated. 
+    ![select rule](./images/cleanupSelect.png)
+
+    2. Confirm that the table already has a row for **IN Inc** invoices and click the icon to expand the window. 
+    ![cleanup confirm](./images/cleanupConfirm.png)
+
+    3. Open the timeline view for this rule 
+    ![open timeline](./images/openTimeline.png)
+
+    4. Browse through the history of the rule until you find an earlier version with just 6 rows, that doesn't contain the new row. Just click on the card to open a specific version. 
+    ![browse timeline](./images/timelineBrowse.png)
+
+    3. If the rule contains the new row just go back to the timeline by clicking on the **Timeline** icon again and select another version. 
+    If the rule does not contain the new row click the **Restore** icon, and then the **Restore Version** button. 
+    ![open timeline](./images/openTimeline.png)
+
+    Your rules should now be back at the starting state. It would be helpful to others if you could do the same restoration to the main branch. 
+    Just switch over to the main branch using the arrow near your branch name, once you've updated the main branch remember to switch back to your branch.
+
+    Finally, please remove your branch. Click on **Validate Invoice Service** in the top left corner, select your branch, then select **Delete**
+
+    ![remove branch](./images/deleteBranch.png)
 
     [Go to top](#introduction) | [Go to Getting Start Lab](#getting-started-lab)
 
@@ -356,19 +392,17 @@
 
     **Operations week 1**
 
-    Further, we can see from the Operations Specialist's Accounts Payable dashboard that the average invoice processing time in the upper right is unmanageable at above 100 minutes.  Further, the rules deviated from the final result on more than 60 invoices this week, adding to rework. Rules must change at the speed of the changing business so let's see how we can improve the business rules.
+    Further, we can see from the Operations Specialist's week 1 dashboard that the average invoice processing time in the upper right is unmanageable at above 100 minutes.  Further, the rules deviated from the final result on more than 60 invoices this week, adding to rework. Rules must change at the speed of the changing business so let's see how we can improve the business rules.
 
     **Rules manager**
 
-    As a rules manager, we have access to the invoice validation decision model. The invoice data move from the oval at the bottom through multiple sub-decisions including a text rule to check the total amount is more than $0 which resulted in our first invoice being rejected.  Another decision table looks for combinations of PO numbers and supplier types that do not follow the correct pattern (update!).  This is where the second invoice should have be rejected but the table is missing a new invalid pattern.
+    As a rules manager, we have access to the invoice validation decision model. The ruleflow orchestrates the decision making process using a text rule to check the total amount is more than $0 which resulted in our first invoice being rejected.  A decision table looks for combinations of PO numbers and supplier types that do not follow the correct pattern (update!).  This is where the second invoice should have be rejected but the table is missing a new invalid pattern.
 
     The rules manager, a business user, edits the decision model, adds a new row, easily does a copy/paste of the existing row to get a head start, exactly like a spreadsheet, adjusts the values to match the new Inc. based rejection pattern and the rule is ready.  Tables automatically generate multiple text rules that follow the same pattern so we do not have to write them all from scratch.
 
-    Let's validate our work in real time by running the same test case as before that should have been rejected.  Great, and with the new rule we get the rejection reason we just created.
+    Let's validate our work by running the test suite to confirm the business logic is now correct.
 
-    Once they save the new decision model for audit and compliance, the rule manager can run an automated regression test but instead we'll move on to simulation.  Loading an old simulation report before the rule change, we see rule metrics including the number of invoices approved and rejected as well as trends by date and invoice amount.  No high invoice amounts are being rejected, interesting.  The business knows most of the high value invoices are Inc. vendors so the new rule should catch more of these errors.
-
-    After running a new simulation and comparing side by side, the business can make an informed decision about the impact of new rules before ever deploying to production.  Yes, this looks as expected so we are ready to deploy.  In this case, the business can deploy on their own but this can be configured for only certain safe rules and others must go through IT testing.
+    Now we'll move beyond functional testing and onto simulation. After running a new simulation and comparing side by side, the business can make an informed decision about the impact of new rules before ever deploying to production.  Yes, this looks as expected so we are ready to deploy.  In this case, the business can deploy on their own but this can be configured for only certain safe rules and others must go through IT testing.
 
     **Customer approved to rejected**
 
@@ -383,3 +417,4 @@
     We just used decision automation, a capability within IBM Cloud Pak for Automation, to automate an accounts payable process.  With growing volumes of invoices, business rule automation helps reduce the amount of human intervention for account processing, detect issues earlier, and incorporate changes quickly when needed.
 
     [Go to top](#video-narration) | [Go to Getting Started Lab](#getting-started-lab) | [Go to Introduction](#introduction)
+
