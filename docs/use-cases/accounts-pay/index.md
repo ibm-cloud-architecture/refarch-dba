@@ -382,7 +382,7 @@
     3. If the rule contains the new row just go back to the timeline by clicking on the **Timeline** icon again and select another version. 
     If the rule does not contain the new row click the **Restore** icon, and then the **Restore Version** button.
 
-    ![open timeline](./images/openTimeline.png)
+    ![open timeline](./images/timelineRestore.png)
 
     Your rules should now be back at the starting state. It would be helpful to others if you could do the same restoration to the main branch. 
     Just switch over to the main branch using the arrow near your branch name, once you've updated the main branch remember to switch back to your branch.
