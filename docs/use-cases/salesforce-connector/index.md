@@ -6,10 +6,13 @@
 
 **Use Case:** FileNet Salesforce Connector
 
-**Use Case Overview:** Focus Corp have recently acquired Salesforce as part of their strategy to drive sales opportunities and client relationships, documents such as contracts, meting notes, invoices, etc , needed to be associated to client accounts or opportunities as part of their day by day operations.  You will assume the role of Chad, an Sales Specislist employee at Focus Corp. Chad will seamlessly connect Salesforce with FileNet Content Manager to eliminate a content silo and manage Salesforce content within the leading, modern FileNet Content Manager platform. This native integration allows Salesforce users to store and manage related content seamlessly in FileNet Content Manager as it relates to Salesforce accounts, cases, opportunities, and more. They will no longer need to switch applications to find related information. With a Salesforce-oriented user experience, this connector will require minimal to no training, and IT teams can take advantage of the feature-rich content management capabilities of FileNet and govern enterprise content in one place.
+**Use Case Overview:** Focus Corp recently acquired a subscription to Salesforce CRM as part of their strategy to drive sales opportunities and client relationships, documents such as contracts, meeting notes, invoices, etc , needed to be associated to client accounts or opportunities as part of their day by day operations. You will assume the role of Chad, a Sales Specialist employee at Focus Corp. Chad will seamlessly connect Salesforce with FileNet Content Manager to eliminate a content silo and manage Salesforce content within the leading, modern FileNet Content Manager platform. This native integration allows Salesforce users to store and manage related content seamlessly in FileNet Content Manager as it relates to Salesforce accounts, cases, opportunities, and more. They will no longer need to switch applications to find related information. With a Salesforce-oriented user experience, this connector will require minimal to no training, and IT teams can take advantage of the feature-rich content management capabilities of FileNet and govern enterprise content in one place.
+
+The IBM FileNet Content Services GraphQL API provides the connection between the IBM FileNet Connector for Salesforce app and the IBM FileNet Content Engine server. The following graphic describes this connection:
 
 ![1](./images/001-Architecture.png)
 
+The FileNet Salesforce Connector App connects to the IBM FileNet Content Services GraphQL API through a secure HTTPS connection. The GraphQL API then makes calls to the Content Platform Engine server through the Content Engine Java API to interact with Documents and with SalesforceRelationship objects that associate Documents with Salesforce records.
 
 **Environment Access:**
 
@@ -37,11 +40,12 @@
 ??? note SUMMARY "Expand to view"
 
     **Use Case Overview**
-    Employee applicant (John Doe) submitted an employee application and video interview along with other materials as part of the employment application process. During this process, HR processors initially reviewed the employment application making comments and annotations on the document along with entering video bookmarks, allowing additional reviewers to quickly locate key responses. Lucy along with other reviewers are able to review all the information and documents pertaining to applicant John Doe in the teamspace in a consistent and secure manner using an intuitive user-interface. Some of the information such as the applicant's SSN, is available on some of the documents but they are redacted so that only reviewers with the appropriate permission are able to see the redacted content. The use of video bookmarks also allows Lucy to quickly jump to key sections of the video without necessarily having to watch the entire video. Finally, Lucy is able to integrate with enterprise workflow to launch additional manual and automated processes.
+
+    Sales Specialist (Chad Jones) needs to create a new SalesForce Account for a customer. As part of the process he needs to attach several documentation to the account for auditing and tracking . This documentation have several properties that need to be added as document metadata in the IBM Filenet Content Manager Repository. The document properties are often updated by sales representatives as well as the version of the documents. Being able to view , download and delete associated documents is crucial so Chad can  manage the required account documentation from one single place instead of using multiple user interfaces.
 
     **Discovery Map**
 
-    ![Discovery Map](./images/000-Intro-DiscoveryMap.png)
+    ![Discovery Map](./images/002-process.png)
 
     [Go to top](#lab-section-1) | [Go to Getting Started Lab](#getting-started-lab)
 
@@ -49,70 +53,88 @@
 <a name="lab-section-2"></a>
 ??? note summary "Expand to view"
 
-    **IBM Navigator is a desktop for an organization's workers to find and organize information.**
+    **Salesforce is a customer relationship management (CRM) platform. It helps marketing, sales, commerce, service and IT teams work as one from anywhere and collaborate to progress sales opportunities and handle the relationship with clients.**
 
-    You are now a Human Resources (HR) Onboarding Specialist, Lucy, at Focus Corp reviewing an applicant, John Doe, for employment. As an onboarding specialist, Lucy will use the IBM Navigator user interface to review content submitted by John such as the employment application and video interview.
+    1\. One you request access to the Salesforce environment, you will receive an email to activate your account, go ahead a click "Verify Account"
 
-    Let's take a quick tour of the **IBM Navigator** user interface.
+    ![Verify1](./images/003-verify.png)    
 
-    1\. Click on the navigation menu icon in the upper left corner of the screen
+    2\. You will be asked to change your password
 
-## 3. Tour FileNet Salesforce Connector
+    ![Verify2](./images/004-verify.png) 
+
+    3\. Once you change your password you will be redirected to the Salesforce home page
+    
+    ![Verify3](./images/005-verify.png) 
+
+## 3. FileNet Salesforce Connector
 <a name="lab-section-3"></a>
 ??? note SUMMARY "Expand to view"
 
-    **IBM Navigator is a desktop for an organization's workers to find and organize information.**
+    You are now a Sales Specialist employee at Focus Corp, Chad, at Focus Corp creating a new Customer for handling sales opportunities and client relationship . As an Sales Specialist, Chad will use the Salesforce web user interface to create a new account and associate relevant documentation for auditing and tracking. The documentation have properties that will help you identify it in the future, you will also need to view and update this documents from the Salesforce web page.
 
-    You are now a Human Resources (HR) Onboarding Specialist, Lucy, at Focus Corp reviewing an applicant, John Doe, for employment. As an onboarding specialist, Lucy will use the IBM Navigator user interface to review content submitted by John such as the employment application and video interview.
+    Let's get started
 
-    Let's take a quick tour of the **IBM Navigator** user interface.
+    1\. Access the IBM Filenet Sales Force Application 
 
-    1\. Click on the navigation menu icon in the upper left corner of the screen  
-
-    The navigation menu icon (also commonly referred to as the hamburger icon) is used to access the navigation menu and features such as **Browse**, **Search**, **Share**, **Teamspaces**, **Work**, **Cases** and **Reports**. Additional features can also be added using plugins. This interface including the top banner, list of features and menu options are configurable through the use of desktops.
-
-    Note: The **Reports** feature is used for Records Management and may or may not be installed on your environment. Records Management related activities such as declaring a record can be done automatically and also manually using the **Browse** feature. The **Work** and **Cases** feature show workflow tasks assigned to the user and case manager activities (respectively).
-
-    ![13](./images/100-Navigator-Hamburger.png)
-
-    2\. Click the **Browse** feature  
-
-    ![44](./images/100-Navigator-BrowseFeature.png)
-
-    You are now viewing a repository called **Corporate Operations** which is an **IBM FileNet Content Manager** repository.
+    In the SalesForce menu search for "IBM Filenet" and then click over the "IBM FileNet Salesforce Connector" Application
     
-    !!! note
-        You can also access other repositories and perform cross-repository searches using **CM8** (IBM Content Manager), **CMOD** (IBM Content Manager OnDemand), **Box®** and **CMIS** (Content Management Interoperability Services) compliant repositories like **Alfresco®** and **Microsoft SharePoint®** On-Premises.
+     ![Connector1](./images/006-connector.png)
 
-    3\. From the folder structure on the left side of the screen, traverse and click on the **Focus Corp Docs / Human Resources / Onboarded Employees** folder representing content for onboarded employees.  
+    2\. Create a new Account in Salesforce
 
-    ![13](./images/110c-Navigator-OnboardedEmployees.png)
+    In the "IBM FileNet Salesforce Connector" Application menu click "Accounts" and then "New" button to create a new Account
+    
+     ![Connector1](./images/007-connector.png)
 
-    As shown the diagram above, the center or content area of the screen shows the selected content which may also be used to traverse the folder structure. Additionally, the top of the content area displays the full folder structure of the selected content.
+    3\. Complete the new Account information in Salesforce
 
-    4\. Click on the **Selena Swift** checkbox as shown in the diagram below.  
+    In the "New Account" window complete the following properties and click "Save":
 
-    Please note that the folder can be selected by either clicking on the checkbox -OR- by clicking on the folder row. If a checkbox is not visible, contact your administrator to enable **Content list checkboxes** at the desktop level. Clicking on the folder name text will select the folder and additionally traverse into the folder.
+    * Account Name: TestAcount(Username)
+    * Type: Customer
+    * Industry: Communications
+    * Employees: 25
+    * Annual Revenue: 5'000.000
+    
+     ![Connector1](./images/008-connector.png)
 
-    ![13](./images/115-Navigator-SelenaSwift.png)
+    4\. You will be redirected to the "TestAcount" account page, there is a widget called "Related Documents" which is the one that provides the IBM Filenet integration, as it is a new company the list of documents should be empty.
+    
+     ![Connector1](./images/009-connector.png)
 
-    For onboarded employee – **Selena Swift**, you can see custom folder properties such as the **First Name**, **Last Name**, **Employee ID**, **Onboarded** status and **Hire Date**.
+    5\. Now you will upload some example documents to the account, you can use the folowing files:
 
-    5\. Navigate to the **Focus Corp Docs / Human Resources / Onboarded Employees / Selena Swift / Employee Packet** folder and then click on the checkbox for the first document. Next, in the upper-right corner, select the different **Views** (**Details**, **Magazine**, **Filmstrip**). As shown in the diagram below, the **Details** view is shown as the default view.  
+    * [Map Example](./sample-documents/Image.jpg)
+    * [Meeting Notes](./sample-documents/Meeting%20Notes%201-30-2023.docx)
+    * [Brochure](./sample-documents/WSD14120USEN.pdf)
 
-    ![13](./images/120c-Navigator-EmployeePacket.png)
+    Use the following table to upload the 3 documents to the account:
 
-    In our example, Focus Corp maintains an **Employee Packet** folder that contains new employee info documents such as the **Confidentiality Agreement** and **Employee Manual**. In the **Details** view, you are able to see the thumbnail and properties of the selected content.
+    Name | Filename | Document Class      | Account Name
+    ------- | ---------------- | ---------- | ---------:
+    Map Example  | Image.jpg | SF Document | TestAccount(Francisco)
+    Meeting Notes  | Meeting Notes 1-30-2023.docx        | SF CRM Document       | TestAccount(Francisco)
+    Brochure   | WSD14120USEN.pdf | SF Document      | TestAccount(Francisco)
 
-    6\. Select the **Magazine** view  
+    Use the next screen as reference for document uploading:
 
-    ![13](./images/121-Navigator-Magazine.png)
+    ![Connector1](./images/010-connector.png)
 
-    In the **Magazine** view, you can now see the same content along with social features such as **Likes**, **Tags**, **Downloads** and **Comments**.
+    After uploading the files your "Related Documents" widget should look like this
 
-    7\. Select the **Filmstrip** view. The **Filmstrip** view is very useful for looking at media such pictures. Select the **Photos** folder below the **Employee Packet** folder and then select each picture document.
+    ![Connector1](./images/011-connector.png)
 
-    ![13](./images/122-Navigator-Filmstrip.png)
+    6\. Once the documents are uploaded you can View/Edit the related properties
+
+    Click in the icon menu of the "Brochure" document then click on properties
+
+    ![Connector1](./images/012-connector.png)
+
+    The document properties are displayed, you can even change some property value or view "System Properties" and "Versions"
+  
+    ![Connector1](./images/013-connector.png)
+
 
     [Go to top](#lab-section-3) | [Go to Getting Started Lab](#getting-started-lab)
 
@@ -121,11 +143,8 @@
 
 ??? note SUMMARY "Expand to view"
 
-    As you saw, content services enables secure and compliant content access through the use of teamspaces, viewing and editing capabilities such as role-based Redactions, merge and split, video bookmarks and finally workflow to automate additional processes. The Cloud Pak for Business Automation provides a powerful, pre-integrated platform including Content Services alongside additional business automation services such as Workflow (BAW), RPA, Decisions (ODM and ADS) and more.
+    As you saw, FileNet Salesforce Connector enables secure and compliant IBM Filenet content access through the use of the Salesforce web user interface, uploading viewing and editing documents and associate them with Salesforce records within one single user interface greatlly improve the accesibility needed by users to execute their daily tasks.
 
-    Please visit the [Additional Assets](#additional-assets) section for additional features not covered in this lab.<br><br>
-
-    >BAW - Business Automation Workflow, ODM - Operational Decision Manager, ADS - Automation Decision Services
     
     [Go to top](#lab-section-9) | [Go to Getting Started Lab](#getting-started-lab)
 
@@ -134,7 +153,7 @@
 ??? note SUMMARY "Expand to view"
 
     1\. Using Salesforce UI 
-    Chrome/Fifefox are the recommended browsers to display the document viewer and work with documents from the Accounts Tab. 
+    Chrome/Firefox are the recommended browsers to display the document viewer and work with documents from the Accounts Tab. 
 
     [Go to top](#lab-section-10) | [Go to Getting Started Lab](#getting-started-lab)
 
@@ -144,7 +163,7 @@
 
 **additional assets to explore**
 
-## 110. GraphQL
+## 100. GraphQL
 <a name="additional-assets-110"></a>
 ??? note SUMMARY "Expand to view"
     Video: <a href="https://ibm.biz/SimplifyDevelopmentFileNetGraphQL" target="_blank">Simplify Development using the FileNet GraphQL API (7:18)</a>
@@ -157,7 +176,7 @@
 
 
 
-## 120. Salesforce Integration
+## 101. Salesforce Integration
 <a name="additional-assets-130"></a>
 ??? note SUMMARY "Expand to view"
     Video: <a href="https://ibm.biz/FileNetSalesforce" target="_blank">Salesforce CRM Content to FileNet (6:29)</a>
