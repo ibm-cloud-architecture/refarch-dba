@@ -135,6 +135,26 @@ The FileNet Salesforce Connector App connects to the IBM FileNet Content Service
   
     ![Connector1](./images/013-connector.png)
 
+    7\. You can also view the documents in the SalesForce User Interface, document formats such as pdf or jpeg will be displayed
+
+    Click in the icon menu of the "Brochure" document then click on view
+
+    ![Connector1](./images/014-connector.png)
+
+    The document content is displayed
+
+     ![Connector1](./images/015-connector.png)
+
+    8\. You can update a new version of a document using the user interface by using the icon menu of the "Brochure" document then click on "Upload New Version"
+
+     ![Connector1](./images/016-connector.png)
+
+     In the next screen you should select the new file to upload and click "Upload"
+
+     ![Connector1](./images/017-connector.png)
+
+     9\. To Dowload..........
+
 
     [Go to top](#lab-section-3) | [Go to Getting Started Lab](#getting-started-lab)
 
