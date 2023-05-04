@@ -54,23 +54,37 @@ The FileNet Salesforce Connector App connects to the IBM FileNet Content Service
 <a name="lab-section-2"></a>
 ??? note summary "Expand to view"
 
+    ??? note summary "Option 2A - Using a Cloud Pak for Business Automation as a Service environment (likely an IBMer or Business Partner) ?"
+        <a name="lab-section-2a"></a>
+
+        IBM maintains multiple SaaS tenants that can be reserved and accessed by both IBMers and Business Partners.
+
+        Please login to IBM Technology Zone and navigate to <a href="https://techzone.ibm.com/collection/5fdfcf8b99cf35001ee4954d" target="_blank">here</a> to reserve an environment.
+
+        1. Once you have access to an environment, please continue here:
+
+            • Enablement Users, the Connect Salesforce use case will be available 2023 H2.
+
+            • Demo Users, once your account administrator completes the below setup and provides you access with the base environment, additionally request access to the Salesforce environment.
+
+            • Administrator Users, please reference the Administration Guide (IBM only) for any additional setup information including onboarding users.
+
+
+        **Salesforce is a customer relationship management (CRM) platform. It helps marketing, sales, commerce, service and IT teams work as one from anywhere and collaborate to progress sales opportunities and handle the relationship with clients.**
+
+        2\. One you request access to the Salesforce environment, you will receive an email to activate your account, go ahead a click "Verify Account"
+
+        ![Verify1](./images/003-verify.png)    
+
+        3\. You will be asked to change your password
+
+        ![Verify2](./images/004-verify.png) 
+
+        4\. Once you change your password you will be redirected to the Salesforce home page
     
+        ![Verify3](./images/005-verify.png) 
 
-    **Salesforce is a customer relationship management (CRM) platform. It helps marketing, sales, commerce, service and IT teams work as one from anywhere and collaborate to progress sales opportunities and handle the relationship with clients.**
-
-    1\. One you request access to the Salesforce environment, you will receive an email to activate your account, go ahead a click "Verify Account"
-
-    ![Verify1](./images/003-verify.png)    
-
-    2\. You will be asked to change your password
-
-    ![Verify2](./images/004-verify.png) 
-
-    3\. Once you change your password you will be redirected to the Salesforce home page
-    
-    ![Verify3](./images/005-verify.png) 
-
-    [Go to top](#lab-section-2) | [Go to Getting Started Lab](#getting-started-lab)
+        [Go to top](#lab-section-2) | [Go to Getting Started Lab](#getting-started-lab)
 
 ## 3. FileNet Salesforce Connector
 <a name="lab-section-3"></a>
