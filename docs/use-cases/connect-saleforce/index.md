@@ -18,7 +18,7 @@ The FileNet Salesforce Connector App connects to the IBM FileNet Content Service
 
 **Choose an option:**
 
-* Cloud Pak for Business Automation as a Service demo environment (likely an IBMer or Business Partner): your environment is predeployed, continue to the [Getting Started Lab](#getting-started-lab) Lab section below.
+* Cloud Pak for Business Automation as a Service demo environment (likely an IBMer or Business Partner): your environment is predeployed, continue to the [Getting Started Lab](#getting-started-lab) Lab section below. This option includes a Salesforce environment that is already configured to access IBM Filenet. 
 
 * Install Yourself: To deploy Connect Salesforce on your own environment, and technical architecture information, see the <a href="https://github.com/ibm-cloud-architecture/dba-connect-salesforce" target="_blank">dba-onboarding-automation</a> git repository which includes the required deployment artifacts.
  
@@ -54,6 +54,8 @@ The FileNet Salesforce Connector App connects to the IBM FileNet Content Service
 <a name="lab-section-2"></a>
 ??? note summary "Expand to view"
 
+    
+
     **Salesforce is a customer relationship management (CRM) platform. It helps marketing, sales, commerce, service and IT teams work as one from anywhere and collaborate to progress sales opportunities and handle the relationship with clients.**
 
     1\. One you request access to the Salesforce environment, you will receive an email to activate your account, go ahead a click "Verify Account"
@@ -67,6 +69,8 @@ The FileNet Salesforce Connector App connects to the IBM FileNet Content Service
     3\. Once you change your password you will be redirected to the Salesforce home page
     
     ![Verify3](./images/005-verify.png) 
+
+    [Go to top](#lab-section-2) | [Go to Getting Started Lab](#getting-started-lab)
 
 ## 3. FileNet Salesforce Connector
 <a name="lab-section-3"></a>
@@ -154,7 +158,21 @@ The FileNet Salesforce Connector App connects to the IBM FileNet Content Service
 
      ![Connector1](./images/017-connector.png)
 
-     9\. To Dowload..........
+     9\. To Dowload a document use the icon menu of the "Brochure" document then click on "Download"
+
+     ![Connector1](./images/018-connector.png)
+
+     9\. To Delete a document use the icon menu of the "Brochure" document then click on "Remove from Record"
+
+     ![Connector1](./images/019-connector.png)
+
+      Confirm the document deletion in the following dialog
+
+     ![Connector1](./images/020-connector.png)
+
+     The widget should show the updated list of documents
+
+     ![Connector1](./images/021-connector.png)
 
 
     [Go to top](#lab-section-3) | [Go to Getting Started Lab](#getting-started-lab)
