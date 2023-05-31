@@ -14,6 +14,8 @@ The IBM FileNet Content Services GraphQL API provides the connection between the
 
 The FileNet Salesforce Connector App connects to the IBM FileNet Content Services GraphQL API through a secure HTTPS connection. The GraphQL API then makes calls to the Content Platform Engine server through the Content Engine Java API to interact with Documents and with SalesforceRelationship objects that associate Documents with Salesforce records.
 
+Note that while all query and data retrieval operations are made from the Connector App running within a Salesforce.com server, there are two operations where the user’s browser will connect directly to the Content Services GraphQL API server. This direct communication occurs only for document upload and download operations.
+
 **Environment Access:**
 
 **Choose an option:**
@@ -38,6 +40,25 @@ The FileNet Salesforce Connector App connects to the IBM FileNet Content Service
 
 ## 1. Scenario Introduction - FileNet Salesforce Connector
 <a name="lab-section-1"></a>
+
+??? note SUMMARY "Value for the business - Expand to view"
+
+    **Business users**
+
+    * Up to date information without duplication
+    * Content accessible without switching applications
+    * No file size or storage limitations
+
+    **IT administrators**
+
+    * Eliminate content silos with consistent and advanced governance and records management across applications
+    * Automate relationships for new and existing documents with Salesforce objects
+    * Utilize optimized storage in FileNet
+
+    
+    [Go to top](#lab-section-1) | [Go to Getting Started Lab](#getting-started-lab)
+
+
 ??? note SUMMARY "Expand to view"
 
     **Use Case Overview**
