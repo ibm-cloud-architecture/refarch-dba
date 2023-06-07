@@ -113,7 +113,7 @@ Note that while all query and data retrieval operations are made from the Connec
 
             Administrator must have a Salesforce environment to been able to configure the connector to FileNet.
 
-            Go to <a href="https://developer.salesforce.com/signup" target="_blank">Salesforce Developers</a> . Follow the prompts on the Saleforce pages to get your free developer account.
+            Go to <a href="https://developer.salesforce.com/signup" target="_blank">Salesforce Developers</a> . Follow the prompts on the Salesforce pages to get your free developer account.
 
             See the <a href="https://github.com/ibm-cloud-architecture/dba-connect-salesforce" target="_blank">dba-connect-salesforce</a> git repository to configure the connector.
 
