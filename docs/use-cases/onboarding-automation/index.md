@@ -775,6 +775,7 @@
 
     Traditional document capture solutions cannot meet the document processing demands of today’s digital world. Increased market demand for speed and flexibility, combined with exponential growth in regulatory compliance requirements prevent enterprises from realizing the potential for digital transformation. Applying a full document processing workflow with low-code development tools and advanced AI with deep learning, enterprises can use IBM Automation Document Processing to eliminate manual work across the enterprise.
     [Go to top](#additional-assets) | [Go to Introduction](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+
 ## 105. External Share
 <a name="additional-assets-105"></a>
 ??? note SUMMARY "Expand to view"
@@ -809,8 +810,9 @@
     [Go to top](#additional-assets) | [Go to Introduction](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 ## 120. Salesforce Integration
-<a name="additional-assets-130"></a>
+<a name="additional-assets-120"></a>
 ??? note SUMMARY "Expand to view"
+    Use Case: <a href="/use-cases/connect-salesforce" target="_blank">Salesforce CRM Content to FileNet</a>  
     Video: <a href="https://ibm.biz/FileNetSalesforce" target="_blank">Salesforce CRM Content to FileNet (6:29)</a>
 
     ![FileNet Saleforce Video](./images/additional-assets/SalesforceOverview2.png)
