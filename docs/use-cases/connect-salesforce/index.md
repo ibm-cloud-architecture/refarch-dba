@@ -20,9 +20,9 @@ Note that while all query and data retrieval operations are made from the Connec
 
 **Choose an option:**
 
-* Cloud Pak for Business Automation as a Service demo environment (likely an IBMer or Business Partner): your environment is predeployed, continue to the [Getting Started Lab](#getting-started-lab) Lab section below. This option includes a Salesforce environment that is already configured to access IBM Filenet. 
+* Cloud Pak for Business Automation as a Service demo environment (likely an IBMer or Business Partner): your environment is predeployed, continue to the [Getting Started Lab](#getting-started-lab) Lab section below. This option includes a Salesforce environment that is already configured to access IBM FileNet. 
 
-* Install Yourself: To deploy Connect Salesforce on your own environment, and technical architecture information, see the <a href="https://github.com/ibm-cloud-architecture/dba-connect-salesforce" target="_blank">dba-onboarding-automation</a> git repository which includes the required deployment artifacts.
+* Install Yourself: To deploy Salesforce Connector on your own environment, and technical architecture information, see the <a href="https://github.com/ibm-cloud-architecture/dba-connect-salesforce" target="_blank">dba-connect-salesforce</a> git repository which includes the required deployment artifacts.
  
 ***
 
@@ -38,10 +38,20 @@ Note that while all query and data retrieval operations are made from the Connec
     | ⚠️      | **Warning note**                              |
     | ⚙️      | **Sections identified with a ﹡ indicates that the section may require deeper technical expertise and should be skipped by non-technical users** |
 
-## 1. Scenario Introduction - FileNet Salesforce Connector
+## 1. Scenario Introduction
 <a name="lab-section-1"></a>
 
-??? note SUMMARY "Value for the business - Expand to view"
+??? note SUMMARY "Expand to view"
+
+    **Use Case Overview**
+
+    Sales Specialist (Chad Jones) needs to create a new Salesforce Account for a customer. As part of the process he needs to attach several documentation to the account for auditing and tracking . This documentation have several properties that need to be added as document metadata in the IBM FileNet Content Manager Repository. The document properties are often updated by sales representatives as well as the version of the documents. Being able to view , download and delete associated documents is crucial so Chad can  manage the required account documentation from one single place instead of using multiple user interfaces.
+
+    **Discovery Map**
+
+    ![Discovery Map](./images/002-process.png)
+
+    ***Value for the business***    
 
     **Business users**
 
@@ -55,24 +65,10 @@ Note that while all query and data retrieval operations are made from the Connec
     * Automate relationships for new and existing documents with Salesforce objects
     * Utilize optimized storage in FileNet
 
-    
-    [Go to top](#lab-section-1) | [Go to Getting Started Lab](#getting-started-lab)
-
-
-??? note SUMMARY "Expand to view"
-
-    **Use Case Overview**
-
-    Sales Specialist (Chad Jones) needs to create a new SalesForce Account for a customer. As part of the process he needs to attach several documentation to the account for auditing and tracking . This documentation have several properties that need to be added as document metadata in the IBM Filenet Content Manager Repository. The document properties are often updated by sales representatives as well as the version of the documents. Being able to view , download and delete associated documents is crucial so Chad can  manage the required account documentation from one single place instead of using multiple user interfaces.
-
-    **Discovery Map**
-
-    ![Discovery Map](./images/002-process.png)
-
     [Go to top](#lab-section-1) | [Go to Getting Started Lab](#getting-started-lab)
 
 ## 2. Login and Setup Your Environment
-<a name="lab-section-2"></a>
+<a name="lab-section-2a"></a>
 ??? note summary "Expand to view"
 
     ??? note summary "Option 2A - Using a Cloud Pak for Business Automation as a Service environment (likely an IBMer or Business Partner) ?"
@@ -105,9 +101,31 @@ Note that while all query and data retrieval operations are made from the Connec
     
         ![Verify3](./images/005-verify.png) 
 
-        [Go to top](#lab-section-2) | [Go to Getting Started Lab](#getting-started-lab)
+        [Go to top (Option 2A)](#lab-section-2a) | [Go to Getting Started Lab](#getting-started-lab)
 
-## 3. FileNet Salesforce Connector
+    ??? note summary "Option 2B - Are You Using Your Own Environment (not a Cloud trial/demo) ?"
+        <a name="lab-section-2b"></a>
+            1\. Standard Users, once your account administrator completes the below setup and provides you access, please continue.
+
+        2\. Administrator Users, expand the following section to access additional information to setup access for yourself and others in your environment:
+
+        ??? note summary "Additional Administrator Setup For Your Own Environment"
+
+            Administrator must have a Salesforce environment to been able to configure the connector to FileNet.
+
+            Go to <a href="https://developer.salesforce.com/signup" target="_blank">Salesforce Developers</a> . Follow the prompts on the Saleforce pages to get your free developer account.
+
+            See the <a href="https://github.com/ibm-cloud-architecture/dba-connect-salesforce" target="_blank">dba-connect-salesforce</a> git repository to configure the connector.
+
+        > Standard Users, continue here...
+
+        > Please continue to the [next](#lab-section-3) section
+
+        [Go to top (Option 2B)](#lab-section-2b) | [Go to Getting Started Lab](#getting-started-lab)
+
+    [Go to top](#lab-section-2a) | [Go to Getting Started Lab](#getting-started-lab)
+
+## 3. Setting up the FileNet Salesforce application
 <a name="lab-section-3"></a>
 ??? note SUMMARY "Expand to view"
 
@@ -115,9 +133,9 @@ Note that while all query and data retrieval operations are made from the Connec
 
     Let's get started
 
-    1\. Access the IBM Filenet Sales Force Application 
+    1\. Access the IBM FileNet Salesforce Application 
 
-    In the SalesForce menu search for "IBM Filenet" and then click over the "IBM FileNet Salesforce Connector" Application
+    In the Salesforce menu search for "IBM FileNet" and then click over the "IBM FileNet Salesforce Connector" application
     
      ![Connector1](./images/006-connector.png)
 
@@ -139,11 +157,18 @@ Note that while all query and data retrieval operations are made from the Connec
     
      ![Connector1](./images/008-connector.png)
 
-    4\. You will be redirected to the "TestAcount" account page, there is a widget called "Related Documents" which is the one that provides the IBM Filenet integration, as it is a new company the list of documents should be empty.
+    4\. You will be redirected to the "TestAcount" account page, there is a widget called "Related Documents" which is the one that provides the IBM FileNet integration, as it is a new company the list of documents should be empty.
     
      ![Connector1](./images/009-connector.png)
 
-    5\. Now you will upload some example documents to the account, you can use the folowing files:
+    [Go to top](#lab-section-3) | [Go to Getting Started Lab](#getting-started-lab)
+
+## 4. Adding and Viewing Documents
+<a name="lab-section-4"></a>
+
+??? note SUMMARY "Expand to view"
+
+    1\. Now you will upload some example documents to the account, you can use the folowing files:
 
     * [Map Example](./sample-documents/Image.jpg)
     * [Meeting Notes](./sample-documents/Meeting%20Notes%201-30-2023.docx)
@@ -165,7 +190,7 @@ Note that while all query and data retrieval operations are made from the Connec
 
     ![Connector1](./images/011-connector.png)
 
-    6\. Once the documents are uploaded you can View/Edit the related properties
+    2\. Once the documents are uploaded you can View/Edit the related properties
 
     Click in the icon menu of the "Brochure" document then click on properties
 
@@ -175,7 +200,7 @@ Note that while all query and data retrieval operations are made from the Connec
   
     ![Connector1](./images/013-connector.png)
 
-    7\. You can also view the documents in the SalesForce User Interface, document formats such as pdf or jpeg will be displayed
+    3\. You can also view the documents in the Salesforce User Interface, document formats such as pdf or jpeg will be displayed
 
     Click in the icon menu of the "Brochure" document then click on view
 
@@ -185,7 +210,14 @@ Note that while all query and data retrieval operations are made from the Connec
 
      ![Connector1](./images/015-connector.png)
 
-    8\. You can update a new version of a document using the user interface by using the icon menu of the "Brochure" document then click on "Upload New Version"
+    [Go to top](#lab-section-4) | [Go to Getting Started Lab](#getting-started-lab)
+
+## 5. Updating Documents
+<a name="lab-section-5"></a>
+
+??? note SUMMARY "Expand to view"
+
+    1\. You can update a new version of a document using the user interface by using the icon menu of the "Brochure" document then click on "Upload New Version"
 
      ![Connector1](./images/016-connector.png)
 
@@ -193,11 +225,25 @@ Note that while all query and data retrieval operations are made from the Connec
 
      ![Connector1](./images/017-connector.png)
 
-     9\. To Dowload a document use the icon menu of the "Brochure" document then click on "Download"
+    [Go to top](#lab-section-5) | [Go to Getting Started Lab](#getting-started-lab)
+
+## 6. Downloading Documents
+<a name="lab-section-6"></a>
+
+??? note SUMMARY "Expand to view"
+
+     1\. To Dowload a document use the icon menu of the "Brochure" document then click on "Download"
 
      ![Connector1](./images/018-connector.png)
 
-     9\. To Delete a document use the icon menu of the "Brochure" document then click on "Remove from Record"
+    [Go to top](#lab-section-6) | [Go to Getting Started Lab](#getting-started-lab)
+
+## 7. Deleting Documents 
+<a name="lab-section-7"></a>
+
+??? note SUMMARY "Expand to view"
+
+     1\. To Delete a document use the icon menu of the "Brochure" document then click on "Remove from Record"
 
      ![Connector1](./images/019-connector.png)
 
@@ -209,33 +255,62 @@ Note that while all query and data retrieval operations are made from the Connec
 
      ![Connector1](./images/021-connector.png)
 
+    [Go to top](#lab-section-7) | [Go to Getting Started Lab](#getting-started-lab)
 
-    [Go to top](#lab-section-3) | [Go to Getting Started Lab](#getting-started-lab)
-
-## 4. Summary
-<a name="lab-section-4"></a>
+## 8. Summary
+<a name="lab-section-8"></a>
 
 ??? note SUMMARY "Expand to view"
 
-    As you saw, FileNet Salesforce Connector enables secure and compliant IBM Filenet content access through the use of the Salesforce web user interface, uploading viewing and editing documents and associate them with Salesforce records within one single user interface greatlly improve the accesibility needed by users to execute their daily tasks.
+    As you saw, FileNet Salesforce Connector enables secure and compliant IBM FileNet content access through the use of the Salesforce web user interface, uploading viewing and editing documents and associate them with Salesforce records within one single user interface greatlly improve the accesibility needed by users to execute their daily tasks.
+
+    ***Value for the business***    
+
+    **Business users**
+
+    * Up to date information without duplication
+    * Content accessible without switching applications
+    * No file size or storage limitations
+
+    **IT administrators**
+
+    * Eliminate content silos with consistent and advanced governance and records management across applications
+    * Automate relationships for new and existing documents with Salesforce objects
+    * Utilize optimized storage in FileNet
+
+
+    ***Solves a variety of use cases across industries***
+
+    * Back-office employees digitize documents that are automatically associated with a Salesforce account so that front-office employees have access to the most up to date information while interacting with customers.
+
+    * Banking advisors saving documents about their clients in Salesforce to provide informed customer experiences, but store and govern those documents in FileNet.
+
+    * Share content across sales and service groups to provide a single source of truth while maintaining a single content repository.
+
+    * Managing complaints within Salesforce, but storing the relevant documentation in FileNet.
+
+    * Keep sensitive healthcare documents in FileNet while accessing them seamlessly in Salesforce.
+
+    * B2B new merchant onboarding where the merchant is being tracked as an opportunity in Salesforce and sends in documents to be stored within the opportunity in FileNet.
 
     
-    [Go to top](#lab-section-9) | [Go to Getting Started Lab](#getting-started-lab)
+    [Go to top](#lab-section-8) | [Go to Getting Started Lab](#getting-started-lab)
 
-## 5. Troubleshooting
-<a name="lab-section-5"></a>
+## 9. Troubleshooting
+<a name="lab-section-9"></a>
 ??? note SUMMARY "Expand to view"
 
     1\. Using Salesforce UI 
+    
     Chrome/Firefox are the recommended browsers to display the document viewer and work with documents from the Accounts Tab. 
 
-    [Go to top](#lab-section-10) | [Go to Getting Started Lab](#getting-started-lab)
+    [Go to top](#lab-section-9) | [Go to Getting Started Lab](#getting-started-lab)
 
 ***
 
 # Additional Assets
 
-**additional assets to explore**
+**Optional - additional assets to explore**
 
 ## 100. GraphQL
 <a name="additional-assets-110"></a>
@@ -246,6 +321,10 @@ Note that while all query and data retrieval operations are made from the Connec
 
     The FileNet GraphQL API enables you to query and manipulate data easily through an intuitive and flexible syntax that simplifies application development for your Content Platform Engine. The API allows you to request the exact information you need and receive predictable results reducing the number of network calls and bandwidth requirements improving performance.
 
+    The following document provides reference information for developers who want to use the Content Services GraphQL API in a FileNet Content Manager container environment.
+
+    [Content Services GraphQL API Developer Guide](./guides/GraphQL_API_Developer.pdf)
+
     [Go to top](#additional-assets) | [Go to Introduction](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
 
@@ -255,7 +334,7 @@ Note that while all query and data retrieval operations are made from the Connec
 ??? note SUMMARY "Expand to view"
     Video: <a href="https://ibm.biz/FileNetSalesforce" target="_blank">Salesforce CRM Content to FileNet (6:29)</a>
 
-    ![FileNet Saleforce Video](./images/additional-assets/SalesforceOverview2.png)
+    ![FileNet Salesforce Video](./images/additional-assets/SalesforceOverview2.png)
 
     Seamlessly connect Salesforce with FileNet Content Manager to eliminate a content silo and manage Salesforce content within the leading, modern FileNet Content Manager platform. This native integration allows Salesforce users to store and manage related content seamlessly in FileNet Content Manager as it relates to Salesforce accounts, cases, opportunities, and more. They will no longer need to switch applications to find related information. With a Salesforce-oriented user experience, this connector will require minimal to no training, and IT teams can take advantage of the feature-rich content management capabilities of FileNet and govern enterprise content in one place.
 
