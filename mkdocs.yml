@@ -25,8 +25,7 @@ use_directory_urls: true
 plugins:
   - search:
       lang: en
-  - minify:
-      minify_html: true
+
       
 markdown_extensions:
   - attr_list
@@ -79,4 +78,4 @@ nav:
     - Onboarding Automation: use-cases/onboarding-automation/index.md
     - Shared Services: use-cases/shared-ser/index.md
     - Connect Salesforce: use-cases/connect-salesforce/index.md
-  - Contribute: /contribute/
+  - Contribute: contribute/index.md
