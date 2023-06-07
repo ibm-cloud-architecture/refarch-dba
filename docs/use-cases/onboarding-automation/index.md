@@ -812,7 +812,7 @@
 ## 120. Salesforce Integration
 <a name="additional-assets-120"></a>
 ??? note SUMMARY "Expand to view"
-    Use Case: <a href="/use-cases/connect-salesforce" target="_blank">Salesforce CRM Content to FileNet</a>  
+    Use Case: <a href="../connect-salesforce" target="_blank">Salesforce CRM Content to FileNet</a>  
     Video: <a href="https://ibm.biz/FileNetSalesforce" target="_blank">Salesforce CRM Content to FileNet (6:29)</a>
 
     ![FileNet Saleforce Video](./images/additional-assets/SalesforceOverview2.png)
