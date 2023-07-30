@@ -821,6 +821,8 @@
 
     [Go to top](#additional-assets) | [Go to Introduction](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
+<!--- 2023_0730 - Removed - EVS has been deprecated  
+
 ## 125. Enterprise Video Streaming
 <a name="additional-assets-125"></a>
 ??? note SUMMARY "Expand to view"
@@ -838,6 +840,9 @@
     Coming soon!
 
     [Go to top](#additional-assets) | [Go to Introduction](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+
+--->
+
 
 ## 135. Microsoft Online Editing
 <a name="additional-assets-135"></a>
