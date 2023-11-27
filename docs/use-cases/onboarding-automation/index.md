@@ -296,7 +296,7 @@
             | Item                     | Download Link                                |
             | :----------------------- | :------------------------------------------- |
             | Employment Application   | [Focus Corp - Employment Application.pdf](https://github.com/ibm-cloud-architecture/dba-onboarding-automation/raw/main/content-services/sample-content/Focus%20Corp%20-%20Employment%20Application.pdf)                          |
-            | Video Interview          | <a href="https://ibm.box.com/s/wrg8tk9cx7bi4g23wjk19esxi1rmnl8l" target="_blank">Focus Corp - Video Interview - John Doe - KT.mp4</a>      |
+            | Video Interview          | <a href="https://ibm.box.com/s/wrg8tk9cx7bi4g23wjk19esxi1rmnl8l" target="_blank">Focus Corp - Interview Video.mp4</a>      |
 
 
             1\. From the navigation menu, click on **Teamspaces**
