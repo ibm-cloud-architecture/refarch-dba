@@ -833,6 +833,7 @@
     With the FileNet Enterprise Video Streaming connector, you can upload, manage, quickly access video alongside other documents in FileNet Content Manager and search through automatically generated closed captions. IBM’s Enterprise Video Streaming offering features multi-quality streaming and adaptive bit rates to eliminate download delays and provide users with fast access to relevant video moments.
 
     [Go to top](#additional-assets) | [Go to Introduction](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
+--->
 
 <a name="additional-assets-130"></a>
 ## 130. Parallel / Serial Workflow
@@ -841,7 +842,7 @@
 
     [Go to top](#additional-assets) | [Go to Introduction](#introduction) | [Go to Getting Started Lab](#getting-started-lab)
 
---->
+
 
 
 ## 135. Microsoft Online Editing
