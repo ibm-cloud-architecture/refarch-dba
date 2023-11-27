@@ -378,7 +378,7 @@
 
             | Field             | Value                                               |
             | :---------------- | :-------------------------------------------------- |
-            | File name         | **Focus Corp - Video Interview - John Doe - KT.mp4**|
+            | File name         | **Focus Corp - Video Interview.mp4**                |
             | Class             | **Document**                                        |
 
 
@@ -480,7 +480,7 @@
         ??? note SUMMARY "4.3.2 - Prepare Video Interview"  
             You will create video bookmarks to the video interview in preparation for section [**7. Review Video**](#lab-section-7).
             
-            1\. From your teamspace, click on the video name (Focus Corp - Video Interview - John Doe - KT.mp4) in the folder: **Employee Onboarding \ Application \ Video Interview**.  
+            1\. From your teamspace, click on the video name (Focus Corp - Video Interview.mp4) in the folder: **Employee Onboarding \ Application \ Video Interview**.  
             
             ![13](./images/380-Video-Launch.png)
             
