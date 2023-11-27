@@ -2,3 +2,7 @@ docs/node_modules/
 .DS_Store
 docs/public/
 docs/.cache/
+
+.venv
+public
+*.log
