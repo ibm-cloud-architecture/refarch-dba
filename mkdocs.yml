@@ -25,8 +25,10 @@ use_directory_urls: true
 plugins:
   - search:
       lang: en
+  - pdf-export:
+      enabled_if_env: ENABLE_PDF_EXPORT
 
-      
+
 markdown_extensions:
   - attr_list
   - admonition
@@ -69,7 +71,6 @@ nav:
     - Overview: technology/index.md
     - Automation Decision Service: technology/decision/index.md
     - RPA: technology/rpa/index.md
-    - title: Use cases
   - Use Cases:
     - Accounts Payable: use-cases/accounts-pay/index.md
     - HR Onboarding App: use-cases/hr-onboard-app/index.md

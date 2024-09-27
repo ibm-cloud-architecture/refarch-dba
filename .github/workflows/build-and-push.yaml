@@ -1,5 +1,5 @@
 name: Build & Push docs
-on: 
+on:
   push:
     branches:
       - master
@@ -13,4 +13,5 @@ jobs:
           - name: Deploy docs
             uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
+            ENABLE_PDF_EXPORT: 1
             GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
