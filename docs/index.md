@@ -1,4 +1,4 @@
 ---
 template: home.html
-title: Digital Business Automation
+title: Data & AI - Business Automation
 ---

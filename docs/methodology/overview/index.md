@@ -1,6 +1,6 @@
 ---
-title: Digital Business Automation implementation methodology
-description: Digital Business Automation implementation methodology
+title: Business Automation implementation methodology
+description: Business Automation implementation methodology
 ---
 
 ## Business automation application development

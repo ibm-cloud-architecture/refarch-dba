@@ -9,7 +9,7 @@ description: What is the purpose of the business automation reference architectu
 
 ## Digital business automation architecture
 
-The current Digital Business Automation architecture is documented [here](https://www.ibm.com/cloud/architecture/architectures/dba-architecture) in the [IBM Cloud Architecture Center](https://www.ibm.com/cloud/architecture). 
+The current Business Automation architecture is documented [here](https://www.ibm.com/cloud/architecture/architectures/dba-architecture) in the [IBM Cloud Architecture Center](https://www.ibm.com/cloud/architecture). 
 It includes detailed architecture capabilities on the following components:
 
 * [Workflow management](https://www.ibm.com/cloud/architecture/architectures/workflowDomain) includes runtime and business process authoring components in a single view. 

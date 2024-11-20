@@ -1,5 +1,5 @@
-site_name: Digital Business Automation
-site_description: Knowledge sharing on digital business automation
+site_name: Data & AI - Business Automation
+site_description: Knowledge sharing on business automation
 repo_url: https://github.com/ibm-cloud-architecture/refarch-dba
 docs_dir: docs
 site_dir: public
@@ -64,7 +64,7 @@ nav:
     - Overview: methodology/overview/index.md
     - Agile Business Rule Development: methodology/abrd/index.md
     - Event Storming: https://ibm-cloud-architecture.github.io/refarch-eda/methodology/event-storming/
-  - Patterns in DBA:
+  - Patterns in Business Automation:
     - Devising the data models: methodology/model/index.md
     - Champion-challenger: https://ibm-cloud-architecture.github.io/odm-cp4d-integration/champchall/
   - Use Cases:
