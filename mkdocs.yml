@@ -20,6 +20,8 @@ theme:
       - navigation.tabs.sticky
       - navigation.top
       - navigation.sections
+      - navigation.expand
+      - navigation.path
 extra_css: ["extra.css"]
 use_directory_urls: true
 plugins:
@@ -52,7 +54,7 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.snippets:
       base_path: docs/snippets
-copyright: Copyright © 2022 IBM
+copyright: Copyright © 2024 IBM
 nav:
   - Home: index.md
   - Introduction:
@@ -66,11 +68,10 @@ nav:
     - Devising the data models: methodology/model/index.md
     - Champion-challenger: https://ibm-cloud-architecture.github.io/odm-cp4d-integration/champchall/
   - Use Cases:
-    - Accounts Payable: use-cases/accounts-pay/index.md
-    - HR Onboarding App: use-cases/hr-onboard-app/index.md
-    - ODM-WML integration: https://ibm-cloud-architecture.github.io/odm-cp4d-integration/introduction
-    - Refund Request: use-cases/refund-req/index.md
     - Onboarding Automation: use-cases/onboarding-automation/index.md
-    - Shared Services: use-cases/shared-ser/index.md
     - Connect Salesforce: use-cases/connect-salesforce/index.md
+    - HR Onboarding App: use-cases/hr-onboard-app/index.md
+    - Accounts Payable: use-cases/accounts-pay/index.md
+    - ODM-WML integration: https://ibm-cloud-architecture.github.io/odm-cp4d-integration/introduction
+    - Shared Services: use-cases/shared-ser/index.md
   - Contribute: contribute/index.md
