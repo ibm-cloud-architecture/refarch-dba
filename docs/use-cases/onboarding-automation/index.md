@@ -722,6 +722,11 @@
 
     As shown in the diagram above, the launch screen is displayed with properties such as the **Document Name**, **First Name**, **Last Name**, and **Application Date** automatically populated from the document properties. You are able to view the contents of employement application as a final check and ultimately trigger the process by clicking on the **Launch process** button.
 
+    !!! info ""
+        ⚠️ Please note, if the lauch screen is NOT automatically displayed, locate the **Task** in **Workplace** and click on the **Name** link to display the launch screen. 
+        ![13](./images/620B-LaunchProcess-Workplace.png)
+
+
     4\. Click the **Launch process** button to start the process.  
 
     ![13](./images/625-LaunchProcess-Launch.png)
